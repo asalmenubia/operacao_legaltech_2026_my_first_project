@@ -33,9 +33,22 @@ compliance is claimed. The historical synthetic validation recorded zero critica
 findings and 3,000 identity-mapping warnings; historical date-only inquiry data
 cannot validate the new response policy.
 
-## Publication
+## GitHub validation and publication
 
-The project is prepared for the repository's main branch. The static Pages job
-requires GitHub Pages to be enabled with GitHub Actions as its source. Repository
-publication and live messaging activation are separate operations. CI and push
-results will be recorded after publication.
+The project was pushed to `main` in commit
+`685f41ecc00f44c2a0d587da7af74c4628e4fc88`.
+[GitHub validation passed](https://github.com/asalmenubia/operacao_legaltech_2026_my_first_project/actions/runs/35572687542).
+The job ran the 19 unit tests, applied all migrations to PostgreSQL 18, passed the
+14 transactional assertions, downgraded to revision 0003 and reapplied 0004,
+repeated the integration checks, then loaded and validated the synthetic CSVs.
+These database tests used the disposable GitHub service, not the user's local
+database. The local migration remains unapplied by this update.
+
+The separate [Pages job](https://github.com/asalmenubia/operacao_legaltech_2026_my_first_project/actions/runs/35572687624)
+failed at `actions/configure-pages`: GitHub Pages is not enabled/configured for
+this repository (HTTP 404). The repository files and both PDFs are uploaded and
+downloadable directly from GitHub. No claim is made that the dashboard website is
+live. Enable Pages with GitHub Actions as the source, then rerun that job to host
+the static site. This setting was not changed as part of the requested Git push.
+Repository publication, static hosting and live messaging activation are
+separate operations.
