@@ -9,6 +9,12 @@ Plotly dashboard, and a private WhatsApp/email automation module.
 
 ## Download the dissertations
 
+**[Open the interactive dashboard](https://asalmenubia.github.io/operacao_legaltech_2026_my_first_project/)**
+
+The dashboard includes filters, synthetic operational indicators and downloads
+of both dissertation editions. GitHub Pages publishes the validated pipeline
+output after successful checks on `main`.
+
 - [European Portuguese PDF](site/reports/operacao_legaltech_dissertation_pt-PT.pdf)
 - [English PDF](site/reports/operacao_legaltech_dissertation_en.pdf)
 
