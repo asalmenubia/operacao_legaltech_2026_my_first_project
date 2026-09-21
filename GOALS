@@ -1,0 +1,77 @@
+# Option 1 – Final Project: LegalTech Operation
+
+## Organising Data Chaos in a Law Firm
+
+**Course:** Data Analysis and IT Applied to Management
+**Individual Submission**
+
+### 1. Context
+
+A law firm has grown rapidly.
+
+The number of clients has increased, but the information has become scattered and decentralised across:
+
+* Old spreadsheets
+* Emails
+* Messages
+* Manual records
+
+The partners want to see everything in a single dashboard, including:
+
+* Client records
+* Type of legal case
+* Current case stage
+* Financial value
+* Payment status
+* Other relevant indicators
+
+You have been hired as an **Innovation Analyst**.
+
+Your mission is to create an integrated data solution that gives the firm greater clarity and control.
+
+### 2. Challenge Objective
+
+Develop a solution that:
+
+1. Centralises client, case, case-progress and financial data.
+2. Creates dashboards with KPIs and intelligent filters.
+3. Presents real-time results to senior management.
+4. Includes a data governance and standardisation guide to maintain data quality.
+
+**Permitted tools:** Excel, Power BI, Looker Studio, Airtable, Python, Notion, Trello, etc.
+
+### 3. Initial Data
+
+**Initial file:** `desafio-advocacia-dados.xlsx`
+
+It contains:
+
+* Clients
+* Legal cases
+* Case progress
+* Invoices and payments
+* Activities
+* Data dictionary
+
+You may clean, transform and connect the data in any way you choose. The focus is on the intelligence of the solution and its ability to solve the problem.
+
+### 4. Deliverables
+
+Each student must submit:
+
+1. A centralised database or spreadsheet.
+2. An executive dashboard with KPIs and filters.
+3. A data dictionary.
+4. A process and data governance guide.
+5. An automation backlog, including alerts, notifications and similar features, if applicable.
+6. **Optional:** A three-to-five-minute video demonstrating the solution.
+
+### 5. Submission
+
+* **Type:** Individual
+* **Deadline:** By the 15th day of the 18th month of the course, counted from the programme’s official start date
+* **Format:** Dashboard link, project file and documentation
+* **Project name:** `legaltech_turma_Name`
+* **Email:** [dadoseti@preparaportugal.com](mailto:dadoseti@preparaportugal.com)
+
+If students have any questions, they may contact the course team by email at **[dadoseti@preparaportugal.com](mailto:dadoseti@preparaportugal.com)**.

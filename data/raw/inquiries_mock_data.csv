@@ -1,0 +1,1001 @@
+inquiry_id,client_id,origin_channel,menu_option,received_at,is_working_hours,assistant_id,first_response_at,response_delay_minutes,outcome
+1,443,phone456,completed,1/5/25,no,1,5/15/24,1358,cancelled
+2,726,emailDEF,approved,5/17/26,no,2,12/21/24,634,pending
+3,570,whatsapp789,cancelled,8/19/26,yes,3,12/25/24,613,delayed
+4,254,whatsapp123,completed,4/28/24,no,4,12/17/26,790,pending
+5,576,phone456,on hold,11/27/24,yes,5,4/12/24,231,on hold
+6,693,whatsapp789,delayed,5/15/25,yes,6,1/11/26,530,rejected
+7,53,email123,pending,5/17/24,no,7,3/26/25,144,rejected
+8,475,phone789,delayed,8/5/25,yes,8,1/6/25,164,pending
+9,674,email456,under review,8/20/25,no,9,3/1/24,642,rejected
+10,94,email123,under review,6/1/25,yes,10,1/29/26,355,in progress
+11,644,whatsapp123,cancelled,1/25/26,no,11,8/30/24,1058,on hold
+12,291,email123,scheduled,9/3/24,no,12,3/22/26,1170,approved
+13,992,whatsapp123,in progress,9/11/25,yes,13,12/11/24,695,delayed
+14,910,email123,pending,9/9/25,no,14,12/10/26,890,cancelled
+15,898,whatsapp789,approved,9/13/24,no,15,9/22/24,462,delayed
+16,802,emailDEF,scheduled,10/1/25,no,16,9/22/24,281,approved
+17,83,phone789,on hold,11/28/24,no,17,10/21/25,628,under review
+18,16,email123,pending,12/5/26,yes,18,8/18/25,1113,delayed
+19,90,whatsapp789,delayed,10/22/25,no,19,4/3/24,258,on hold
+20,151,emailDEF,delayed,8/3/25,no,20,4/26/24,1169,pending
+21,532,whatsappXYZ,delayed,12/14/24,yes,21,4/27/24,1439,scheduled
+22,537,phone456,delayed,8/28/25,no,22,6/16/25,830,cancelled
+23,587,emailDEF,cancelled,8/22/26,yes,23,2/14/24,838,rejected
+24,786,whatsappABC,completed,9/26/24,no,24,7/1/24,24,in progress
+25,398,whatsapp789,in progress,7/26/25,yes,25,10/2/24,21,cancelled
+26,433,phone456,on hold,5/20/25,no,26,11/27/26,552,completed
+27,964,phoneGHI,approved,4/19/26,no,27,11/1/24,1155,cancelled
+28,566,phoneGHI,in progress,9/14/26,yes,28,10/22/26,823,rejected
+29,560,whatsapp123,pending,4/5/25,yes,29,3/6/25,304,in progress
+30,410,whatsappABC,scheduled,12/8/25,no,30,3/23/26,1224,scheduled
+31,212,email456,cancelled,11/18/26,no,31,9/14/25,636,under review
+32,170,whatsapp789,on hold,10/2/24,no,32,9/4/25,1272,on hold
+33,305,phone456,scheduled,2/14/25,no,33,5/5/26,782,scheduled
+34,828,email456,pending,6/7/26,no,34,1/6/25,282,cancelled
+35,738,whatsappXYZ,under review,7/16/24,yes,35,7/3/24,93,under review
+36,967,email123,cancelled,4/21/24,yes,36,2/26/26,1379,pending
+37,782,phoneGHI,rejected,1/26/25,yes,37,9/26/25,1009,cancelled
+38,983,email456,pending,1/25/24,no,38,11/16/26,1437,approved
+39,226,whatsapp789,rejected,5/29/26,no,39,3/26/25,1214,completed
+40,677,email456,under review,6/5/25,no,40,3/26/26,378,rejected
+41,725,email456,completed,11/9/26,yes,41,7/13/26,1131,cancelled
+42,233,whatsapp123,cancelled,5/16/24,no,42,1/30/26,1431,approved
+43,972,phone456,pending,9/16/26,yes,43,12/9/26,1082,under review
+44,627,whatsappABC,completed,8/2/25,yes,44,2/3/24,468,pending
+45,163,whatsappXYZ,on hold,11/27/24,yes,45,7/26/24,903,rejected
+46,176,whatsapp789,completed,6/24/25,yes,46,5/3/24,397,approved
+47,864,whatsappABC,under review,8/28/25,no,47,6/29/24,499,delayed
+48,257,whatsappXYZ,completed,10/29/25,no,48,3/5/26,822,approved
+49,23,whatsappABC,rejected,9/21/26,yes,49,5/23/24,1341,approved
+50,896,whatsapp123,completed,10/8/25,no,50,11/25/24,825,rejected
+51,617,whatsappABC,pending,10/2/26,yes,51,6/24/25,973,under review
+52,177,email456,cancelled,8/8/25,no,52,1/18/26,562,on hold
+53,705,whatsapp123,on hold,7/14/25,no,53,5/6/25,1386,rejected
+54,509,emailDEF,on hold,9/19/25,yes,54,11/11/24,489,rejected
+55,975,whatsappXYZ,cancelled,9/23/24,no,55,11/7/24,388,pending
+56,779,whatsappXYZ,completed,3/7/24,yes,56,7/18/25,215,on hold
+57,909,whatsappXYZ,scheduled,2/13/25,no,57,5/15/24,193,in progress
+58,717,emailDEF,completed,12/6/26,yes,58,5/5/26,739,completed
+59,16,email456,scheduled,11/28/24,yes,59,2/7/26,391,cancelled
+60,675,email123,delayed,3/2/25,no,60,4/1/25,679,rejected
+61,121,email123,on hold,8/23/26,no,61,12/15/24,129,under review
+62,365,whatsapp123,approved,6/29/26,yes,62,5/24/26,1046,rejected
+63,168,whatsapp789,scheduled,1/11/25,yes,63,5/17/26,1137,under review
+64,729,emailDEF,scheduled,9/6/26,no,64,5/31/26,47,on hold
+65,28,emailDEF,on hold,4/19/25,yes,65,7/27/25,1118,cancelled
+66,751,email456,scheduled,3/12/25,no,66,12/14/25,1225,approved
+67,175,whatsappABC,scheduled,4/9/26,yes,67,5/3/24,939,in progress
+68,17,whatsappXYZ,on hold,6/27/24,no,68,9/15/24,1173,scheduled
+69,791,whatsappXYZ,approved,5/10/25,no,69,1/16/26,1357,cancelled
+70,181,phoneGHI,cancelled,1/25/24,yes,70,3/24/25,1047,delayed
+71,864,phone789,cancelled,12/13/25,no,71,2/10/24,821,pending
+72,377,whatsappABC,cancelled,10/7/25,no,72,12/6/24,573,in progress
+73,828,emailDEF,cancelled,8/12/25,yes,73,4/2/26,360,completed
+74,171,email123,scheduled,1/10/26,yes,74,6/23/24,1066,under review
+75,386,emailDEF,cancelled,3/8/25,no,75,4/25/26,281,under review
+76,141,whatsappABC,delayed,7/5/24,yes,76,1/30/26,622,in progress
+77,301,phone456,delayed,7/15/25,no,77,6/17/26,410,in progress
+78,867,phone456,under review,3/10/26,yes,78,4/9/25,1088,pending
+79,507,phone456,pending,4/28/24,no,79,4/22/24,1122,pending
+80,773,whatsappABC,rejected,1/9/24,yes,80,7/4/26,1301,cancelled
+81,879,whatsappABC,on hold,3/28/26,no,81,8/26/26,259,in progress
+82,680,whatsapp789,delayed,12/1/24,no,82,5/11/25,565,pending
+83,877,emailDEF,on hold,12/12/24,no,83,10/28/24,1154,under review
+84,784,phone789,on hold,12/18/25,yes,84,1/16/24,119,delayed
+85,468,emailDEF,rejected,3/16/25,no,85,2/13/24,1212,under review
+86,818,whatsapp789,completed,10/21/24,no,86,8/2/26,1218,rejected
+87,665,phone789,pending,4/21/24,yes,87,4/17/26,317,under review
+88,286,email123,in progress,12/16/25,yes,88,9/27/26,823,rejected
+89,566,email123,cancelled,2/15/24,yes,89,8/5/24,986,on hold
+90,369,email123,in progress,9/26/26,no,90,1/14/24,275,rejected
+91,506,email123,cancelled,5/27/24,yes,91,6/7/25,871,approved
+92,61,phoneGHI,under review,8/7/26,yes,92,9/14/25,1053,delayed
+93,745,phoneGHI,pending,9/15/26,yes,93,6/28/26,1061,on hold
+94,774,phone789,approved,3/31/25,no,94,5/6/25,1323,cancelled
+95,634,phone789,in progress,3/15/24,no,95,12/7/25,755,scheduled
+96,436,phone789,under review,4/21/25,yes,96,2/16/24,1197,cancelled
+97,341,email123,completed,1/17/25,no,97,4/18/25,108,in progress
+98,674,phoneGHI,delayed,3/8/25,yes,98,9/17/24,1030,under review
+99,340,whatsapp123,pending,2/2/24,no,99,9/4/24,951,under review
+100,130,phoneGHI,pending,3/26/26,no,100,5/28/26,1138,approved
+101,704,whatsapp123,on hold,7/11/25,no,101,10/8/26,1017,pending
+102,343,emailDEF,rejected,8/6/24,no,102,4/26/25,186,delayed
+103,768,whatsappXYZ,approved,7/25/24,yes,103,8/20/25,993,on hold
+104,403,whatsapp789,scheduled,1/13/24,no,104,10/23/24,746,under review
+105,735,emailDEF,under review,8/8/24,yes,105,5/10/26,95,delayed
+106,941,phoneGHI,scheduled,10/16/25,no,106,10/27/26,708,scheduled
+107,702,whatsapp123,scheduled,10/11/25,no,107,8/31/24,924,pending
+108,367,phoneGHI,under review,12/12/26,yes,108,10/28/26,729,delayed
+109,666,phone456,completed,9/5/25,no,109,10/17/25,1415,pending
+110,685,emailDEF,in progress,5/14/26,no,110,5/21/24,836,delayed
+111,587,phone456,delayed,7/28/26,yes,111,9/21/26,604,on hold
+112,787,emailDEF,completed,11/15/24,yes,112,6/6/25,1001,scheduled
+113,241,email456,scheduled,6/25/25,yes,113,11/17/25,661,completed
+114,675,email123,approved,6/27/25,yes,114,1/20/26,1088,on hold
+115,470,email456,cancelled,8/23/24,no,115,9/25/24,899,approved
+116,363,email456,approved,3/17/24,no,116,4/28/26,1143,in progress
+117,300,emailDEF,in progress,10/29/24,no,117,4/28/26,1123,on hold
+118,314,email456,rejected,5/6/24,no,118,4/29/25,362,cancelled
+119,668,whatsapp789,approved,2/3/25,yes,119,1/3/26,78,completed
+120,51,whatsappABC,approved,8/10/25,no,120,12/8/25,537,pending
+121,277,whatsappABC,completed,4/16/25,yes,121,5/19/24,1117,approved
+122,901,whatsappXYZ,approved,7/23/26,yes,122,3/31/26,708,rejected
+123,447,whatsapp789,approved,3/3/25,yes,123,9/17/24,957,cancelled
+124,746,phone456,approved,8/11/25,yes,124,7/11/26,554,on hold
+125,507,whatsappABC,under review,6/17/24,no,125,7/23/26,822,on hold
+126,395,whatsapp789,pending,8/11/26,yes,126,12/5/26,614,pending
+127,12,emailDEF,approved,2/18/26,yes,127,12/24/25,1382,rejected
+128,993,emailDEF,scheduled,12/8/26,no,128,3/10/25,50,approved
+129,580,whatsappABC,rejected,12/15/24,no,129,4/5/24,463,completed
+130,985,emailDEF,scheduled,11/20/25,no,130,12/28/25,972,on hold
+131,619,phone456,on hold,5/24/25,yes,131,9/12/25,678,rejected
+132,746,phone456,completed,2/23/26,no,132,7/26/26,547,completed
+133,856,whatsappXYZ,approved,6/30/25,no,133,9/21/26,1295,approved
+134,42,whatsappXYZ,rejected,3/21/26,yes,134,3/11/26,451,completed
+135,775,whatsappABC,pending,9/4/26,yes,135,2/15/24,486,in progress
+136,45,phoneGHI,delayed,2/8/25,yes,136,6/22/26,966,delayed
+137,382,phone789,in progress,11/22/24,no,137,8/28/25,838,cancelled
+138,481,email456,in progress,9/15/25,yes,138,6/2/24,405,rejected
+139,365,whatsapp123,cancelled,8/13/24,no,139,2/10/24,530,delayed
+140,798,email123,approved,2/9/25,no,140,2/20/24,284,approved
+141,805,emailDEF,under review,4/8/24,yes,141,4/5/24,627,completed
+142,929,emailDEF,in progress,8/10/24,yes,142,3/30/26,75,completed
+143,528,email456,delayed,6/6/26,no,143,2/1/25,209,under review
+144,501,phone789,delayed,5/20/25,no,144,11/20/25,939,approved
+145,541,whatsapp789,cancelled,10/31/24,no,145,7/16/26,1266,cancelled
+146,697,email456,cancelled,3/11/26,no,146,2/17/24,1295,scheduled
+147,481,email123,under review,12/22/25,no,147,6/11/25,627,on hold
+148,339,email123,completed,9/30/24,no,148,3/27/26,935,pending
+149,876,phone789,rejected,11/28/26,no,149,1/12/24,242,rejected
+150,832,phone789,cancelled,1/20/26,no,150,1/25/24,716,pending
+151,598,phone789,under review,6/14/25,yes,151,2/22/24,1093,under review
+152,139,email123,in progress,8/4/25,no,152,1/20/24,410,delayed
+153,877,email123,delayed,10/18/24,no,153,5/24/26,303,pending
+154,340,emailDEF,under review,8/11/26,no,154,6/13/25,585,cancelled
+155,936,email123,completed,7/4/26,no,155,5/12/24,283,delayed
+156,696,whatsappXYZ,rejected,12/8/25,no,156,9/8/25,938,on hold
+157,333,whatsappXYZ,approved,4/3/25,yes,157,4/3/26,972,scheduled
+158,180,whatsappABC,under review,2/16/25,no,158,5/26/25,668,approved
+159,429,phoneGHI,completed,7/11/25,no,159,1/23/25,527,under review
+160,755,phone456,under review,3/1/24,no,160,8/27/24,795,cancelled
+161,406,phone789,under review,5/25/26,no,161,5/24/26,147,in progress
+162,524,phone789,cancelled,5/7/26,yes,162,11/3/25,1234,under review
+163,459,email123,under review,9/13/24,yes,163,3/5/25,1091,delayed
+164,110,phone789,on hold,8/4/26,yes,164,4/26/25,1416,on hold
+165,267,whatsapp789,delayed,7/26/24,yes,165,3/25/24,725,approved
+166,921,phoneGHI,approved,6/5/24,yes,166,5/23/24,189,approved
+167,641,phone789,scheduled,9/7/26,yes,167,2/2/25,399,scheduled
+168,828,phone789,scheduled,12/13/24,no,168,7/30/26,73,pending
+169,724,whatsappXYZ,completed,5/18/24,yes,169,3/10/26,276,approved
+170,898,email123,rejected,1/15/25,no,170,9/10/26,608,under review
+171,859,whatsapp123,rejected,1/28/24,no,171,6/23/26,120,in progress
+172,355,whatsapp789,cancelled,12/23/26,no,172,3/4/25,1367,on hold
+173,985,whatsapp789,rejected,4/21/26,yes,173,10/3/25,419,on hold
+174,131,emailDEF,on hold,7/15/26,yes,174,2/3/24,450,delayed
+175,978,email123,under review,11/8/24,yes,175,7/2/25,314,pending
+176,235,whatsapp123,on hold,10/9/26,no,176,5/2/24,685,under review
+177,596,whatsappXYZ,approved,1/3/25,no,177,2/25/24,1317,rejected
+178,642,whatsappXYZ,cancelled,11/4/26,no,178,2/2/25,67,under review
+179,228,phoneGHI,in progress,3/2/25,no,179,5/21/26,1171,rejected
+180,610,whatsappXYZ,approved,2/27/24,no,180,7/9/25,1021,under review
+181,96,email123,rejected,3/15/25,no,181,3/5/25,1155,pending
+182,248,whatsappABC,completed,3/29/26,yes,182,1/23/25,1051,rejected
+183,180,emailDEF,rejected,12/28/26,yes,183,1/31/25,99,pending
+184,543,phone456,delayed,12/23/24,no,184,3/19/25,562,pending
+185,755,email123,in progress,12/1/26,no,185,10/22/24,1218,cancelled
+186,947,whatsappABC,under review,8/24/25,no,186,8/5/24,379,on hold
+187,78,phone789,in progress,2/1/24,yes,187,5/2/26,963,completed
+188,60,phone789,scheduled,8/4/25,no,188,9/12/24,687,approved
+189,723,whatsappABC,pending,4/3/26,yes,189,11/19/26,293,on hold
+190,605,phone456,pending,11/1/24,no,190,11/26/24,1035,completed
+191,242,phoneGHI,approved,3/2/24,no,191,11/21/25,12,in progress
+192,725,whatsapp123,pending,11/11/25,yes,192,11/1/26,1142,in progress
+193,376,whatsappABC,delayed,10/1/24,no,193,10/5/24,655,pending
+194,837,whatsapp789,on hold,7/11/24,yes,194,1/30/25,15,rejected
+195,594,whatsappXYZ,on hold,5/16/26,yes,195,11/2/25,1276,pending
+196,190,whatsapp789,approved,11/21/25,no,196,4/1/24,279,delayed
+197,255,email456,approved,10/28/26,yes,197,12/1/24,485,cancelled
+198,234,email456,cancelled,7/9/26,no,198,2/9/26,415,on hold
+199,924,emailDEF,approved,10/13/24,yes,199,10/21/24,1238,delayed
+200,19,whatsappABC,scheduled,1/17/26,no,200,10/27/26,124,rejected
+201,660,email456,rejected,6/12/26,no,201,12/15/26,1007,cancelled
+202,863,whatsappABC,cancelled,8/19/25,yes,202,11/26/24,326,scheduled
+203,98,email123,in progress,12/8/26,no,203,1/11/24,305,in progress
+204,488,emailDEF,rejected,6/14/26,no,204,5/30/25,375,delayed
+205,364,whatsapp123,under review,8/19/26,yes,205,10/4/24,619,pending
+206,202,email123,in progress,11/23/26,yes,206,12/13/26,382,delayed
+207,485,phoneGHI,under review,4/14/26,yes,207,2/19/26,1403,in progress
+208,884,email123,cancelled,9/1/24,no,208,11/22/25,1390,pending
+209,83,whatsapp789,completed,1/18/25,no,209,6/14/24,1181,scheduled
+210,957,phone789,under review,8/5/24,no,210,11/29/25,132,delayed
+211,441,phone789,pending,4/20/26,no,211,11/30/24,537,in progress
+212,837,emailDEF,rejected,3/5/26,yes,212,6/26/25,76,on hold
+213,709,whatsappXYZ,pending,9/13/25,no,213,12/20/24,1350,delayed
+214,808,whatsappXYZ,on hold,8/13/26,no,214,11/1/24,816,approved
+215,208,phone456,pending,8/29/26,no,215,5/1/25,133,cancelled
+216,989,whatsapp789,cancelled,5/31/24,yes,216,4/1/25,1129,completed
+217,46,whatsapp123,completed,6/23/25,yes,217,2/23/26,1423,in progress
+218,841,email123,under review,3/5/25,yes,218,8/15/24,798,cancelled
+219,153,email123,on hold,11/27/25,no,219,8/18/26,1163,completed
+220,20,whatsapp123,in progress,3/26/25,no,220,4/3/24,406,delayed
+221,830,whatsappXYZ,scheduled,11/30/24,yes,221,12/20/26,1195,on hold
+222,612,email123,in progress,11/16/24,yes,222,8/17/24,324,scheduled
+223,988,phone789,scheduled,5/3/25,yes,223,12/21/26,566,pending
+224,429,phoneGHI,approved,4/11/24,yes,224,7/21/24,1184,approved
+225,544,whatsapp123,delayed,6/14/25,yes,225,12/19/26,619,scheduled
+226,817,whatsappXYZ,under review,7/1/24,no,226,9/7/25,58,delayed
+227,662,phoneGHI,rejected,10/25/25,no,227,5/23/26,770,in progress
+228,547,phone789,scheduled,9/6/24,yes,228,10/25/26,177,in progress
+229,334,whatsapp123,under review,10/28/25,no,229,12/13/26,1192,rejected
+230,486,whatsapp789,delayed,2/19/24,no,230,12/13/24,860,cancelled
+231,502,phone456,under review,4/14/26,yes,231,1/31/24,1427,on hold
+232,849,phone789,rejected,9/29/25,yes,232,3/18/24,1162,rejected
+233,911,email456,under review,6/27/26,no,233,11/29/26,610,on hold
+234,172,phone789,approved,12/3/26,no,234,1/13/26,484,pending
+235,717,email456,pending,7/21/26,no,235,5/27/24,477,under review
+236,747,phoneGHI,under review,3/26/24,no,236,7/10/26,909,in progress
+237,650,phone456,on hold,4/15/26,no,237,10/17/24,317,rejected
+238,471,whatsappABC,completed,8/31/25,no,238,2/11/26,808,completed
+239,984,phone789,under review,10/31/26,yes,239,9/1/25,1217,scheduled
+240,538,whatsappXYZ,delayed,9/26/25,yes,240,10/13/24,980,pending
+241,486,emailDEF,under review,11/5/26,no,241,5/7/24,799,scheduled
+242,467,phone456,delayed,9/6/24,yes,242,4/16/24,1337,delayed
+243,616,whatsappXYZ,cancelled,6/30/25,no,243,4/3/26,487,on hold
+244,992,whatsappABC,approved,9/26/26,no,244,9/10/25,742,under review
+245,824,phone456,approved,11/21/26,yes,245,8/16/24,1121,in progress
+246,825,whatsappABC,cancelled,10/8/25,no,246,4/23/25,992,pending
+247,267,emailDEF,completed,7/18/26,yes,247,4/16/24,40,under review
+248,233,whatsapp789,completed,9/23/24,no,248,11/22/26,1264,pending
+249,96,email456,scheduled,10/10/24,yes,249,8/22/24,1269,approved
+250,765,phoneGHI,delayed,9/13/24,yes,250,1/19/25,536,cancelled
+251,365,whatsappABC,on hold,1/7/25,yes,251,11/13/26,578,in progress
+252,820,whatsapp789,scheduled,3/6/26,yes,252,8/1/24,383,scheduled
+253,409,email456,delayed,3/2/25,yes,253,10/6/26,200,approved
+254,471,email456,pending,5/1/25,yes,254,5/12/25,1309,under review
+255,540,email456,on hold,6/26/26,no,255,4/20/24,8,cancelled
+256,723,phone789,cancelled,2/2/26,no,256,9/22/24,451,under review
+257,839,email123,pending,6/8/26,no,257,9/26/25,265,in progress
+258,347,whatsapp123,approved,7/5/26,yes,258,4/24/24,997,pending
+259,488,email456,delayed,1/11/26,no,259,12/10/24,553,cancelled
+260,844,whatsapp789,pending,3/24/25,yes,260,10/31/25,402,approved
+261,24,whatsapp789,approved,4/16/24,yes,261,4/18/25,660,delayed
+262,52,emailDEF,completed,9/16/25,no,262,7/24/26,509,under review
+263,870,phone789,completed,10/24/24,no,263,11/22/25,862,on hold
+264,658,whatsappABC,delayed,5/16/26,yes,264,6/18/24,595,scheduled
+265,961,phone789,pending,12/2/26,no,265,1/24/24,209,pending
+266,431,phoneGHI,pending,12/12/25,no,266,8/17/24,93,delayed
+267,565,whatsapp789,pending,3/18/25,no,267,7/1/25,385,under review
+268,413,whatsapp123,delayed,6/16/26,no,268,4/8/24,771,in progress
+269,547,whatsapp789,pending,7/10/25,yes,269,1/27/25,1254,scheduled
+270,249,phoneGHI,cancelled,6/13/25,no,270,6/27/25,1425,on hold
+271,876,whatsappABC,scheduled,8/9/24,no,271,12/2/24,1021,completed
+272,892,phone456,cancelled,1/9/25,no,272,1/26/26,75,under review
+273,66,phone789,cancelled,12/27/26,yes,273,3/2/25,232,on hold
+274,400,email123,under review,5/31/26,no,274,5/12/24,1219,in progress
+275,534,phoneGHI,cancelled,10/10/25,yes,275,1/28/25,1320,scheduled
+276,794,whatsappABC,rejected,10/7/25,no,276,5/22/26,216,scheduled
+277,551,whatsappABC,on hold,5/22/26,yes,277,12/9/25,1134,rejected
+278,824,whatsapp789,cancelled,11/19/25,no,278,8/23/24,980,cancelled
+279,516,phone789,under review,7/19/24,yes,279,6/27/26,803,scheduled
+280,118,phone789,rejected,11/16/24,no,280,9/26/24,267,under review
+281,251,whatsappXYZ,cancelled,6/20/24,no,281,7/4/25,554,completed
+282,223,emailDEF,completed,2/1/24,yes,282,6/17/25,833,scheduled
+283,968,emailDEF,in progress,7/17/24,yes,283,2/29/24,750,under review
+284,451,emailDEF,scheduled,3/13/24,yes,284,10/7/26,128,approved
+285,759,phone456,on hold,6/18/24,yes,285,6/25/26,380,under review
+286,804,whatsapp789,delayed,10/26/26,yes,286,1/6/26,263,delayed
+287,875,phoneGHI,completed,3/9/25,no,287,6/28/25,357,under review
+288,693,phoneGHI,completed,1/19/26,no,288,6/13/24,1165,approved
+289,753,phoneGHI,approved,5/19/25,yes,289,12/16/26,462,scheduled
+290,407,phoneGHI,under review,10/29/24,yes,290,10/8/26,683,rejected
+291,19,whatsappABC,pending,12/18/26,yes,291,11/1/24,99,completed
+292,619,email456,scheduled,8/21/24,yes,292,3/9/24,665,pending
+293,405,phoneGHI,on hold,2/4/25,yes,293,4/15/25,700,pending
+294,828,whatsapp789,delayed,6/15/24,yes,294,3/21/24,893,delayed
+295,458,phone456,under review,12/29/25,no,295,4/2/25,589,pending
+296,698,whatsapp123,rejected,10/26/26,no,296,4/19/26,100,in progress
+297,811,phone456,completed,1/10/26,no,297,1/14/25,677,in progress
+298,544,phone789,rejected,12/21/25,no,298,8/14/26,913,scheduled
+299,603,phone789,completed,6/17/26,no,299,8/12/24,370,cancelled
+300,991,whatsapp789,completed,6/7/24,no,300,3/14/24,127,delayed
+301,499,phone789,scheduled,6/6/24,no,301,6/30/24,1168,approved
+302,828,whatsappABC,scheduled,10/24/26,no,302,6/25/24,444,rejected
+303,120,whatsappABC,under review,11/17/24,yes,303,5/14/26,727,rejected
+304,295,email123,cancelled,10/1/26,no,304,1/9/25,926,scheduled
+305,718,whatsapp789,on hold,10/27/24,yes,305,9/28/25,1069,rejected
+306,415,phoneGHI,cancelled,3/16/24,no,306,11/17/25,1305,on hold
+307,797,whatsapp123,rejected,1/30/24,no,307,12/6/26,1135,pending
+308,164,whatsappXYZ,approved,9/15/24,yes,308,1/25/26,618,rejected
+309,983,whatsapp789,cancelled,8/5/26,yes,309,6/22/26,1008,scheduled
+310,132,phone456,in progress,1/22/25,yes,310,2/1/25,942,on hold
+311,164,whatsappABC,delayed,4/30/25,no,311,3/5/25,16,cancelled
+312,374,whatsappABC,delayed,10/2/24,no,312,4/2/24,59,pending
+313,576,whatsapp789,scheduled,11/5/24,no,313,8/17/24,1274,scheduled
+314,289,phone789,cancelled,1/28/24,no,314,6/7/25,245,in progress
+315,663,emailDEF,delayed,10/18/25,yes,315,3/4/25,103,approved
+316,31,whatsapp789,under review,5/5/26,no,316,9/3/24,526,completed
+317,61,phone456,approved,2/4/24,yes,317,6/3/26,964,completed
+318,768,emailDEF,on hold,3/5/26,yes,318,11/7/25,303,approved
+319,447,emailDEF,delayed,2/17/25,yes,319,4/21/25,970,scheduled
+320,74,whatsappABC,delayed,7/17/26,yes,320,10/19/26,924,on hold
+321,210,email456,approved,8/21/26,no,321,1/27/25,1189,completed
+322,456,whatsapp123,approved,8/28/26,yes,322,11/12/26,760,completed
+323,773,email123,under review,12/7/25,yes,323,10/3/26,214,on hold
+324,11,whatsappABC,under review,4/14/25,yes,324,1/16/25,632,under review
+325,557,email123,delayed,10/29/24,yes,325,7/28/26,974,on hold
+326,233,whatsapp123,scheduled,9/25/24,yes,326,7/12/25,843,scheduled
+327,887,emailDEF,rejected,10/21/26,no,327,5/29/26,272,pending
+328,885,phone789,delayed,10/29/26,yes,328,11/4/26,1139,on hold
+329,609,whatsappABC,in progress,7/23/25,yes,329,12/20/25,106,delayed
+330,14,whatsappXYZ,cancelled,12/13/26,yes,330,11/20/25,123,rejected
+331,20,emailDEF,scheduled,1/18/24,no,331,12/5/25,402,pending
+332,547,phone456,pending,4/6/26,yes,332,7/7/24,992,rejected
+333,235,email456,rejected,3/17/24,no,333,10/17/24,74,cancelled
+334,403,phone789,delayed,4/17/25,no,334,12/19/24,991,delayed
+335,854,whatsapp789,approved,10/12/26,no,335,3/15/24,1051,under review
+336,988,whatsapp123,under review,5/17/25,yes,336,8/12/24,837,completed
+337,334,whatsappXYZ,rejected,10/18/25,no,337,1/9/26,554,scheduled
+338,398,whatsappXYZ,cancelled,1/19/26,no,338,9/12/26,524,cancelled
+339,381,email456,completed,6/23/26,yes,339,3/22/26,1211,cancelled
+340,943,phone456,cancelled,4/7/25,yes,340,8/5/26,1230,rejected
+341,773,whatsappABC,delayed,1/25/25,no,341,10/26/25,428,approved
+342,236,whatsapp789,cancelled,5/27/25,yes,342,3/15/24,36,rejected
+343,53,phone789,approved,5/4/24,no,343,12/30/26,488,pending
+344,692,phone456,approved,12/23/26,no,344,4/8/25,1370,completed
+345,642,emailDEF,on hold,3/9/26,yes,345,9/8/24,1398,completed
+346,29,email456,approved,4/4/25,no,346,9/29/24,219,under review
+347,404,phone456,on hold,5/5/26,no,347,8/18/24,1224,scheduled
+348,66,emailDEF,scheduled,2/14/25,yes,348,6/13/24,124,delayed
+349,314,phone456,under review,12/30/26,yes,349,4/17/24,589,rejected
+350,543,whatsappXYZ,in progress,5/25/26,yes,350,1/27/26,646,pending
+351,689,phone456,cancelled,4/10/24,yes,351,2/3/26,222,under review
+352,606,emailDEF,pending,7/30/25,no,352,1/26/25,1127,scheduled
+353,943,email123,cancelled,9/3/24,yes,353,4/11/25,71,on hold
+354,334,whatsapp123,delayed,8/28/24,no,354,6/14/25,895,in progress
+355,962,whatsappXYZ,cancelled,4/28/25,yes,355,3/31/24,662,pending
+356,130,whatsappABC,scheduled,1/31/24,no,356,11/7/24,549,completed
+357,528,whatsappXYZ,approved,11/9/25,no,357,2/13/26,1252,completed
+358,649,whatsappXYZ,pending,6/3/25,yes,358,3/2/24,1386,approved
+359,983,whatsapp123,delayed,3/7/26,no,359,5/27/24,349,completed
+360,626,whatsappABC,under review,8/9/25,yes,360,2/11/25,173,in progress
+361,218,whatsapp123,rejected,3/7/25,yes,361,5/4/26,29,completed
+362,92,email123,on hold,12/20/25,no,362,9/10/24,442,in progress
+363,889,email456,cancelled,8/25/26,no,363,4/27/25,1278,in progress
+364,759,email123,rejected,9/8/24,no,364,10/17/26,691,approved
+365,996,phone789,rejected,6/29/24,no,365,9/22/24,10,scheduled
+366,659,whatsapp123,delayed,12/2/24,yes,366,7/27/24,961,on hold
+367,407,whatsapp789,completed,9/26/26,no,367,1/2/25,957,approved
+368,117,whatsappXYZ,rejected,6/22/25,no,368,11/1/25,400,in progress
+369,650,whatsappABC,on hold,11/28/26,no,369,6/4/26,1360,approved
+370,654,whatsapp789,under review,12/6/26,no,370,2/3/24,1152,in progress
+371,65,phoneGHI,delayed,2/16/26,yes,371,11/1/24,131,cancelled
+372,729,email456,rejected,1/11/24,yes,372,3/13/25,1114,in progress
+373,5,phoneGHI,scheduled,7/14/25,no,373,8/8/25,1112,rejected
+374,123,whatsapp123,completed,1/30/25,no,374,9/30/24,395,pending
+375,139,email456,scheduled,3/14/26,no,375,11/1/25,921,scheduled
+376,777,phoneGHI,approved,6/27/24,no,376,8/13/25,534,in progress
+377,236,whatsapp789,approved,5/22/26,no,377,9/19/24,720,cancelled
+378,962,phone789,rejected,7/14/25,yes,378,8/20/26,197,delayed
+379,143,phone789,under review,5/8/25,no,379,10/5/26,500,rejected
+380,824,email456,approved,5/31/25,yes,380,2/23/24,239,scheduled
+381,863,whatsapp123,completed,6/4/25,no,381,12/11/25,265,in progress
+382,833,whatsappXYZ,rejected,7/14/25,yes,382,10/30/26,1112,in progress
+383,623,whatsapp789,approved,7/6/24,yes,383,9/14/24,561,cancelled
+384,431,whatsapp789,completed,2/3/24,yes,384,8/28/25,1395,under review
+385,82,whatsappABC,pending,12/22/25,no,385,6/24/24,427,completed
+386,359,phone789,in progress,5/23/26,yes,386,7/4/25,1414,delayed
+387,139,emailDEF,cancelled,7/11/24,no,387,12/24/26,126,delayed
+388,972,phone456,on hold,12/13/24,no,388,5/4/26,1265,completed
+389,446,whatsappABC,rejected,7/18/26,yes,389,9/19/25,659,delayed
+390,351,whatsapp789,scheduled,9/14/26,no,390,3/4/24,666,scheduled
+391,454,whatsappABC,completed,2/15/24,yes,391,12/27/25,1079,scheduled
+392,582,whatsappABC,completed,8/6/25,no,392,7/1/25,586,rejected
+393,386,phone456,pending,4/6/26,yes,393,2/14/25,880,under review
+394,301,email456,under review,5/16/26,no,394,7/9/25,561,delayed
+395,557,phone789,cancelled,3/30/24,yes,395,7/11/26,133,delayed
+396,936,email123,cancelled,4/10/26,yes,396,5/21/26,37,approved
+397,687,whatsappABC,under review,7/7/26,no,397,2/20/25,1126,cancelled
+398,410,emailDEF,rejected,5/24/24,yes,398,3/25/26,1058,pending
+399,13,phone456,approved,3/22/24,yes,399,6/17/24,82,pending
+400,899,whatsappABC,in progress,5/11/26,yes,400,8/1/24,238,completed
+401,863,phone456,in progress,10/8/25,no,401,6/26/25,313,delayed
+402,751,phone789,rejected,12/19/24,no,402,1/18/26,930,cancelled
+403,763,phone789,pending,5/17/24,no,403,9/11/26,240,in progress
+404,300,email123,under review,5/20/24,yes,404,6/12/25,111,delayed
+405,861,whatsapp789,completed,2/16/24,yes,405,5/7/24,1239,approved
+406,152,whatsappABC,cancelled,5/7/24,yes,406,3/1/24,573,cancelled
+407,890,email123,in progress,9/30/25,no,407,10/10/25,732,delayed
+408,754,email456,completed,9/29/26,no,408,2/23/26,668,completed
+409,151,whatsappABC,delayed,10/11/25,no,409,5/3/26,926,approved
+410,384,phoneGHI,completed,9/2/25,yes,410,8/27/24,1304,under review
+411,551,whatsappXYZ,rejected,12/8/26,yes,411,7/11/24,442,cancelled
+412,955,whatsappXYZ,in progress,8/17/26,no,412,7/20/24,235,rejected
+413,951,whatsapp123,in progress,10/29/26,no,413,5/8/25,757,completed
+414,666,whatsapp123,delayed,6/26/24,yes,414,4/27/25,735,on hold
+415,768,whatsappABC,pending,7/28/26,no,415,10/11/26,949,delayed
+416,121,whatsappABC,rejected,1/23/24,yes,416,8/9/26,888,under review
+417,861,email456,delayed,3/11/26,yes,417,2/28/24,63,scheduled
+418,143,whatsapp123,cancelled,8/26/26,yes,418,2/3/25,1428,scheduled
+419,291,whatsapp123,cancelled,9/23/26,yes,419,4/26/24,729,delayed
+420,993,whatsapp789,scheduled,5/18/25,no,420,12/13/25,443,on hold
+421,170,whatsapp123,on hold,4/26/26,yes,421,11/12/26,577,cancelled
+422,8,email456,scheduled,3/19/24,yes,422,4/13/24,338,pending
+423,454,whatsapp789,in progress,7/18/24,yes,423,3/15/24,1097,approved
+424,294,whatsapp789,delayed,9/25/25,no,424,11/12/24,100,under review
+425,186,phone789,approved,11/6/25,no,425,11/16/24,941,rejected
+426,138,emailDEF,on hold,4/27/25,no,426,5/6/25,204,approved
+427,846,email456,under review,9/22/26,yes,427,9/14/24,1392,rejected
+428,954,emailDEF,on hold,1/24/25,yes,428,11/28/24,564,delayed
+429,956,whatsappXYZ,pending,12/24/26,yes,429,11/11/24,909,pending
+430,22,phoneGHI,on hold,5/9/24,yes,430,4/11/25,806,cancelled
+431,452,phone789,pending,6/11/24,no,431,12/1/24,155,delayed
+432,4,whatsapp789,approved,9/4/25,yes,432,6/13/26,996,approved
+433,643,phone456,in progress,8/14/24,yes,433,3/9/26,1305,in progress
+434,927,email123,completed,3/12/25,yes,434,12/12/26,766,delayed
+435,975,whatsappABC,completed,8/11/26,no,435,10/17/25,385,under review
+436,485,whatsapp123,rejected,2/9/25,no,436,11/12/26,83,delayed
+437,583,whatsappABC,approved,5/28/26,yes,437,8/18/26,1205,scheduled
+438,573,emailDEF,pending,10/17/26,yes,438,7/26/24,1301,approved
+439,846,whatsapp123,pending,1/24/26,yes,439,11/20/26,437,completed
+440,761,whatsappABC,approved,11/13/26,yes,440,4/16/25,627,delayed
+441,3,email456,completed,5/29/24,no,441,5/10/25,426,on hold
+442,858,email456,rejected,9/3/24,no,442,10/6/25,1031,delayed
+443,185,whatsappXYZ,scheduled,6/13/26,yes,443,11/2/26,1423,scheduled
+444,694,phone789,under review,10/8/24,yes,444,9/17/24,872,pending
+445,6,whatsapp123,cancelled,6/4/24,yes,445,5/16/25,1082,rejected
+446,842,whatsapp789,cancelled,12/27/26,no,446,5/16/25,770,approved
+447,479,email456,scheduled,11/4/26,yes,447,12/6/26,635,rejected
+448,419,whatsapp123,cancelled,8/8/24,yes,448,8/4/26,437,delayed
+449,327,whatsapp789,scheduled,11/26/24,yes,449,1/2/26,1243,completed
+450,40,whatsappXYZ,on hold,10/26/25,no,450,7/9/25,1171,delayed
+451,310,emailDEF,cancelled,11/23/26,yes,451,5/25/26,295,scheduled
+452,801,whatsapp789,under review,5/22/24,no,452,5/9/24,1073,delayed
+453,589,whatsapp123,in progress,10/23/24,yes,453,8/12/24,186,under review
+454,933,email123,rejected,7/9/24,no,454,11/6/25,1225,on hold
+455,484,whatsappXYZ,under review,2/3/26,no,455,6/26/26,1153,approved
+456,300,email123,approved,6/8/26,no,456,5/12/24,828,under review
+457,200,email456,pending,12/23/24,yes,457,3/20/25,1101,on hold
+458,591,email456,scheduled,6/18/25,yes,458,9/25/25,858,pending
+459,865,phone456,under review,12/6/24,yes,459,5/16/25,265,in progress
+460,751,whatsappXYZ,under review,6/16/25,no,460,5/17/25,1385,delayed
+461,662,whatsapp789,cancelled,6/30/24,yes,461,5/4/25,995,cancelled
+462,971,email456,approved,7/11/26,yes,462,7/6/25,1073,delayed
+463,668,whatsapp789,completed,5/26/24,yes,463,6/28/26,1355,cancelled
+464,449,emailDEF,pending,8/26/25,no,464,7/31/25,1153,under review
+465,759,phone456,pending,1/7/25,yes,465,10/23/24,517,cancelled
+466,460,phoneGHI,pending,12/29/24,yes,466,7/1/26,52,delayed
+467,605,email456,delayed,5/27/24,yes,467,8/30/24,422,in progress
+468,236,emailDEF,rejected,5/21/24,no,468,11/28/25,596,scheduled
+469,618,emailDEF,completed,11/23/25,no,469,7/18/24,1340,cancelled
+470,182,email456,approved,3/17/24,yes,470,4/26/24,563,scheduled
+471,622,whatsappABC,cancelled,2/13/26,yes,471,3/9/26,34,pending
+472,882,whatsapp789,approved,9/14/26,no,472,10/12/24,673,pending
+473,132,phone456,approved,4/19/26,yes,473,11/17/25,1120,under review
+474,377,email456,in progress,9/13/26,yes,474,7/6/25,118,rejected
+475,534,phone456,completed,1/1/24,no,475,10/10/25,1404,completed
+476,431,phoneGHI,pending,6/24/24,no,476,9/1/24,1009,approved
+477,668,whatsapp789,on hold,5/31/24,yes,477,1/19/25,56,completed
+478,939,whatsapp123,on hold,11/30/24,yes,478,9/4/25,224,on hold
+479,509,whatsapp123,completed,3/16/25,yes,479,1/2/25,449,on hold
+480,781,whatsappABC,delayed,5/28/26,no,480,6/7/26,961,approved
+481,246,whatsapp789,rejected,10/5/24,yes,481,3/21/26,255,completed
+482,177,email456,delayed,4/28/26,no,482,3/22/25,301,scheduled
+483,985,email123,on hold,12/26/24,no,483,3/18/24,770,approved
+484,859,phone456,in progress,8/24/24,yes,484,6/2/24,1298,scheduled
+485,883,whatsapp789,cancelled,4/1/24,yes,485,4/21/26,1156,in progress
+486,874,emailDEF,delayed,12/4/25,no,486,1/24/24,1192,scheduled
+487,332,email123,completed,7/7/26,yes,487,2/16/25,391,approved
+488,970,phone456,on hold,2/6/25,no,488,8/20/26,1347,under review
+489,761,whatsapp789,cancelled,5/8/24,yes,489,5/29/25,155,scheduled
+490,213,whatsapp123,approved,4/20/26,yes,490,2/7/24,792,scheduled
+491,963,whatsapp789,delayed,6/26/25,no,491,8/14/24,719,in progress
+492,222,phone789,approved,11/26/26,yes,492,11/5/24,1082,under review
+493,13,phoneGHI,scheduled,11/28/26,no,493,8/17/25,1264,rejected
+494,148,whatsappXYZ,rejected,5/31/25,yes,494,6/20/25,1112,under review
+495,774,whatsappABC,delayed,6/30/26,yes,495,8/29/25,1074,rejected
+496,524,phone789,cancelled,4/25/26,no,496,12/2/24,553,in progress
+497,850,whatsapp123,on hold,2/20/25,no,497,1/27/26,203,rejected
+498,974,phone456,under review,6/23/24,no,498,11/15/26,524,under review
+499,369,email123,on hold,4/23/26,no,499,9/24/25,379,rejected
+500,899,phone789,completed,1/23/26,no,500,11/27/24,1249,cancelled
+501,313,phoneGHI,completed,3/22/26,yes,501,7/7/25,610,pending
+502,714,whatsapp789,scheduled,12/30/24,yes,502,8/8/25,1282,in progress
+503,281,whatsappABC,rejected,9/5/24,yes,503,2/13/26,9,scheduled
+504,837,emailDEF,on hold,4/18/26,yes,504,2/27/24,1160,on hold
+505,128,whatsappXYZ,on hold,10/29/26,yes,505,11/1/26,1353,cancelled
+506,67,whatsapp789,delayed,1/3/26,yes,506,12/29/25,38,rejected
+507,346,whatsappABC,under review,5/7/24,no,507,11/24/26,320,on hold
+508,312,phoneGHI,pending,5/16/24,yes,508,11/19/26,1065,completed
+509,417,phone789,in progress,4/27/26,yes,509,10/13/26,1280,on hold
+510,145,email456,delayed,4/21/26,yes,510,2/21/26,580,delayed
+511,212,phone456,completed,8/16/25,yes,511,1/7/24,498,rejected
+512,249,whatsapp789,delayed,5/17/24,no,512,1/30/26,470,rejected
+513,384,whatsappXYZ,in progress,10/21/24,no,513,7/23/26,1349,delayed
+514,547,phone789,rejected,4/19/25,yes,514,9/30/25,1424,pending
+515,212,emailDEF,pending,2/27/26,yes,515,11/25/24,358,scheduled
+516,973,whatsapp123,completed,6/8/25,yes,516,9/9/26,1159,in progress
+517,429,emailDEF,in progress,9/2/26,no,517,6/23/24,573,on hold
+518,55,email456,in progress,2/2/25,no,518,11/22/25,966,completed
+519,911,phone456,delayed,4/2/25,yes,519,6/3/25,942,scheduled
+520,738,whatsappXYZ,pending,2/3/25,yes,520,7/8/25,605,approved
+521,403,phone456,pending,9/13/25,no,521,4/3/26,860,scheduled
+522,426,phone456,approved,1/10/25,no,522,12/8/25,181,scheduled
+523,196,phone456,delayed,6/17/26,yes,523,1/14/24,1270,completed
+524,886,phoneGHI,completed,12/12/24,yes,524,1/14/26,862,rejected
+525,42,email123,cancelled,2/18/24,no,525,9/20/24,756,on hold
+526,867,email123,delayed,7/1/24,yes,526,9/7/24,6,approved
+527,422,email123,approved,3/22/26,yes,527,6/7/24,183,scheduled
+528,161,whatsapp123,completed,10/2/25,no,528,11/6/25,1072,cancelled
+529,208,whatsapp789,rejected,4/20/24,yes,529,6/15/26,274,cancelled
+530,960,phone456,delayed,10/30/25,no,530,3/20/26,1254,in progress
+531,780,phone789,cancelled,5/13/24,yes,531,6/10/25,1423,under review
+532,6,phone789,rejected,10/17/25,no,532,7/9/26,1319,delayed
+533,935,phone789,on hold,2/9/26,yes,533,3/26/24,594,completed
+534,437,whatsapp123,completed,9/23/24,no,534,1/6/24,1038,delayed
+535,926,emailDEF,in progress,7/8/24,yes,535,8/3/24,664,rejected
+536,933,emailDEF,on hold,8/22/25,no,536,10/18/26,1425,cancelled
+537,541,emailDEF,pending,6/29/25,no,537,10/10/24,362,approved
+538,757,email456,under review,1/29/26,yes,538,10/2/26,585,pending
+539,14,email456,approved,5/26/25,no,539,10/11/25,838,under review
+540,911,email123,on hold,6/10/25,yes,540,11/1/24,569,in progress
+541,186,whatsapp123,rejected,9/12/25,no,541,9/2/25,19,approved
+542,651,emailDEF,cancelled,8/2/26,no,542,8/31/26,311,rejected
+543,816,email456,on hold,10/30/26,no,543,2/20/25,1281,delayed
+544,826,email123,scheduled,8/3/26,no,544,11/6/24,1182,rejected
+545,908,whatsappXYZ,approved,12/5/24,no,545,3/12/26,1300,cancelled
+546,149,whatsappABC,approved,3/7/25,no,546,11/23/26,968,delayed
+547,930,email456,approved,12/5/25,no,547,1/29/25,252,scheduled
+548,146,whatsappXYZ,cancelled,12/4/25,yes,548,1/16/26,891,rejected
+549,402,emailDEF,under review,5/20/26,yes,549,6/13/25,527,completed
+550,628,emailDEF,cancelled,4/3/24,no,550,9/19/26,1003,pending
+551,240,whatsappABC,on hold,11/2/26,no,551,12/11/24,351,pending
+552,76,whatsapp789,approved,12/27/26,yes,552,8/23/25,145,in progress
+553,617,whatsapp123,in progress,5/21/26,no,553,12/14/25,1375,rejected
+554,152,whatsappABC,under review,12/2/26,yes,554,10/27/26,987,under review
+555,207,emailDEF,scheduled,6/5/25,yes,555,12/11/24,120,pending
+556,370,phone456,in progress,7/8/24,yes,556,12/25/25,1111,under review
+557,211,whatsappXYZ,cancelled,5/11/25,no,557,6/18/24,107,pending
+558,283,whatsapp123,in progress,8/14/24,yes,558,12/12/24,1090,rejected
+559,427,phone789,scheduled,5/6/25,no,559,7/8/24,745,rejected
+560,3,email456,under review,12/3/26,no,560,12/21/24,1226,on hold
+561,152,emailDEF,in progress,12/13/24,no,561,9/15/24,1031,cancelled
+562,145,whatsappXYZ,cancelled,7/20/24,no,562,9/7/26,634,under review
+563,246,phone456,cancelled,6/29/26,no,563,12/17/25,1273,rejected
+564,76,whatsapp789,cancelled,9/15/25,yes,564,6/22/26,791,delayed
+565,142,whatsapp123,under review,11/14/25,yes,565,1/27/25,1275,rejected
+566,445,whatsapp789,under review,10/27/24,no,566,9/22/24,367,scheduled
+567,41,emailDEF,delayed,3/18/26,yes,567,3/6/26,744,approved
+568,26,whatsappXYZ,on hold,10/14/26,no,568,2/21/25,930,on hold
+569,266,email123,cancelled,1/7/25,yes,569,7/19/25,1399,scheduled
+570,73,phone456,delayed,9/11/24,no,570,6/23/26,905,in progress
+571,452,whatsapp123,delayed,6/2/25,no,571,7/19/26,960,rejected
+572,39,phoneGHI,completed,5/28/26,yes,572,12/19/25,491,in progress
+573,110,emailDEF,scheduled,12/8/24,yes,573,12/25/26,1249,under review
+574,275,whatsapp123,completed,4/25/25,no,574,12/19/24,1072,under review
+575,105,whatsappXYZ,under review,3/1/24,yes,575,9/19/24,325,delayed
+576,194,phone456,cancelled,10/28/25,no,576,2/22/25,1078,cancelled
+577,44,whatsappABC,cancelled,2/20/25,no,577,4/23/25,1249,cancelled
+578,76,email123,under review,2/7/26,yes,578,12/28/24,310,pending
+579,793,whatsapp123,approved,9/28/25,no,579,4/13/25,886,rejected
+580,414,email123,scheduled,12/11/26,no,580,6/1/26,430,delayed
+581,488,whatsapp123,rejected,2/27/24,no,581,11/19/24,327,under review
+582,408,phoneGHI,completed,6/3/25,no,582,2/1/25,291,cancelled
+583,787,whatsapp789,on hold,6/26/26,no,583,2/12/26,167,completed
+584,111,emailDEF,delayed,1/12/25,no,584,10/17/25,1095,on hold
+585,588,whatsapp789,completed,7/14/26,no,585,8/24/25,1216,rejected
+586,916,emailDEF,under review,12/13/25,yes,586,6/18/24,785,approved
+587,746,whatsapp123,pending,11/9/26,no,587,1/26/25,937,under review
+588,554,email456,rejected,12/7/24,no,588,11/12/24,644,cancelled
+589,11,email456,delayed,5/16/26,yes,589,6/24/24,510,on hold
+590,671,email456,scheduled,11/30/26,yes,590,2/7/25,329,completed
+591,998,whatsappABC,pending,8/1/25,no,591,3/17/26,865,pending
+592,812,phoneGHI,rejected,12/9/24,yes,592,7/14/25,745,scheduled
+593,841,phone456,under review,8/31/26,yes,593,1/27/25,500,cancelled
+594,487,email123,under review,1/8/24,no,594,1/1/26,1101,scheduled
+595,910,phone789,in progress,9/28/26,yes,595,10/4/25,584,scheduled
+596,226,phoneGHI,on hold,9/13/24,no,596,4/10/26,93,in progress
+597,207,whatsappXYZ,scheduled,6/18/26,yes,597,2/4/25,1427,under review
+598,221,emailDEF,in progress,6/19/25,yes,598,9/4/24,835,under review
+599,599,whatsappXYZ,in progress,7/12/25,yes,599,6/10/25,638,approved
+600,936,phoneGHI,in progress,3/21/24,yes,600,4/23/25,548,rejected
+601,539,phone456,approved,7/30/26,yes,601,2/8/24,450,cancelled
+602,151,email123,completed,4/17/25,no,602,8/2/25,273,on hold
+603,42,phoneGHI,scheduled,12/23/26,yes,603,8/27/25,413,approved
+604,529,phoneGHI,completed,9/18/24,no,604,4/14/24,859,in progress
+605,466,phone789,scheduled,3/4/24,no,605,12/4/24,689,in progress
+606,425,phone789,approved,9/11/25,yes,606,6/29/25,1209,completed
+607,35,whatsapp123,pending,4/1/26,yes,607,8/24/24,470,cancelled
+608,670,email456,on hold,1/13/25,yes,608,12/6/25,43,rejected
+609,723,email456,pending,3/11/24,no,609,7/19/24,814,cancelled
+610,846,whatsapp789,rejected,9/8/24,yes,610,10/18/25,681,approved
+611,180,whatsappXYZ,on hold,6/3/26,no,611,6/21/24,555,in progress
+612,966,whatsappXYZ,in progress,12/16/24,no,612,9/29/25,764,cancelled
+613,799,emailDEF,completed,12/7/26,no,613,1/29/25,1327,in progress
+614,802,whatsapp789,pending,10/14/25,yes,614,2/2/25,637,pending
+615,152,whatsappXYZ,cancelled,7/20/25,no,615,6/6/24,1182,scheduled
+616,824,whatsapp789,in progress,6/22/24,no,616,12/22/25,763,rejected
+617,910,email123,on hold,7/17/25,no,617,12/26/26,820,under review
+618,768,phoneGHI,rejected,6/15/25,no,618,10/18/25,1087,on hold
+619,59,whatsapp789,in progress,9/30/25,yes,619,10/16/24,971,scheduled
+620,48,whatsappXYZ,pending,12/30/26,yes,620,1/22/26,881,completed
+621,511,email456,cancelled,10/30/24,no,621,11/15/26,620,delayed
+622,817,whatsappABC,pending,5/26/26,yes,622,7/25/26,416,under review
+623,829,email123,pending,3/16/26,no,623,5/20/26,708,delayed
+624,511,whatsappXYZ,pending,6/17/24,yes,624,12/6/24,968,on hold
+625,270,whatsapp789,approved,2/17/24,no,625,6/14/25,805,on hold
+626,64,email123,rejected,6/14/25,yes,626,10/11/26,1145,pending
+627,129,phone456,rejected,4/6/24,yes,627,6/21/25,1277,cancelled
+628,155,email456,pending,5/28/26,yes,628,5/24/24,176,approved
+629,141,phone789,delayed,2/20/25,yes,629,12/24/24,267,in progress
+630,543,phoneGHI,approved,11/29/26,no,630,1/22/26,488,completed
+631,202,phone456,cancelled,6/17/24,no,631,6/25/24,1322,scheduled
+632,984,email456,approved,4/30/25,yes,632,10/19/25,1009,pending
+633,430,phone456,under review,6/8/26,no,633,6/23/26,862,under review
+634,478,emailDEF,delayed,12/1/26,no,634,8/15/26,442,under review
+635,353,whatsapp789,in progress,4/18/25,no,635,2/20/25,290,under review
+636,741,email456,rejected,3/6/26,no,636,12/18/26,865,under review
+637,96,phoneGHI,in progress,10/18/26,yes,637,8/23/25,1022,delayed
+638,384,phoneGHI,on hold,8/20/25,no,638,1/6/24,609,delayed
+639,210,email123,under review,3/17/26,yes,639,11/27/26,482,scheduled
+640,201,whatsappXYZ,on hold,12/18/25,yes,640,1/13/26,791,rejected
+641,972,emailDEF,under review,3/13/26,no,641,10/16/26,292,delayed
+642,119,whatsappABC,rejected,11/19/26,no,642,4/12/24,786,approved
+643,47,whatsappXYZ,on hold,5/11/24,yes,643,10/2/24,225,approved
+644,905,whatsappABC,completed,5/19/26,no,644,2/2/24,567,on hold
+645,610,whatsapp789,scheduled,8/18/26,no,645,5/24/26,567,approved
+646,582,email123,delayed,3/2/24,no,646,2/15/24,465,pending
+647,622,email456,under review,5/20/26,yes,647,11/6/26,469,in progress
+648,822,whatsapp123,on hold,8/22/26,no,648,2/2/26,1075,on hold
+649,312,whatsappXYZ,approved,6/21/25,yes,649,4/13/26,273,under review
+650,487,phone456,completed,4/26/25,yes,650,5/17/24,1356,in progress
+651,989,phone789,completed,4/25/25,no,651,12/24/26,1257,cancelled
+652,603,whatsapp123,pending,7/20/25,no,652,6/19/24,645,completed
+653,72,whatsapp789,approved,6/25/26,yes,653,7/11/24,213,scheduled
+654,32,email123,pending,11/7/25,yes,654,3/19/26,1220,rejected
+655,949,whatsappXYZ,completed,6/24/25,no,655,3/16/26,606,under review
+656,902,whatsappABC,delayed,6/7/25,yes,656,10/9/26,1060,scheduled
+657,849,emailDEF,rejected,2/26/26,yes,657,4/18/26,719,completed
+658,561,phoneGHI,rejected,4/25/25,no,658,2/25/24,330,completed
+659,742,whatsappABC,cancelled,6/1/26,yes,659,8/11/24,498,rejected
+660,107,phoneGHI,cancelled,1/15/24,yes,660,9/21/25,1311,cancelled
+661,407,phoneGHI,pending,5/23/24,no,661,11/7/26,140,rejected
+662,869,email123,on hold,3/29/26,no,662,8/8/24,110,delayed
+663,517,phoneGHI,under review,11/8/25,yes,663,4/27/24,201,under review
+664,154,whatsappABC,cancelled,6/14/26,no,664,7/3/25,1218,under review
+665,976,phone456,pending,11/6/26,no,665,9/4/26,1040,in progress
+666,515,phoneGHI,on hold,8/10/26,yes,666,3/28/25,18,completed
+667,228,email123,rejected,11/2/25,no,667,11/28/25,1379,cancelled
+668,724,email123,completed,6/29/25,no,668,9/4/25,1176,cancelled
+669,40,whatsapp123,on hold,11/20/24,no,669,7/30/24,303,rejected
+670,390,whatsapp789,completed,7/14/25,no,670,9/12/26,506,scheduled
+671,341,whatsappXYZ,on hold,1/9/24,yes,671,5/2/24,449,completed
+672,613,whatsappABC,on hold,1/4/26,yes,672,12/8/25,925,pending
+673,703,whatsapp123,scheduled,1/28/26,no,673,5/26/26,477,pending
+674,975,phone456,completed,8/30/25,no,674,3/29/26,1086,completed
+675,35,whatsappXYZ,on hold,2/12/25,no,675,2/9/26,67,in progress
+676,528,emailDEF,in progress,10/14/25,yes,676,9/30/26,530,scheduled
+677,705,whatsappXYZ,approved,6/20/26,yes,677,10/19/24,218,rejected
+678,536,emailDEF,completed,5/31/25,no,678,11/10/24,254,in progress
+679,754,whatsapp123,approved,8/4/26,yes,679,10/24/24,69,delayed
+680,94,email456,cancelled,11/14/24,no,680,2/25/25,787,on hold
+681,957,email456,under review,7/1/25,no,681,7/20/24,857,under review
+682,400,email123,completed,12/30/24,no,682,10/11/24,1296,delayed
+683,96,phone789,under review,7/17/26,no,683,4/24/24,1427,pending
+684,346,whatsapp123,in progress,8/1/24,yes,684,10/30/25,582,pending
+685,326,emailDEF,scheduled,12/18/26,no,685,10/19/24,1010,completed
+686,474,whatsapp789,pending,1/25/26,yes,686,9/2/26,797,completed
+687,255,email456,in progress,7/28/26,no,687,12/5/25,208,pending
+688,454,phone456,pending,6/9/25,yes,688,8/10/25,832,approved
+689,161,whatsappXYZ,approved,2/10/25,yes,689,8/28/26,352,scheduled
+690,550,whatsapp789,cancelled,2/24/24,no,690,2/28/26,1031,in progress
+691,534,phone789,cancelled,11/7/24,no,691,2/25/26,583,rejected
+692,725,whatsappABC,pending,10/7/24,no,692,12/18/24,1059,on hold
+693,817,phone456,approved,5/12/26,no,693,2/17/26,836,on hold
+694,867,emailDEF,rejected,2/2/25,yes,694,3/1/24,168,cancelled
+695,644,phone456,delayed,7/14/25,yes,695,7/3/26,1223,delayed
+696,435,email456,approved,6/15/24,yes,696,10/18/24,1165,rejected
+697,910,phoneGHI,approved,7/11/25,yes,697,11/8/25,537,pending
+698,844,whatsappABC,approved,9/19/25,yes,698,11/6/24,142,on hold
+699,951,phone789,completed,3/19/25,no,699,8/22/24,23,scheduled
+700,212,whatsapp123,rejected,5/15/24,no,700,3/10/24,658,cancelled
+701,119,whatsapp123,on hold,7/25/24,no,701,7/31/24,729,completed
+702,519,phoneGHI,in progress,9/23/24,yes,702,4/18/24,836,cancelled
+703,317,whatsapp123,delayed,8/11/24,yes,703,9/28/24,747,on hold
+704,702,whatsappXYZ,delayed,3/4/25,no,704,8/31/26,120,pending
+705,794,phoneGHI,completed,5/28/24,no,705,12/18/24,579,on hold
+706,774,email456,in progress,1/10/24,no,706,6/28/25,1056,approved
+707,46,phone456,scheduled,3/24/26,yes,707,6/9/25,257,under review
+708,336,email123,approved,10/18/26,yes,708,8/14/25,1043,cancelled
+709,896,email123,completed,2/9/25,yes,709,3/29/26,357,rejected
+710,255,phoneGHI,scheduled,11/23/24,no,710,9/4/26,1373,delayed
+711,806,whatsapp123,completed,3/4/25,no,711,10/17/26,102,in progress
+712,91,whatsappABC,under review,9/23/24,yes,712,8/29/24,400,completed
+713,374,whatsapp789,delayed,2/21/26,no,713,8/9/24,770,under review
+714,417,emailDEF,completed,1/25/24,no,714,4/1/26,42,approved
+715,901,phoneGHI,cancelled,4/3/24,no,715,9/20/26,490,pending
+716,294,phoneGHI,delayed,5/6/25,yes,716,10/29/24,250,cancelled
+717,660,email123,on hold,2/22/26,no,717,7/29/25,1291,under review
+718,402,email456,on hold,5/3/26,yes,718,10/10/24,263,approved
+719,180,emailDEF,under review,11/27/25,no,719,10/25/25,180,pending
+720,119,whatsappABC,completed,3/17/25,no,720,4/18/26,425,on hold
+721,585,whatsappABC,rejected,1/19/24,no,721,11/21/24,1254,rejected
+722,200,whatsapp789,in progress,1/12/26,yes,722,3/3/26,92,under review
+723,321,email456,completed,5/18/24,yes,723,12/8/26,159,scheduled
+724,19,email123,on hold,5/15/26,yes,724,10/26/25,515,pending
+725,227,whatsapp123,scheduled,10/18/26,no,725,9/11/26,556,cancelled
+726,871,phoneGHI,completed,9/1/25,yes,726,8/1/24,421,delayed
+727,416,email123,rejected,4/20/25,yes,727,6/8/25,1112,cancelled
+728,900,emailDEF,approved,11/27/26,no,728,9/23/26,67,cancelled
+729,682,whatsappXYZ,delayed,2/8/26,no,729,12/4/25,1291,in progress
+730,449,emailDEF,approved,3/19/24,no,730,11/27/26,569,approved
+731,894,whatsapp789,pending,7/15/26,yes,731,3/31/26,359,on hold
+732,703,phone456,completed,11/8/26,no,732,10/20/26,965,delayed
+733,26,phone456,completed,1/5/25,no,733,5/31/24,1289,in progress
+734,586,email123,pending,1/18/24,yes,734,12/18/24,262,in progress
+735,707,whatsappXYZ,under review,5/6/26,no,735,5/27/25,1263,on hold
+736,768,whatsapp789,pending,7/23/26,yes,736,1/18/26,103,in progress
+737,321,whatsapp789,pending,11/1/25,no,737,10/2/25,782,on hold
+738,143,phone789,approved,3/12/25,yes,738,6/5/25,1268,completed
+739,237,whatsapp123,completed,11/20/24,no,739,12/4/26,470,under review
+740,33,whatsapp789,rejected,2/8/25,no,740,3/3/25,262,completed
+741,827,phoneGHI,approved,4/2/26,no,741,11/18/24,42,on hold
+742,213,phoneGHI,scheduled,3/2/26,no,742,11/18/24,289,under review
+743,59,whatsapp123,on hold,1/16/24,yes,743,4/27/25,195,under review
+744,192,whatsapp789,cancelled,6/14/26,yes,744,10/24/26,774,under review
+745,564,email456,under review,5/5/26,no,745,1/10/26,1049,delayed
+746,443,email456,delayed,5/29/25,yes,746,3/29/24,876,approved
+747,487,whatsapp123,on hold,6/26/24,yes,747,2/13/24,931,cancelled
+748,405,phone456,pending,3/15/26,no,748,12/21/26,94,in progress
+749,798,whatsappXYZ,in progress,6/4/24,no,749,5/20/26,311,in progress
+750,772,whatsappABC,scheduled,1/1/25,no,750,1/7/25,59,under review
+751,890,email123,rejected,7/9/26,no,751,1/11/25,123,on hold
+752,805,emailDEF,pending,4/21/26,yes,752,12/18/25,835,under review
+753,728,email123,scheduled,9/29/24,yes,753,4/4/26,741,scheduled
+754,11,emailDEF,in progress,8/25/24,no,754,5/18/26,1263,approved
+755,789,phone456,pending,10/8/24,yes,755,10/18/25,1368,on hold
+756,169,email456,in progress,9/10/24,no,756,6/21/24,850,delayed
+757,544,phone789,scheduled,1/3/24,no,757,8/6/26,837,under review
+758,371,phone789,completed,12/14/25,yes,758,7/31/26,1424,rejected
+759,249,phone456,delayed,2/1/25,no,759,10/12/25,447,on hold
+760,467,email123,approved,9/29/24,no,760,7/30/24,1194,completed
+761,500,whatsappABC,scheduled,2/17/24,no,761,12/10/26,379,in progress
+762,485,emailDEF,under review,2/28/26,yes,762,4/5/24,274,scheduled
+763,80,email456,pending,7/30/24,yes,763,7/21/26,884,on hold
+764,548,email123,scheduled,10/18/26,no,764,10/4/25,1086,scheduled
+765,554,phone789,cancelled,11/19/25,yes,765,7/6/24,323,under review
+766,170,phone456,cancelled,6/23/25,yes,766,2/20/24,138,on hold
+767,475,phoneGHI,delayed,12/18/25,yes,767,8/15/26,809,on hold
+768,2,whatsappXYZ,rejected,3/1/26,no,768,3/3/25,65,on hold
+769,293,email123,completed,1/15/25,yes,769,5/27/26,34,rejected
+770,243,phoneGHI,approved,6/16/26,no,770,6/26/25,398,rejected
+771,388,emailDEF,in progress,10/2/25,no,771,8/1/24,1282,pending
+772,107,phone456,rejected,3/26/26,yes,772,11/15/26,980,on hold
+773,124,email123,under review,5/1/26,no,773,4/24/24,504,under review
+774,322,email456,cancelled,5/22/24,yes,774,1/28/26,1125,delayed
+775,542,whatsappABC,completed,11/30/25,yes,775,1/13/24,295,delayed
+776,795,phoneGHI,approved,4/17/25,no,776,3/21/25,1049,rejected
+777,21,email123,on hold,3/2/26,yes,777,1/2/24,303,pending
+778,706,phone789,in progress,6/15/26,yes,778,11/3/25,307,approved
+779,507,whatsapp123,approved,5/10/24,no,779,1/13/26,386,completed
+780,613,whatsapp123,pending,5/1/24,yes,780,9/6/26,664,on hold
+781,401,emailDEF,on hold,7/19/24,no,781,4/1/24,851,under review
+782,999,phone456,delayed,9/17/24,no,782,2/11/26,1011,pending
+783,486,whatsapp789,in progress,11/26/24,yes,783,6/25/25,994,rejected
+784,829,whatsapp789,in progress,8/15/24,yes,784,5/23/25,1242,scheduled
+785,800,email456,pending,10/22/24,yes,785,10/16/25,788,delayed
+786,759,email123,rejected,3/9/24,yes,786,2/17/24,374,cancelled
+787,627,whatsappABC,on hold,9/1/24,no,787,3/6/24,222,delayed
+788,546,whatsappXYZ,completed,8/16/25,no,788,1/24/24,904,in progress
+789,82,whatsappABC,under review,1/18/25,yes,789,1/15/24,248,pending
+790,776,email456,in progress,10/27/25,no,790,8/3/24,472,in progress
+791,554,whatsappABC,on hold,1/8/26,no,791,12/2/24,789,in progress
+792,433,whatsapp789,cancelled,6/4/24,yes,792,1/28/26,1190,cancelled
+793,87,email123,on hold,2/11/24,no,793,3/24/26,289,scheduled
+794,238,email456,delayed,8/19/25,no,794,5/24/25,386,completed
+795,413,email456,completed,11/25/25,yes,795,10/23/25,471,on hold
+796,200,whatsapp123,completed,5/25/25,no,796,10/12/26,304,approved
+797,758,whatsappXYZ,under review,8/13/26,yes,797,8/25/26,96,scheduled
+798,8,email123,approved,7/4/24,yes,798,1/19/25,1221,scheduled
+799,825,phone789,in progress,11/23/24,no,799,6/3/24,887,approved
+800,346,email456,under review,12/7/25,no,800,1/17/26,388,under review
+801,920,email456,cancelled,2/3/25,yes,801,2/9/25,110,delayed
+802,415,emailDEF,approved,2/6/26,yes,802,6/6/24,6,rejected
+803,133,whatsapp123,on hold,3/5/25,yes,803,3/18/24,235,on hold
+804,564,whatsapp789,completed,3/14/26,yes,804,5/13/24,941,scheduled
+805,647,emailDEF,cancelled,6/1/25,yes,805,7/22/25,1120,in progress
+806,324,phone456,on hold,6/5/26,no,806,10/17/26,386,under review
+807,613,phone456,completed,12/17/26,yes,807,9/29/26,573,under review
+808,306,whatsappABC,completed,7/20/25,no,808,2/11/25,204,rejected
+809,235,phone789,rejected,5/29/25,yes,809,7/6/25,146,pending
+810,492,phoneGHI,cancelled,9/5/24,yes,810,8/5/24,837,completed
+811,316,emailDEF,cancelled,2/26/24,no,811,10/23/25,566,in progress
+812,226,whatsappXYZ,in progress,9/17/26,yes,812,10/4/25,987,on hold
+813,19,whatsapp123,scheduled,7/9/25,yes,813,2/17/24,1080,in progress
+814,529,email456,under review,12/28/26,yes,814,5/14/26,1201,approved
+815,546,phoneGHI,under review,5/3/25,yes,815,2/9/25,558,scheduled
+816,836,email456,on hold,2/13/25,no,816,7/9/25,340,completed
+817,53,emailDEF,pending,5/8/26,no,817,11/19/25,131,pending
+818,603,whatsapp789,cancelled,2/18/25,no,818,8/4/25,1101,cancelled
+819,183,whatsapp789,pending,3/17/25,no,819,10/16/24,107,on hold
+820,523,email456,completed,3/12/24,yes,820,6/18/24,1331,in progress
+821,27,whatsapp123,delayed,5/16/25,no,821,3/22/25,127,rejected
+822,453,whatsappABC,scheduled,4/7/25,yes,822,12/1/24,216,completed
+823,765,phone456,under review,12/5/25,yes,823,12/9/26,576,scheduled
+824,916,phone789,cancelled,4/14/26,no,824,5/4/26,698,cancelled
+825,290,whatsapp123,approved,11/8/24,no,825,2/18/25,468,scheduled
+826,67,email456,in progress,1/28/26,yes,826,8/21/24,978,scheduled
+827,599,whatsappXYZ,under review,4/11/25,no,827,9/14/24,1240,on hold
+828,679,phoneGHI,approved,10/18/26,yes,828,8/23/26,507,on hold
+829,478,whatsapp123,completed,9/20/25,yes,829,11/3/24,1051,pending
+830,961,whatsappXYZ,approved,5/6/25,no,830,8/8/26,389,on hold
+831,409,email123,scheduled,12/31/25,yes,831,1/19/24,1234,completed
+832,701,phone456,under review,4/2/25,no,832,3/2/24,1209,rejected
+833,524,whatsappABC,on hold,11/11/24,yes,833,3/24/26,397,delayed
+834,544,phone789,under review,5/17/25,yes,834,8/5/24,278,delayed
+835,413,whatsapp123,approved,10/29/26,yes,835,12/20/24,101,cancelled
+836,201,phoneGHI,completed,6/11/25,yes,836,12/6/24,761,pending
+837,484,whatsappXYZ,scheduled,6/15/26,yes,837,2/18/26,105,pending
+838,626,phone789,under review,12/9/25,yes,838,3/27/25,1109,under review
+839,336,whatsapp789,under review,11/6/25,no,839,2/20/26,1340,scheduled
+840,259,phone456,on hold,4/7/24,yes,840,2/1/24,1014,under review
+841,306,whatsapp789,pending,11/9/26,no,841,4/22/25,1336,under review
+842,700,email456,on hold,11/12/25,yes,842,12/11/24,899,delayed
+843,554,whatsapp123,scheduled,8/28/24,yes,843,11/14/24,1001,rejected
+844,816,emailDEF,pending,9/20/24,yes,844,5/14/24,571,on hold
+845,688,email123,pending,10/19/24,no,845,4/22/26,345,scheduled
+846,655,whatsapp789,scheduled,2/2/24,no,846,6/22/24,147,under review
+847,251,phone789,on hold,1/25/25,yes,847,5/3/25,452,rejected
+848,630,whatsapp123,approved,9/2/25,yes,848,9/17/26,6,scheduled
+849,258,emailDEF,approved,2/15/24,no,849,6/16/24,245,under review
+850,567,phone456,approved,2/11/24,no,850,1/20/26,614,approved
+851,334,whatsappXYZ,on hold,2/13/26,yes,851,8/28/24,1318,pending
+852,706,whatsappXYZ,completed,5/11/25,yes,852,6/1/24,118,in progress
+853,107,whatsapp789,under review,8/31/26,yes,853,9/4/25,321,delayed
+854,384,email456,on hold,4/2/24,no,854,5/3/25,597,delayed
+855,579,phone456,pending,5/27/26,no,855,12/3/25,760,pending
+856,987,email123,scheduled,11/3/24,yes,856,12/5/24,317,on hold
+857,912,phone456,delayed,5/27/25,no,857,3/8/24,1414,scheduled
+858,196,email456,completed,12/15/25,no,858,7/5/26,621,cancelled
+859,637,whatsapp789,delayed,10/27/24,no,859,1/12/25,451,approved
+860,20,whatsappABC,approved,6/20/25,yes,860,4/6/24,923,pending
+861,251,phone789,in progress,10/26/26,no,861,12/31/25,640,approved
+862,148,email456,in progress,3/24/24,no,862,3/26/26,396,scheduled
+863,650,whatsapp789,rejected,2/1/25,no,863,6/3/24,1006,pending
+864,157,whatsappXYZ,cancelled,2/15/25,yes,864,8/5/25,981,in progress
+865,399,whatsappABC,completed,7/13/24,no,865,1/9/24,1213,rejected
+866,731,emailDEF,on hold,4/20/26,yes,866,4/24/25,247,completed
+867,298,phone789,rejected,12/18/26,no,867,11/17/24,1117,completed
+868,384,phone789,cancelled,5/19/26,no,868,9/20/26,1192,on hold
+869,476,whatsappXYZ,in progress,1/18/24,yes,869,10/8/26,953,completed
+870,799,emailDEF,rejected,8/5/26,yes,870,1/14/26,1427,pending
+871,398,whatsapp123,scheduled,2/4/25,yes,871,3/7/25,29,in progress
+872,154,email123,rejected,3/30/26,no,872,9/1/24,226,delayed
+873,711,emailDEF,completed,4/8/26,no,873,5/5/26,711,on hold
+874,976,whatsappABC,cancelled,2/5/24,no,874,10/28/25,150,in progress
+875,665,email456,cancelled,10/9/24,no,875,6/19/24,687,rejected
+876,364,email456,scheduled,2/12/25,yes,876,5/8/26,56,delayed
+877,686,email123,cancelled,4/5/25,no,877,5/12/24,343,rejected
+878,514,email123,on hold,9/11/26,yes,878,1/18/26,948,in progress
+879,673,email456,on hold,11/8/26,no,879,12/10/24,1095,under review
+880,311,phoneGHI,under review,2/22/24,yes,880,5/26/26,8,on hold
+881,638,phone456,pending,11/23/25,no,881,12/23/24,627,pending
+882,943,phone456,cancelled,1/2/25,no,882,8/18/26,238,on hold
+883,537,phoneGHI,cancelled,7/25/25,no,883,1/12/25,34,scheduled
+884,178,whatsapp789,on hold,10/13/25,no,884,10/7/26,795,completed
+885,903,phoneGHI,in progress,10/28/26,no,885,8/14/25,131,in progress
+886,664,email123,completed,3/5/26,no,886,5/16/24,574,delayed
+887,570,emailDEF,cancelled,1/21/26,yes,887,11/11/24,1146,delayed
+888,381,whatsappXYZ,approved,6/8/24,yes,888,10/17/24,744,scheduled
+889,79,email123,scheduled,2/8/26,yes,889,6/3/25,313,on hold
+890,182,whatsapp123,on hold,5/23/26,yes,890,12/28/25,1426,cancelled
+891,102,whatsappABC,cancelled,4/9/24,no,891,6/5/26,64,under review
+892,873,phoneGHI,delayed,7/31/25,no,892,7/18/25,410,rejected
+893,6,email456,under review,8/20/26,no,893,8/15/25,513,pending
+894,669,whatsapp123,scheduled,10/30/25,no,894,3/24/25,1020,rejected
+895,927,whatsapp789,on hold,1/5/24,yes,895,11/12/26,1130,pending
+896,966,emailDEF,on hold,12/23/25,no,896,5/9/25,1235,on hold
+897,235,whatsappXYZ,completed,7/21/25,yes,897,3/21/26,825,in progress
+898,23,phone789,completed,10/23/24,yes,898,7/25/26,386,pending
+899,97,whatsapp789,in progress,1/21/25,no,899,3/28/26,104,under review
+900,744,whatsapp789,pending,5/22/24,no,900,7/22/24,997,completed
+901,399,whatsapp789,under review,5/18/26,no,901,5/28/24,525,rejected
+902,162,whatsappXYZ,rejected,6/4/24,yes,902,9/29/25,984,under review
+903,932,phone789,rejected,7/9/26,yes,903,11/29/25,650,pending
+904,789,whatsapp123,approved,12/23/25,yes,904,4/7/25,709,scheduled
+905,681,email456,delayed,2/4/26,yes,905,11/25/24,322,delayed
+906,327,phone789,rejected,10/28/26,yes,906,4/11/25,472,approved
+907,411,whatsappABC,cancelled,6/9/26,no,907,11/24/24,1206,pending
+908,570,whatsappXYZ,cancelled,10/28/25,no,908,6/15/24,19,completed
+909,829,phoneGHI,rejected,12/2/25,no,909,9/28/25,1237,on hold
+910,820,phone789,pending,2/23/24,yes,910,1/4/25,1224,scheduled
+911,933,whatsapp789,pending,2/6/24,yes,911,7/14/24,911,completed
+912,537,phone456,completed,10/3/24,no,912,6/30/25,1124,rejected
+913,670,email123,approved,3/14/25,no,913,1/10/26,896,rejected
+914,302,whatsapp789,delayed,5/23/26,no,914,4/8/24,307,on hold
+915,706,whatsapp789,under review,2/4/26,yes,915,12/15/24,456,scheduled
+916,363,whatsapp789,cancelled,11/9/24,yes,916,11/4/26,1127,cancelled
+917,244,whatsappXYZ,on hold,3/3/26,no,917,9/20/25,897,rejected
+918,221,email123,under review,6/15/25,yes,918,3/15/24,451,rejected
+919,851,email123,in progress,7/10/25,no,919,3/22/24,1102,pending
+920,368,phoneGHI,approved,7/11/25,yes,920,10/19/24,533,rejected
+921,549,phone456,pending,12/6/26,no,921,8/7/24,685,in progress
+922,501,phoneGHI,rejected,4/13/24,yes,922,5/3/24,1285,approved
+923,154,emailDEF,rejected,3/31/25,yes,923,8/11/25,1255,in progress
+924,704,email456,rejected,4/16/25,yes,924,7/30/26,1035,delayed
+925,339,whatsappABC,in progress,11/20/26,no,925,2/14/24,1113,completed
+926,675,whatsapp789,in progress,4/13/25,yes,926,8/14/25,4,approved
+927,356,phone789,scheduled,11/14/25,no,927,12/17/24,1114,delayed
+928,399,email456,in progress,12/5/24,no,928,1/2/26,542,pending
+929,597,whatsapp789,approved,4/28/24,yes,929,5/6/26,149,approved
+930,199,phone456,cancelled,7/9/25,yes,930,2/25/26,1061,approved
+931,954,phoneGHI,in progress,1/31/24,no,931,8/3/25,1152,scheduled
+932,660,emailDEF,cancelled,5/23/24,no,932,1/6/26,57,on hold
+933,749,whatsapp789,approved,3/27/26,yes,933,8/5/25,337,in progress
+934,781,phone456,pending,2/25/25,no,934,4/6/26,432,delayed
+935,144,whatsapp123,cancelled,5/1/25,no,935,9/24/24,932,pending
+936,276,whatsappXYZ,on hold,7/12/24,no,936,2/16/25,490,delayed
+937,573,whatsappABC,delayed,11/30/26,no,937,9/18/24,464,under review
+938,796,whatsappXYZ,cancelled,11/4/25,yes,938,3/13/25,887,under review
+939,144,whatsapp123,delayed,4/8/25,yes,939,12/5/24,525,completed
+940,406,emailDEF,on hold,10/30/25,yes,940,10/1/24,95,approved
+941,550,whatsapp789,approved,11/24/24,no,941,10/16/26,789,pending
+942,458,emailDEF,scheduled,8/8/24,yes,942,5/17/26,414,on hold
+943,148,whatsapp123,approved,5/28/26,no,943,3/21/26,859,completed
+944,408,whatsappXYZ,scheduled,12/25/26,yes,944,11/13/24,1094,pending
+945,994,emailDEF,scheduled,11/22/24,yes,945,1/27/24,301,completed
+946,288,phone789,delayed,12/7/25,yes,946,1/23/24,327,approved
+947,992,emailDEF,pending,8/20/25,no,947,1/4/26,979,rejected
+948,179,whatsappXYZ,on hold,12/30/26,yes,948,2/13/24,1350,completed
+949,861,phoneGHI,on hold,6/10/26,yes,949,7/29/24,802,on hold
+950,518,whatsappXYZ,delayed,12/7/26,yes,950,11/29/25,695,rejected
+951,982,whatsappABC,scheduled,3/28/26,yes,951,6/30/25,820,cancelled
+952,811,email456,rejected,10/14/25,yes,952,12/20/25,534,approved
+953,932,phone789,in progress,7/19/25,no,953,6/30/24,257,cancelled
+954,327,email456,delayed,9/10/25,no,954,6/22/24,1111,rejected
+955,616,email456,scheduled,4/27/26,yes,955,1/20/26,836,approved
+956,56,whatsapp789,in progress,5/19/24,yes,956,9/29/24,1138,completed
+957,170,whatsappXYZ,completed,3/2/24,yes,957,10/18/26,169,under review
+958,328,phone456,on hold,4/11/26,yes,958,4/1/24,731,completed
+959,462,whatsappABC,on hold,4/30/25,yes,959,9/9/24,0,completed
+960,475,email123,in progress,2/27/25,yes,960,3/22/25,47,cancelled
+961,657,phoneGHI,rejected,10/14/24,yes,961,1/24/25,1229,rejected
+962,927,phoneGHI,rejected,2/11/25,no,962,5/6/24,940,completed
+963,94,whatsappABC,pending,10/2/25,no,963,7/31/24,22,on hold
+964,552,phone456,approved,7/17/26,no,964,10/13/26,577,approved
+965,664,phone789,pending,6/22/25,yes,965,7/5/26,1231,delayed
+966,159,phoneGHI,completed,9/12/26,yes,966,11/18/24,117,rejected
+967,207,phone789,on hold,9/5/25,no,967,1/11/26,1162,delayed
+968,713,phoneGHI,on hold,5/8/26,yes,968,3/3/25,1432,on hold
+969,145,whatsapp789,in progress,7/7/24,yes,969,2/8/24,192,scheduled
+970,869,phoneGHI,approved,2/25/26,yes,970,11/23/24,1298,delayed
+971,346,whatsappABC,cancelled,9/10/24,no,971,10/28/24,1149,rejected
+972,329,email123,rejected,7/26/25,no,972,5/16/26,1248,scheduled
+973,19,whatsappXYZ,under review,6/1/26,no,973,8/25/26,475,delayed
+974,82,whatsapp123,in progress,12/13/25,no,974,4/10/25,203,scheduled
+975,25,whatsappABC,delayed,5/26/24,no,975,1/11/25,496,rejected
+976,326,phone789,cancelled,11/30/25,yes,976,8/3/25,398,approved
+977,897,phone789,approved,2/3/25,no,977,4/23/24,241,rejected
+978,139,email123,completed,7/30/24,no,978,3/25/24,34,delayed
+979,601,whatsappABC,approved,9/9/24,yes,979,5/18/25,861,rejected
+980,268,whatsappXYZ,scheduled,11/26/24,yes,980,10/26/26,1100,delayed
+981,134,phone456,approved,5/14/25,yes,981,3/27/26,976,in progress
+982,634,emailDEF,pending,2/18/25,yes,982,9/29/24,1324,delayed
+983,895,email123,on hold,3/17/26,no,983,6/2/25,324,scheduled
+984,758,phoneGHI,rejected,5/1/26,yes,984,10/4/26,390,scheduled
+985,249,phoneGHI,approved,2/27/26,no,985,6/1/26,348,delayed
+986,48,whatsapp789,under review,5/19/26,yes,986,5/1/24,1054,delayed
+987,219,emailDEF,on hold,5/23/24,yes,987,2/12/25,1260,scheduled
+988,387,phone456,delayed,3/17/25,no,988,2/6/24,525,in progress
+989,565,email456,completed,5/6/25,yes,989,8/4/26,344,scheduled
+990,139,whatsapp123,cancelled,1/13/26,yes,990,9/24/24,360,scheduled
+991,377,whatsapp789,under review,1/17/25,no,991,11/14/24,1390,completed
+992,514,whatsappXYZ,rejected,4/15/25,yes,992,12/6/26,1073,cancelled
+993,382,whatsapp789,delayed,1/29/24,no,993,8/7/24,1396,approved
+994,757,emailDEF,cancelled,4/22/25,yes,994,3/1/24,767,in progress
+995,482,email456,delayed,2/3/25,no,995,11/13/26,1157,under review
+996,472,email123,pending,6/9/24,no,996,5/28/24,1119,on hold
+997,159,emailDEF,in progress,11/13/26,no,997,4/8/25,1193,on hold
+998,342,email123,rejected,1/4/26,no,998,1/28/25,1112,under review
+999,591,email456,pending,10/4/24,yes,999,1/3/24,273,cancelled
+1000,728,email456,delayed,5/6/24,no,1000,3/6/24,478,approved

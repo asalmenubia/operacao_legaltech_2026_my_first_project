@@ -1,0 +1,41 @@
+# Local credentials and overrides
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebook and editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs, scratch files, and generated exports
+*.log
+tmp/
+output/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Obsolete zero-byte artifacts at the repository root
+/clients_cleaned
+/consultations_cleaned
+
+# The public synthetic datasets under data/ are intentionally committed.

@@ -1,0 +1,78 @@
+﻿`,`,data_type,primary_key ,foreign_key ,permited_values,business_rules 
+Clients,client_id,UUID ,YES ,,Unique number not  null ,Primary key; generated automatically; cannot be changed.
+Clients,full_name,VARCHAR (150),,,1-150 characters ,Required the client’s legal full name.
+Clients,document_id,UUID ,,,UUID or NULL,Only keep if it is an FK to a separate identity-document record; otherwise rename it to identity_number and use VARCHAR(50).
+Clients,phone,VARCHAR (100),,,"example:  +971501234567, or NULLber null if exist  ","Must start with +; maximum 15 digits; no spaces, dashes, brackets, or leading zero."
+Clients,email,VARCHAR (150),,, valid email adress or NULL,Convert to lowercase; should be unique where provided.
+Clients,prefered_channel,VARCHAR (100),,,"whatsapp, phone, email",Required if contact details exist; must be a usable channel for that client.
+Clients,created_at,DATE,,,Valid date ,Required; set automatically when the client is created.
+Clients,status,VARCHAR (100),,,"former_client, trial_customer, loyal_customer, potential_lead, active_client, lost, churned ",Default is active; blocked clients cannot open a new matter.
+,,,,,,
+Matters ,matter_id,UUID ,YES ,,UUID or NULL,Primary key; generated automatically.
+Matters ,client_id,UUID ,,Clients. clients_id,Existing Clients.client_id,Required FK; every matter belongs to one existing client.
+Matters ,consultation_id,UUID ,,,Existing Consultations.consultation_id or NULL,Optional FK; use only if the matter began through a consultation.
+Matters ,matter_type,VARCHAR (100),,,"labor, family, immigration, real estate, criminal, consultation, contract review, comercial, administrativa, civil",Required; select one legal practice area.
+Matters ,origin_channel,VARCHAR (100),,,"whatsapp, phone, email",Required; records how the matter first came to the firm.
+Matters ,oppened_at ,DATE,,,Valid date ,Required; set when the matter is opened. Correct spelling: opened_at.
+Matters ,current_stage,VARCHAR (100),,,"awaiting response, approved, rejected, under review, under investigation, in process, pending, finilized, delayed",Required; default is intake.
+Matters ,responsible_lawyer_id,UUID ,,users. User_id,"Existing Users.user_id with role lawyer, or NULL",Optional during intake; required once a lawyer is assigned.
+Matters ,total_fee_agreed,"DECIMAL (12,2)",,,Decimal value >= 0.00 or NULL,Use only if you want to record the consultation price in the matter; otherwise this belongs only in Consultations.
+Matters ,contract_signed,BOOLEAN,,,"true, false",Default is false; cannot be true before the client agrees to the fees.alse; cannot be true before the client agrees to the fees.
+Matters ,power_of_attorney_signed ,BOOLEAN,,,"true, false",Default is false; required only when a power of attorney applies.se; required only when a power of attorney applies.
+Matters ,documents_complete,BOOLEAN,,,"true, false",Set to true only when every required document has been received.
+Matters ,closed_at,DATE ,,,Valid date or NULL,Required when current_stage is closed; otherwise leave blank.
+Matters ,outcome,VARCHAR (100),,,"office_declined, ongoing, completed, accepted, cancelled, settled, client_withdraw, resolved, in_progress, lost_case",Default is pending; final outcome is required when the matter is closed.
+,,,,,,
+Inquiries,inquiry_id,UUID ,,,"UUID, not null",Primary key; generated automatically.
+Inquiries,client_id,UUID ,,clients. clients_id,Existing Clients.client_id or NULL,Optional for a new or anonymous lead; fill it after identifying the client.
+Inquiries,origin_channel,VARCHAR (100),,,"Whatsapp, phone, email ",Required; records where the inquiry arrived.
+Inquiries,menu_option,VARCHAR (100),,,"completed, approved, cancelled, on hold, pending, under review, schedule, rejected, in progress",records the option selected in the WhatsApp/intake menu.
+Inquiries,received_at,DATE ,,,valid date ,Required; set when the inquiry arrives.
+Inquiries,is_working_hours,BOOLEAN,,,"true, false",Calculated using the firm’s working-hours schedule; do not enter manually.
+Inquiries,assistant_id,UUID ,,users. assistant_id,"Existing Users.user_id with role assistant, or NULL",Records the assistant who handled the inquiry.
+Inquiries,first_response_at,DATE ,,,Valid date or NULL,Filled in when the first response is sent.
+Inquiries,response_delay_minutes,NUMERIC ,,,Whole number >= 0 or NULL,Calculated from received_at and first_response_at; no manual entry.
+Inquiries,outcome ,VARCHAR (150),,,"cancelled, pending, delayed, on hold, rejected, in progress, approved, under review, schedule",Default is open.
+,,,,,,
+Consultations ,consultation_id,UUID ,YES ,,"UUID, not null",Primary key
+Consultations ,client_id,UUID ,,Clients. clients_id,Existing Clients.client_id,Required FK; consultation belongs to one existing client.
+Consultations ,inquiry_id,UUID ,,Inquiriies. Inquiry_id,Existing Inquiries.inquiry_id or NULL,Optional FK; use when the consultation was created from an inquiry.
+Consultations ,lawyer_id,UUID ,,lawyers.lawyer_id,Existing Users.user_id with role lawyer,Required FK; assigned user must be a lawyer.
+Consultations ,scheduled_at,DATE ,,,Valid date,Required once booked; must match lawyer availability.
+Consultations ,held_at,DATE ,,,Valid date or NULL,Blank until held; cannot be before scheduled_at.
+Consultations ,consultation_fee ,"DECIMAL (12,2)",,consultations. consultation_fee,Decimal value >= 0.00,F.DIST(=G42Required; 0.00 is permitted for a free consultation.
+Consultations ,paid_status ,VARCHAR (100),,,"cancelled, processing, unpaid, pending, refunded, on hold, completed, failed",Default is unpaid.
+Consultations ,case_accepted ,BOOLEAN,,,"true, false or NULL",Leave blank until the lawyer decides whether to accept the case.
+Consultations ,notes ,VARCHAR (250),,,0–250 characters or NULL,Optional summary; do not enter unnecessary confidential information.
+,,,,,,
+Invoices,invoice_id,UUID ,YES ,,"UUID, not null",Primary key 
+Invoices,client_id,UUID ,,Clients. clients_id,Existing Clients.client_id,Required FK; invoice belongs to one client.
+Invoices,matter_id,UUID ,,matters. Matter_id,Existing Matters.matter_id or NULL,Optional FK; required when the invoice is for a legal matter.
+Invoices,consultation_id,UUID ,,consultations. consultation_id ,Remove for now,Do not use because Invoices and Consultations are not related yet.
+Invoices ,invoice_type,VARCHAR (250),,,"translation_service, consultation_fee, urgent_service, process_fee, cout_filing_fee, other_service, document_preparation","Required, choose the biling purpose. "
+Invoices,issued_at,DATE ,,,Valid Date ,Required; set when the invoice is issued.
+Invoices,due_date,DATE ,,,Valid date on or after issued_at,required 
+Invoices,amount,"DECIMAL (12,2)",,,Decimal value > 0.00,Required; use two decimal places.
+Invoices,status,VARCHAR (100),,,"not processed, paid, failed, unpaid, ",Default is draft; update according to payment records.
+Invoices,description,VARCHAR (250),,,0–250 characters,Required for refunds or non-standard invoices; avoid confidential legal details.
+,,,,,,
+Payments ,payment_id ,UUID ,YES ,,UUID not NULL ,Add this field; it is the primary key for Payments.
+Payments ,invoice_id,UUID ,,invoices_invoice_id,Existing Invoices.invoice_id,Required FK; every payment must belong to one invoice.
+Payments ,payment_date,DATE,,,Valid date,Required; normally cannot be a future date.
+Payments ,amount ,"DECIMAL (12,2)",,,Decimal value > 0.00,Required; total payments should not exceed invoice amount unless you support credit/refund records.
+Payments ,method ,VARCHAR (100),,,"paypal, apple_pay, bitcoin, venmo, banck_transfer, google_wallet, online_payment, cash, card ",Required
+Payments ,reference ,VARCHAR (100),,,Text receipt/transaction reference or NULL,"Required for bank transfers, cards, online payments, and cheques. Change its data type to VARCHAR(100)."
+Payments ,recorded_by ,VARCHAR (150),,,Existing Users.user_id,Rename to recorded_by_user_id; FK to Users; identifies the staff member who recorded the payment.
+,,,,,,
+Documents,document_id,UUID ,YES ,,"UUID, not  NULL",Add this field; it is the primary key for Documents.
+Documents,matter_id,UUID ,,matters.matter_id ,Existing Matters.matter_id,Required FK; every document record belongs to one matter.
+Documents,document_type,VARCHAR (100),,,"contract, correspondence, power_of_attorney, court_filing, evidence, incoice, passport_copy ",Required; choose a controlled document category.
+Documents,received_at,DATE ,,,Valid date or NULL,Leave blank until the document is received.
+Documents,received_via ,VARCHAR (100),,,"whattsapp, phone, email",Leave blank until received; records the document source.
+Documents,is_required ,BOOLEAN,,,"true, false",Required; true means it is mandatory for the matter.
+Documents,is_missing ,BOOLEAN,,,"true, false",True only when is_required = true and the document has not been received. Prefer calculating this field automatically.
+,,,,,,
+,,,,,,
+Users ,user_id,UUID ,YES ,,UUID not NULL ,Primary Key 
+Users ,name ,VARCHAR (150),,,1-150 characters ,Required; staff member’s full name.
+Users ,role ,VARCHAR (100),,,"lawyer, assistant, admin, finance, receptionist,",Required; controls the user’s responsibilities and system permissions.

@@ -1,0 +1,211 @@
+{
+  "title": "Operação LegalTech: Processo de Negócio, Governação de Dados e Automatização da Comunicação",
+  "course": "Análise de Dados e Tecnologias de Informação Aplicadas à Gestão",
+  "institution": "Prepara Portugal",
+  "project": "Projeto final individual",
+  "mentor": "Mentor do projeto: Adwiteey Mauriya, Ph.D.",
+  "date": "20 de setembro de 2026",
+  "ack_title": "Agradecimentos",
+  "ack": "Agradeço a Adwiteey Mauriya, Ph.D., pelo acompanhamento enquanto mentor durante este projeto. O presente relatório é da autoria de Nubia Aparecida Silva Almeida.",
+  "abstract_title": "Resumo",
+  "abstract": "Este projeto aplicado analisa a ligação entre o atendimento num escritório de advocacia, a governação de dados e a automatização da comunicação. Oito conjuntos de dados sintéticos sustentam um modelo PostgreSQL com importação controlada, verificações relacionais, imputação de pagamentos e um painel de gestão estático. O processo de negócio mantém duas vias de entrada no trabalho jurídico: contratação direta e consulta paga com um advogado. Uma nova camada privada de comunicações acrescenta a receção de eventos WhatsApp com verificação de assinatura, a recolha de correio eletrónico, uma fila persistente de envio e o acompanhamento das respostas humanas. A política corrigida estabelece o funcionamento de segunda a sexta-feira, das 09:00 às 18:00. Os contactos recebidos fora desse horário devem obter resposta humana até às 10:00 do dia útil seguinte, segundo o fuso horário configurado. As confirmações automáticas não cumprem esse objetivo. A dissertação distingue o conjunto histórico validado de dados sintéticos, o código de integração implementado e a entrada em funcionamento, que exige credenciais e serviços alojados. Apresentam-se a arquitetura, os resultados analíticos, a política de resposta, os controlos, a avaliação e as limitações. O resultado é um sistema educativo reproduzível e um percurso explícito de adoção operacional, sem alegar desempenho real de um escritório.",
+  "keywords": "Palavras-chave: análise jurídica, governação de dados, WhatsApp, correio eletrónico, prazo de resposta, PostgreSQL",
+  "contents": "Índice",
+  "sections": [
+    {
+      "title": "Introdução",
+      "paragraphs": [
+        "Um escritório de advocacia em crescimento necessita de coordenar contactos, consultas, processos jurídicos, documentos obrigatórios, honorários e pagamentos. Quando a informação permanece dispersa por folhas de cálculo, mensagens e correio eletrónico, torna-se difícil distinguir trabalho pendente de registos incompletos. O projeto Operação LegalTech responde a este problema através de um modelo de negócio estruturado, preparação de dados reproduzível e informação de gestão.",
+        "O projeto coloca três questões: como preservar o significado do percurso do cliente nos registos operacionais; como produzir indicadores úteis a partir de dados validados; e como apoiar um compromisso de resposta através da automatização, sem confundir uma confirmação automática com atendimento humano? Trata-se de um estudo de caso técnico aplicado, com registos sintéticos, e não de um estudo sobre clientes identificáveis.",
+        "A autora forneceu o documento Law Office Intake and Matter Workflow como fonte do processo de negócio. A clarificação posterior de que o prazo de uma hora começa na abertura seguinte do escritório substitui a formulação ambígua do documento sobre contactos fora de horas. O horário é de segunda a sexta-feira, das 09:00 às 18:00, com resposta até às 10:00 do dia útil seguinte para contactos fora do horário. Europe/Lisbon é o valor predefinido configurável utilizado nos exemplos; constitui um pressuposto de implementação, não uma instrução adicional do documento-fonte."
+      ]
+    },
+    {
+      "title": "Contexto de Negócio e Percurso do Cliente",
+      "paragraphs": [
+        "O processo descrito começa com um menu de WhatsApp que apresenta novos serviços, estado do processo e consulta. Um assistente identifica a necessidade e esclarece o pedido. Nem todos os contactos originam uma consulta ou um novo processo: o cliente pode pretender apenas uma atualização, recusar uma reunião ou terminar o contacto após o esclarecimento (Law Office Intake and Matter Workflow, s.d., pp. 1-3).",
+        "A contratação direta ocorre quando o esclarecimento é suficiente e o cliente pretende avançar. O documento coloca a assinatura do contrato e da procuração e o pagamento dos honorários aplicáveis antes da recolha documental. A consulta é, por isso, facultativa; criar obrigatoriamente uma consulta para cada processo deturparia esta via.",
+        "Quando a situação exige intervenção de um advogado, o escritório gera o valor da consulta e realiza a reunião. Se o caso não avançar, o serviço pode terminar como consulta autónoma. Se avançar, seguem-se os honorários do processo e a contratação. Os valores da consulta e do trabalho jurídico posterior devem permanecer distinguíveis; o pagamento de uma reunião não prova a abertura de um processo.",
+        "As duas vias convergem na receção dos documentos obrigatórios por correio eletrónico, seguida da abertura do processo, trabalho jurídico, contencioso quando necessário e encerramento. A expressão de aceitação pelo cliente e/ou advogado não define aprovações separadas. O campo existente case_accepted representa uma decisão registada; as aprovações separadas e as verificações de contratação com data e hora permanecem extensões futuras, fora desta atualização das comunicações."
+      ]
+    },
+    {
+      "title": "Dados e Método",
+      "paragraphs": [
+        "O conjunto analítico abrange oito entidades sintéticas: utilizadores, clientes, contactos, consultas, processos, documentos, faturas e pagamentos. A versão validada preservada contém 1 000 registos por entidade. Os ficheiros originais conservam a evidência recebida; os ficheiros tratados normalizam categorias, datas, valores lógicos e montantes. Os volumes e valores sintéticos não descrevem um escritório real.",
+        "O PostgreSQL separa a importação permissiva no esquema staging, os registos operacionais sujeitos a restrições no esquema core e as vistas de consulta no esquema analytics. O Alembic regista alterações ordenadas ao esquema. Chaves primárias, chaves estrangeiras e restrições impedem determinados estados inválidos, enquanto verificações entre tabelas detetam relações válidas isoladamente, mas incoerentes no seu significado (PostgreSQL Global Development Group, s.d.).",
+        "O registo de reconciliação existente apresenta 999 correções de cliente em consultas, 1 000 em processos, 997 em faturas, 89 correções de estados de pagamento sem suporte e 88 correções de estado documental. A validação preservada regista zero ocorrências críticas e 3 000 avisos. Estes correspondem a 2 000 identificadores de profissionais e 1 000 nomes de responsáveis pelo registo de pagamentos ainda sem correspondência verificada; são conservados sem inventar identidades.",
+        "O gerador do painel consulta vistas analíticas validadas e produz um ficheiro JavaScript estático. O relatório lê o mesmo conjunto de dados versionado, permitindo reproduzir os totais sem consultar canais operacionais. Os campos históricos que contêm apenas datas não permitem demonstrar cumprimento do novo prazo. Os novos eventos de comunicação usam datas e horas com fuso horário e uma versão explícita da política.",
+        "O esquema communications mantém-se separado dos dados sintéticos do esquema core e das exportações públicas. Contém pedidos e uma fila de envio, com ligação opcional a um contacto após reconciliação revista. Números de telefone e endereços de correio eletrónico não são associados automaticamente à identidade de um cliente. Esta separação evita a publicação acidental de contactos e impede que um endereço seja tratado como identidade verificada."
+      ]
+    },
+    {
+      "title": "Horário Corrigido e Prazo de Resposta",
+      "paragraphs": [
+        "O escritório funciona de segunda a sexta-feira, das 09:00 inclusive às 18:00 exclusive. Um contacto recebido antes das 09:00 num dia de semana deve obter resposta até às 10:00 desse dia. Um contacto recebido às 18:00 ou depois deve obter resposta até às 10:00 do dia de semana seguinte. Os contactos de sábado e domingo têm prazo até às 10:00 de segunda-feira. A implementação não exclui feriados, pois não foi definido um calendário de feriados.",
+        "Durante o horário de atendimento, o processo prevê uma resposta pronta do assistente. Esta atualização não cria um compromisso numérico adicional: response_due_at fica sem valor nesses contactos e o estado do objetivo é no_numeric_target. A regra de uma hora aplica-se especificamente aos contactos recebidos enquanto o escritório está encerrado. Uma resposta humana enviada antes da reabertura é permitida e cumpre o objetivo.",
+        "O cálculo converte a hora de receção para o fuso horário do escritório antes de verificar o dia e os limites do horário. O prazo é construído na data local do dia útil seguinte, para que uma mudança de hora ao fim de semana não afaste o limite das 10:00 locais. São rejeitadas datas e horas sem fuso horário. Cada pedido conserva o fuso, a versão da política e o prazo calculado para permitir auditoria.",
+        "A confirmação automática comunica o horário e, fora de horas, a data e hora concretas do prazo. Não preenche first_human_response_at. O indicador de resposta humana implementado regista o momento em que o fornecedor aceita uma resposta redigida por um profissional autorizado. Mede a submissão, não a entrega, leitura ou resolução; o tratamento de comprovativos de entrega constitui uma extensão adicional."
+      ]
+    },
+    {
+      "title": "Automatização do WhatsApp e do Correio Eletrónico",
+      "paragraphs": [
+        "O adaptador WhatsApp implementa o desafio de verificação e valida a assinatura HMAC do corpo original do evento. Aceita mensagens apenas para o identificador do número empresarial configurado e impede duplicações dos identificadores do fornecedor no PostgreSQL. O pedido e a respetiva confirmação na fila são gravados na mesma transação antes de o serviço confirmar a receção. A implementação segue o mecanismo de verificação documentado pelo WhatsApp (s.d.-a).",
+        "O envio de texto utiliza a Meta Cloud API, com credenciais e versão configuradas localmente. As mensagens de texto livre fora da janela de atendimento de 24 horas do canal (WhatsApp, s.d.-b) ficam para revisão, em vez de serem reenviadas repetidamente. Esta situação é relevante num contacto recebido na sexta-feira à noite, cujo prazo de segunda-feira pode ultrapassar essa janela. A operação exige, por isso, um modelo aprovado para retomar o contacto ou outra via autorizada; o horário do escritório não substitui as restrições do canal. A Meta documenta os requisitos de conta empresarial, número e credenciais da Cloud API (Meta, s.d.). Um comando permite ao profissional colocar na fila um modelo configurado e aprovado, sem parâmetros. Esse modelo é registado separadamente e não conta como resposta humana.",
+        "O adaptador de correio eletrónico consulta uma pasta IMAP dedicada através de TLS com validação de certificado. Identifica mensagens pela caixa de correio, UIDVALIDITY e UID. Usa INTERNALDATE do servidor como data de receção, em vez de confiar no cabeçalho Date do remetente. A consulta repetida não duplica pedidos já aceites. As bibliotecas padrão de Python disponibilizam as interfaces IMAP e SMTP utilizadas (Python Software Foundation, s.d.-a, s.d.-b).",
+        "A recolha de correio eletrónico lê apenas cabeçalhos. Os conteúdos jurídicos e anexos permanecem na caixa protegida para revisão pelos profissionais; a chegada de uma mensagem não torna um documento automaticamente completo. Mensagens automáticas, listas de distribuição, devoluções e mensagens do próprio escritório são excluídas para reduzir ciclos de respostas. A confirmação por correio eletrónico fica desativada até existir filtragem adequada da pasta dedicada. O envio utiliza SMTP autenticado sobre TLS.",
+        "A fila persistente separa a receção da transmissão externa. Um processo de envio reserva um item pendente através de bloqueio de linha na base de dados e regista a aceitação do fornecedor ou a necessidade de revisão. Falhas ambíguas e reservas antigas não são repetidas automaticamente, pois o fornecedor pode já ter aceite a mensagem. O profissional deve reconciliar o registo do fornecedor antes de decidir reenviar. Não se alega, assim, entrega externa exatamente uma vez.",
+        "As respostas humanas entram na fila através de um comando privado que exige um utilizador ativo e um ficheiro com o texto. A vista operacional distingue objetivos pendentes, ultrapassados, cumpridos e cumpridos com atraso, bem como contactos sem objetivo numérico. O envio real está desativado por predefinição. Os adaptadores exigem contas configuradas e um serviço alojado; não foram enviadas mensagens reais a clientes durante a preparação desta dissertação."
+      ]
+    },
+    {
+      "title": "Resultados Analíticos e Interpretação",
+      "paragraphs": [
+        "As tabelas e figuras seguintes descrevem o conjunto sintético preservado. São independentes da nova fila de comunicações e não apresentam cumprimento de prazos em produção. O painel cobre a visão de gestão, os processos e documentos, os contactos e consultas, e a faturação e pagamentos.",
+        "Um processo ativo é qualquer processo cuja fase não seja closed. Os documentos em falta são calculados a partir dos documentos obrigatórios registados sem data de receção. Esta regra apoia a análise de exceções, mas não demonstra que a lista contém todos os documentos exigidos para o serviço. A completude da própria lista deve ser verificada pelos profissionais.",
+        "Os totais de contactos e consultas são contagens de etapas, não um funil longitudinal com registos ligados. A contratação direta não passa por consulta e a consulta autónoma é um resultado válido. Uma taxa de conversão defensável exige uma coorte de entrada, uma via e um período de observação definidos. A divisão histórica de consultas aceites por realizadas também exige verificar se o numerador contém apenas consultas simultaneamente aceites e realizadas.",
+        "A informação financeira distingue o valor faturado, os pagamentos imputados, os saldos em dívida e os créditos. O montante recebido pode exceder o valor imputado a uma fatura; o excesso deve permanecer reconciliável como crédito. A moeda apresentada no painel educativo é ilustrativa e os montantes sintéticos elevados não constituem uma referência comercial."
+      ]
+    },
+    {
+      "title": "Governação e Responsabilidades Operacionais",
+      "paragraphs": [
+        "Os assistentes são responsáveis pela fila de atendimento e qualificação inicial; os advogados, pela avaliação e trabalho jurídico; a área financeira, pela reconciliação; o responsável pela qualidade dos dados, pelas definições, correspondências de identidade e exceções; e o operador técnico, pelas migrações, disponibilidade e configuração dos fornecedores. O escritório deve assegurar profissionais disponíveis após a abertura: o sistema calcula um prazo, mas não garante que uma pessoa responda.",
+        "O novo perfil de comunicações acede às tabelas privadas e a referências selecionadas do esquema core. Não dá ao analista do painel acesso aos registos dos canais. Os segredos devem permanecer na configuração local ou num serviço de gestão de credenciais. Os artefactos públicos mantêm dados sintéticos. A entrada em produção deve também definir conservação, revisão de auditoria, cópias de segurança, testes de recuperação e revogação de acessos aos contactos e textos em fila.",
+        "O serviço de eventos exige um proxy inverso HTTPS com limites de tamanho e ligação. O coletor de correio eletrónico e o processo de envio necessitam de execução periódica supervisionada e monitorização. O GitHub Pages aloja ficheiros estáticos e não executa estes serviços (GitHub, s.d.). Publicar o repositório disponibiliza código e relatórios, mas não ativa a comunicação.",
+        "Antes da ativação, o escritório deve verificar o número empresarial, a autenticação da caixa de correio, o remetente, o fuso horário, os modelos aprovados e as responsabilidades, utilizando destinatários de teste. Uma integração indisponível ou entrega rejeitada deve permanecer visível na fila privada. Os dados analíticos sintéticos e os registos operacionais reais devem conservar regras distintas de publicação e retenção."
+      ]
+    },
+    {
+      "title": "Avaliação e Limitações",
+      "paragraphs": [
+        "A avaliação incide no comportamento de negócio. Os casos de horário incluem receção antes da abertura, exatamente às 09:00, no último segundo antes das 18:00, exatamente às 18:00, na sexta-feira à noite, ao fim de semana e nas duas mudanças sazonais da hora. As verificações dos canais incluem assinaturas alteradas, filtragem do número empresarial, supressão de ciclos de correio, data de receção do servidor, bloqueio predefinido de envio real e expiração da janela de texto livre do WhatsApp.",
+        "A avaliação da base de dados deve confirmar a gravação atómica do pedido e da confirmação, a rejeição de duplicados, a reserva de itens, a autorização dos profissionais e a distinção entre respostas automáticas e humanas. Estas verificações usam eventos sintéticos e não devem transmitir mensagens. O registo de validação da versão identifica os testes efetivamente executados e as limitações do ambiente; os testes locais não são apresentados como testes reais dos fornecedores.",
+        "As principais limitações são os dados sintéticos, as correspondências históricas de profissionais por resolver, os eventos de origem apenas com data, as contas de fornecedores não configuradas e a ausência de calendário de feriados. A pasta filtrada de correio e um modelo WhatsApp aprovado de retoma de contacto, sem parâmetros, exigem configuração operacional. Comprovativos de entrega e leitura, validação de anexos, aprovações separadas e uma interface autenticada completa permanecem trabalho futuro.",
+        "A aceitação por um fornecedor não prova que o destinatário recebeu a resposta. Um contacto antigo de WhatsApp pode exigir um modelo aprovado antes de permitir uma resposta humana. O objetivo deve, portanto, ser acompanhado em conjunto com a disponibilidade dos canais e dos profissionais. Estas condições não substituem o processo de negócio criado pela autora."
+      ]
+    },
+    {
+      "title": "Conclusão",
+      "paragraphs": [
+        "O projeto Operação LegalTech liga o processo do escritório definido pela autora a análises sintéticas reproduzíveis e a uma estrutura privada de automatização da comunicação. A regra corrigida é precisa: abertura às 09:00 e encerramento às 18:00, de segunda a sexta-feira, com resposta humana até às 10:00 do dia útil seguinte para contactos recebidos fora desse horário. As confirmações automáticas permanecem distintas do atendimento humano.",
+        "O contributo é um percurso controlado dos eventos de contacto até prazos auditáveis e dos registos validados até à informação de gestão. As versões em inglês e português europeu partilham os mesmos dados, definições e limites. A adoção real continua a exigir contas configuradas, serviço supervisionado e responsabilidade pela fila; não resulta apenas da publicação do projeto no GitHub."
+      ]
+    }
+  ],
+  "tables": {
+    "schedule_title": "Exemplos da Regra de Resposta Fora do Horário",
+    "schedule_headers": [
+      "Receção na hora local do escritório",
+      "Prazo de resposta humana"
+    ],
+    "schedule_rows": [
+      [
+        "Segunda-feira, 08:30",
+        "Segunda-feira, 10:00"
+      ],
+      [
+        "Segunda-feira, 09:00",
+        "Resposta pronta; sem prazo numérico definido"
+      ],
+      [
+        "Terça-feira, 18:00",
+        "Quarta-feira, 10:00"
+      ],
+      [
+        "Sexta-feira, 20:00",
+        "Segunda-feira, 10:00"
+      ],
+      [
+        "Sábado ou domingo",
+        "Segunda-feira, 10:00"
+      ]
+    ],
+    "results_title": "Indicadores do Conjunto Sintético Preservado",
+    "results_headers": [
+      "Indicador",
+      "Valor"
+    ],
+    "results_labels": [
+      "Processos",
+      "Processos ativos",
+      "Documentos obrigatórios em falta",
+      "Contactos",
+      "Consultas agendadas",
+      "Consultas realizadas",
+      "Consultas aceites",
+      "Valor faturado",
+      "Pagamentos imputados",
+      "Valor em dívida",
+      "Faturas vencidas"
+    ],
+    "mapping_title": "Eventos de Negócio e Responsabilidades dos Dados",
+    "mapping_headers": [
+      "Evento",
+      "Registo ou controlo"
+    ],
+    "mapping_rows": [
+      [
+        "Contacto WhatsApp / correio eletrónico",
+        "Pedido privado; chave do canal; hora de receção do servidor ou fornecedor"
+      ],
+      [
+        "Confirmação automática",
+        "Item da fila; nunca uma resposta humana"
+      ],
+      [
+        "Resposta do assistente",
+        "Profissional; aceitação pelo fornecedor; comparação com o prazo"
+      ],
+      [
+        "Contratação direta / consulta",
+        "Relação facultativa entre consulta e processo"
+      ],
+      [
+        "Receção documental",
+        "Revisão humana da lista exigida para o serviço"
+      ],
+      [
+        "Faturas e pagamentos",
+        "Finalidade dos honorários, imputações e reconciliação de créditos"
+      ],
+      [
+        "Publicação",
+        "Apenas análise sintética; pedidos privados excluídos"
+      ]
+    ]
+  },
+  "figures": [
+    "Distribuição das Fases dos Processos",
+    "Documentos em Falta e Processos Afetados",
+    "Contagens das Etapas de Consulta",
+    "Faturação, Pagamentos Imputados e Saldo em Dívida"
+  ],
+  "figure_labels": [
+    [
+      "Encerrados",
+      "Ativos"
+    ],
+    [
+      "Documentos em falta",
+      "Processos afetados"
+    ],
+    [
+      "Agendadas",
+      "Realizadas",
+      "Aceites"
+    ],
+    [
+      "Faturado",
+      "Imputado",
+      "Em dívida"
+    ]
+  ],
+  "figure_note": "Nota. Valores calculados a partir do conjunto sintético preservado. As contagens não medem desempenho em produção; as etapas das consultas não são taxas de conversão de uma coorte ligada.",
+  "references_title": "Referências",
+  "appendix_title": "Apêndice: Reprodução e Evidência de Validação",
+  "appendix": "Utilize UV em todos os comandos Python. Aplique as migrações sem repor a base de dados; execute os testes unitários e, com PostgreSQL disponível, as verificações de integração. O gerador lê o conjunto validado do painel e produz as duas versões linguísticas. Não são necessárias credenciais dos fornecedores para gerar os PDF. Consulte docs/COMMUNICATION_AUTOMATION.md para configurar o serviço privado e docs/RELEASE_VALIDATION.md para os testes efetivamente executados.",
+  "table": "Tabela",
+  "figure": "Figura"
+}

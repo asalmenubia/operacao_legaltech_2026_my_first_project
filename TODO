@@ -1,0 +1,140 @@
+# Project roadmap
+
+This roadmap translates the requirements in [GOALS](GOALS) into implementation
+work. Complete the phases in order because the dashboard depends on validated
+database data.
+
+## 1. Repository and development setup
+
+- [x] Keep local credentials in `.env` and publish safe placeholders in `.env.example`.
+- [x] Ignore virtual environments, caches, editor files, temporary files, and generated exports.
+- [x] Keep the synthetic `data/` datasets eligible for Git.
+- [ ] Rename documentation files that still contain ` copy` in their names and update links.
+- [ ] Remove obsolete empty directories after confirming they have no planned use:
+  `migration/`, `processed/`, and `tmp/`.
+- [ ] Decide whether generated PDFs belong in `final/`; `output/` is ignored as a build directory.
+- [x] Replace the inaccurate repository tree and Power BI plan in `README.md`.
+- [ ] Rewrite `docs/BEGINNER_STEP_BY_STEP_GUIDE.md` for the implemented PostgreSQL
+  and static Plotly workflow.
+- [x] Add the UV project configuration in `pyproject.toml`.
+
+## 2. Centralised PostgreSQL database
+
+Goal coverage: centralise client, matter, progress, and financial data; deliver a
+central database.
+
+- [x] Define the `staging`, `core`, and `analytics` PostgreSQL schemas.
+- [x] Create constrained operational tables, promotion procedures, reporting views,
+  access roles, payment allocations, and client credits.
+- [x] Configure Alembic and apply revision `0001` from `.env`.
+- [x] Add a development reset command: `uv run python -m src.reset_database`.
+- [ ] Split each future database change into its own Alembic revision with both
+  `upgrade()` and `downgrade()` behavior.
+- [ ] Add a database smoke test that upgrades an empty development database to head
+  and checks the expected schemas and tables.
+
+## 3. Repeatable CSV loading
+
+Goal coverage: populate the central database from the public source data.
+
+- [x] Produce the eight cleaned synthetic CSV files under `data/cleaned/`.
+- [x] Build a Python loader that discovers only the expected CSV files and reads the
+  database connection from `.env`.
+- [x] Load in dependency order: users, clients, inquiries, consultations, matters,
+  documents, invoices, and payments.
+- [x] Create a `staging.load_batches` record for every file and attach its batch ID
+  to every staging row.
+- [x] Validate each batch, write rejected values to `staging.row_issues`, and promote
+  only issue-free batches to `core`.
+- [x] Make reprocessing safe: loading the same unchanged file twice must not silently
+  duplicate core records.
+- [x] Print a concise load report with accepted, rejected, and promoted row counts.
+- [x] Add and document the `uv run python -m src.load_csvs` CLI.
+
+## 4. Database validation and reconciliation
+
+Goal coverage: establish data quality and standardisation controls.
+
+- [x] Define SQL quality checks in `migrations/queries/data_quality_checks.sql`.
+- [x] Generate the deterministic overpayment review in
+  `data/review/overpaid_invoice_review.csv`.
+- [x] Implement a Python validation command that runs the database checks after load.
+- [x] Fail with a non-zero exit code for critical problems and distinguish warnings
+  such as unresolved staff mappings.
+- [x] Verify staging and core row counts for all eight datasets during loading and validation.
+- [x] Reconcile invoice totals, payment allocations, client credits, and refunds.
+- [x] Save a machine-readable validation report and a readable summary for the final
+  submission.
+- [ ] Add focused tests for loader idempotency, relationship failures, invalid values,
+  and financial reconciliation.
+
+## 5. Automated ingestion
+
+Goal coverage: provide an automation backlog and demonstrate a useful automation.
+
+- [ ] Write the required automation backlog with trigger, action, owner, priority,
+  failure handling, and expected benefit for each proposed automation.
+- [ ] Build a development file watcher for `data/cleaned/` that queues a stable,
+  fully-written CSV before loading it.
+- [ ] Prevent duplicate or simultaneous processing with file hashes or a database lock.
+- [ ] Log failures and leave failed batches available for review.
+- [ ] Add a manual one-shot mode for production or CI; the watcher must not be the
+  only way to load data.
+- [ ] Document possible future alerts for overdue invoices, missing documents,
+  rejected rows, and stale matters.
+
+## 6. Executive Plotly dashboard
+
+Goal coverage: deliver KPIs and useful filters for senior management.
+
+- [ ] Agree and document KPI definitions, including total and active matters,
+  response time, consultation conversion, invoiced, paid, outstanding, overdue,
+  overpaid, and missing-document counts.
+- [x] Build the dashboard from the `analytics` views rather than raw CSV files.
+- [x] Add executive, inquiries/consultations, matters/documents, and finance sections.
+- [x] Add filters for date, channel, matter type, stage, outcome, and responsible person.
+- [x] Show the data refresh timestamp and avoid displaying personal contact fields.
+- [x] Block the dashboard build when PostgreSQL validation has critical findings.
+- [ ] Test empty results, filter combinations, currency formatting, and mobile layout.
+
+Deployment decision: export a static Plotly/HTML dashboard with embedded synthetic
+data and client-side controls, then publish it with GitHub Pages. Regenerate the
+site after each validated database load. The published dashboard is a data snapshot,
+so it must display its generation timestamp and does not query PostgreSQL at runtime.
+
+## 7. Publish and submit
+
+Goal coverage: provide the dashboard link, documentation, governance guide, and
+final project package.
+
+- [x] Select the static Plotly and GitHub Pages deployment path.
+- [x] Add a repeatable command that queries the local `analytics` views and builds
+  the static site into the GitHub Pages publishing directory.
+- [x] Ensure all filters and interactions run in the browser without a Python server.
+- [x] Add a GitHub Actions workflow that deploys the committed static site without
+  database access.
+- [ ] Publish the dashboard with GitHub Pages and test the public link in a private
+  browser window.
+- [ ] Update `README.md` with the final architecture, setup commands, screenshots,
+  KPI definitions, dashboard link, and known limitations.
+- [ ] Review and finalize the existing data dictionary and governance guide.
+- [ ] Put reviewed submission artifacts in `final/` and ensure no credentials,
+  caches, temporary files, or unintended exports are included.
+- [ ] Optionally record the three-to-five-minute demonstration video.
+
+![Roadmap](image.png)
+
+## Communication and bilingual report update
+
+- [x] Correct office schedule to Monday-Friday, 09:00-18:00.
+- [x] Implement next-opening-plus-one-hour deadlines and boundary/DST tests.
+- [x] Add private WhatsApp/IMAP intake and SMTP/Meta outbox adapters.
+- [x] Separate automated acknowledgments, re-engagement and human replies.
+- [x] Add the communications migration and isolated CI database checks.
+- [x] Generate equivalent English and European Portuguese dissertations.
+- [ ] Configure provider accounts, credentials and private HTTPS hosting.
+- [ ] Activate supervised collectors/workers and staff queue coverage.
+- [ ] Validate actual delivery and end-to-end provider behavior with test recipients.
+
+The items above describe the September communication update; actual test and
+publication evidence is recorded in docs/RELEASE_VALIDATION.md.

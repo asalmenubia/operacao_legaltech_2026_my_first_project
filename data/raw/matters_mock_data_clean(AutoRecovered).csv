@@ -1,0 +1,1001 @@
+﻿matter_id,client_id,consultation_id,matter_type,origin_channel,oppened_at,current_stage,responsible_lawyer_id,total_fee_agreed ,contract_signed,power_of_attorney_signed ,documents_complete,closed_at,outcome
+1,598,990,labor,email,10/25/28,awaiting response,1,1510,TRUE,TRUE,TRUE,2/22/24,office_declined
+2,682,270,family,whatsapp,3/23/17,approved,2,1972.7,TRUE,FALSE,TRUE,5/29/27,ongoing
+3,620,801,family,phone,5/6/21,rejected,3,2253.6,FALSE,FALSE,FALSE,11/7/17,ongoing
+4,552,358,criminal,email,3/13/28,approved,4,637.13,TRUE,FALSE,TRUE,6/17/15,ongoing
+5,55,751,family,email,8/17/23,under review,5,3265.11,TRUE,FALSE,FALSE,2/24/18,completed
+6,90,331,labor,email,7/1/30,under investigation,6,1002.19,TRUE,TRUE,TRUE,4/16/29,accepted
+7,539,898,immigration,whatsapp,1/17/22,awaiting response,7,3808.07,FALSE,FALSE,TRUE,7/23/27,office_declined
+8,272,919,consultation only service,email,7/15/26,under investigation,8,3557.77,FALSE,TRUE,FALSE,10/30/22,ongoing
+9,398,266,family,phone,5/30/20,in process,9,219.82,FALSE,TRUE,TRUE,5/17/18,cancelled
+10,301,543,criminal,email,12/27/22,pending,10,3033.99,FALSE,TRUE,TRUE,3/30/27,settled
+11,159,81,real estate,phone,5/28/24,finalized,11,1943.09,TRUE,FALSE,TRUE,2/21/28,client_withdrew
+12,47,939,contract review,whatsapp,3/30/24,delayed,12,3535.28,TRUE,FALSE,TRUE,9/15/21,resolved
+13,781,55,criminal,email,2/23/20,pending,13,3644.99,TRUE,TRUE,FALSE,1/21/18,accepted
+14,97,693,consultation only service,email,4/20/18,under investigation,14,2375.76,TRUE,FALSE,FALSE,7/20/26,completed
+15,936,892,civil,email,3/6/30,pending review,15,954.27,TRUE,FALSE,FALSE,7/25/26,in_progress
+16,761,647,real estate,whatsapp,8/28/26,reviewing,16,3515.15,FALSE,FALSE,FALSE,5/9/15,accepted
+17,972,177,consultation only service,whatsapp,5/25/23,pending,17,1607.05,FALSE,FALSE,TRUE,7/11/15,in_progress
+18,631,405,contract review,email,9/10/19,approved,18,1786.7,FALSE,FALSE,FALSE,1/10/18,in_progress
+19,743,962,criminal,email,12/7/22,reviewing,19,1644.82,TRUE,FALSE,TRUE,2/11/20,ongoing
+20,241,440,labor,email,1/26/25,pending,20,326.23,FALSE,FALSE,TRUE,9/22/17,accepted
+21,516,585,civil,whatsapp,3/7/22,in progress,21,3623.69,FALSE,FALSE,FALSE,6/28/24,lost_case
+22,279,425,commercial,email,7/30/24,finalized,22,4871.67,FALSE,FALSE,FALSE,7/17/25,settled
+23,208,942,consultation only service,phone,4/26/21,approved,23,3087.38,FALSE,FALSE,FALSE,3/19/16,cancelled
+24,819,164,commercial,email,4/7/28,in process,24,1626.66,TRUE,FALSE,TRUE,11/12/18,in_progress
+25,783,405,immigration,email,7/27/28,under investigation,25,553.86,TRUE,FALSE,FALSE,2/12/28,settled
+26,780,840,real estate,whatsapp,7/16/15,in progress,26,4798.12,TRUE,FALSE,TRUE,6/10/20,lost_case
+27,847,551,criminal,whatsapp,4/15/27,pending,27,1317.97,FALSE,TRUE,FALSE,8/26/24,resolved
+28,978,47,criminal,phone,1/31/26,in progress,28,893.49,FALSE,FALSE,TRUE,4/1/29,client_withdrew
+29,801,130,commercial,phone,9/23/20,in progress,29,939.58,TRUE,FALSE,TRUE,8/6/20,ongoing
+30,952,217,family,email,3/13/24,in process,30,1014.72,FALSE,FALSE,TRUE,8/27/27,ongoing
+31,112,666,consultation only service,phone,5/24/15,awaiting response,31,788.54,FALSE,FALSE,FALSE,4/17/27,resolved
+32,178,987,family,phone,3/9/27,under review,32,4866.04,FALSE,TRUE,TRUE,3/7/17,completed
+33,773,674,labor,phone,10/12/17,in process,33,2967.87,FALSE,FALSE,FALSE,7/25/28,resolved
+34,997,890,consultation only service,email,1/14/30,in process,34,4463.52,TRUE,FALSE,FALSE,4/16/16,ongoing
+35,123,505,commercial,email,9/3/22,reviewing,35,4973.82,FALSE,TRUE,TRUE,12/14/17,cancelled
+36,567,983,administrative,phone,5/19/21,approved,36,1054.64,TRUE,FALSE,FALSE,8/15/27,in_progress
+37,339,532,family,phone,11/8/23,awaiting response,37,3190.92,TRUE,FALSE,TRUE,2/12/23,resolved
+38,419,409,immigration,email,7/16/28,finalized,38,2192.07,FALSE,TRUE,TRUE,12/30/19,settled
+39,138,774,consultation only service,email,7/16/18,delayed,39,2783.45,TRUE,FALSE,FALSE,2/21/30,cancelled
+40,998,609,administrative,email,7/15/19,finalized,40,2025.19,TRUE,FALSE,TRUE,10/30/21,office_declined
+41,545,173,real estate,email,11/27/25,pending,41,698.06,TRUE,FALSE,FALSE,7/26/26,cancelled
+42,154,728,real estate,whatsapp,9/22/17,rejected,42,3264.63,FALSE,FALSE,TRUE,1/31/22,in_progress
+43,475,870,immigration,whatsapp,11/21/20,on hold,43,4989.83,FALSE,FALSE,FALSE,10/30/30,lost_case
+44,864,671,real estate,phone,8/29/20,awaiting response,44,4431.11,TRUE,TRUE,TRUE,12/10/17,settled
+45,585,984,commercial,phone,9/24/23,in process,45,223.5,FALSE,TRUE,TRUE,10/17/23,lost_case
+46,474,950,administrative,whatsapp,7/3/27,under review,46,3894.16,TRUE,FALSE,FALSE,11/27/24,ongoing
+47,416,630,labor,email,11/5/24,delayed,47,4212.3,TRUE,FALSE,FALSE,6/11/20,settled
+48,892,288,administrative,whatsapp,10/31/17,on hold,48,477.37,FALSE,FALSE,FALSE,5/22/26,in_progress
+49,757,204,immigration,phone,3/23/22,completed,49,3245.73,FALSE,TRUE,TRUE,5/18/18,in_progress
+50,631,114,administrative,phone,7/30/28,awaiting response,50,2259.82,TRUE,TRUE,TRUE,7/2/16,cancelled
+51,559,555,commercial,whatsapp,11/18/30,under investigation,51,4429.25,FALSE,FALSE,FALSE,3/18/19,cancelled
+52,697,969,labor,email,2/29/28,reviewing,52,337.85,TRUE,TRUE,TRUE,11/25/24,client_withdrew
+53,659,165,criminal,email,7/25/15,pending review,53,3446.29,TRUE,FALSE,FALSE,12/9/18,settled
+54,648,560,criminal,whatsapp,9/17/25,pending approval,54,2269.73,TRUE,TRUE,TRUE,4/28/17,settled
+55,577,870,real estate,phone,7/10/18,rejected,55,3613.69,TRUE,TRUE,FALSE,4/16/16,client_withdrew
+56,292,719,labor,whatsapp,4/23/20,pending,56,2514.82,FALSE,TRUE,TRUE,1/4/18,resolved
+57,821,904,consultation only service,email,1/10/22,under review,57,1904.89,FALSE,FALSE,FALSE,11/23/18,cancelled
+58,921,32,family,whatsapp,9/3/29,pending approval,58,2167.45,FALSE,TRUE,TRUE,4/22/24,accepted
+59,549,315,immigration,email,12/10/15,pending review,59,2925.61,FALSE,TRUE,FALSE,2/13/24,cancelled
+60,845,72,commercial,phone,12/21/30,completed,60,2710.48,TRUE,FALSE,FALSE,12/3/29,resolved
+61,822,310,commercial,phone,9/8/28,approved,61,3915.02,FALSE,FALSE,TRUE,4/17/18,office_declined
+62,734,371,commercial,whatsapp,6/7/26,pending approval,62,1356.85,FALSE,TRUE,FALSE,5/15/17,settled
+63,673,722,labor,email,9/30/18,rejected,63,1058.21,FALSE,TRUE,TRUE,10/5/22,ongoing
+64,804,329,immigration,whatsapp,10/12/25,completed,64,2948.35,TRUE,FALSE,FALSE,1/12/15,completed
+65,578,49,family,email,11/22/16,finalized,65,2909.44,TRUE,TRUE,TRUE,11/11/25,completed
+66,307,442,consultation only service,phone,3/31/28,awaiting response,66,2110.67,TRUE,FALSE,FALSE,5/27/29,completed
+67,664,441,contract review,whatsapp,11/23/24,approved,67,1688.66,FALSE,TRUE,FALSE,3/5/29,settled
+68,554,540,administrative,phone,1/25/29,pending,68,2559.9,TRUE,FALSE,TRUE,6/21/21,ongoing
+69,50,360,administrative,whatsapp,7/23/25,rejected,69,3727.2,TRUE,TRUE,FALSE,1/20/19,ongoing
+70,275,999,commercial,email,11/19/29,delayed,70,1131.69,FALSE,FALSE,FALSE,11/27/30,settled
+71,532,488,administrative,whatsapp,11/19/17,on hold,71,1674.13,FALSE,TRUE,FALSE,7/24/18,ongoing
+72,595,796,criminal,email,1/22/19,pending approval,72,1511.35,FALSE,TRUE,FALSE,5/14/28,in_progress
+73,264,961,contract review,whatsapp,1/27/19,reviewing,73,3903.37,TRUE,TRUE,TRUE,2/2/17,settled
+74,753,372,family,phone,6/2/21,pending approval,74,3222.08,FALSE,FALSE,FALSE,2/12/28,settled
+75,216,639,administrative,email,8/8/17,under investigation,75,3236.09,TRUE,TRUE,FALSE,5/23/19,settled
+76,3,738,administrative,whatsapp,8/27/21,in process,76,1795.75,FALSE,FALSE,FALSE,4/1/16,in_progress
+77,977,986,labor,email,7/24/19,on hold,77,1262.9,FALSE,FALSE,FALSE,9/6/28,in_progress
+78,511,962,civil,phone,7/11/16,in progress,78,4935.67,FALSE,FALSE,TRUE,7/22/30,lost_case
+79,316,692,contract review,whatsapp,3/20/16,finalized,79,1694.11,FALSE,TRUE,FALSE,2/5/18,accepted
+80,282,913,commercial,whatsapp,4/29/17,under investigation,80,1835.95,TRUE,FALSE,TRUE,1/30/15,ongoing
+81,341,18,contract review,phone,7/21/27,approved,81,2606.07,TRUE,FALSE,FALSE,8/12/18,cancelled
+82,970,475,commercial,phone,7/13/22,awaiting response,82,1418.65,TRUE,FALSE,FALSE,10/25/21,client_withdrew
+83,393,522,civil,phone,1/21/15,on hold,83,3668.29,FALSE,FALSE,TRUE,10/29/20,client_withdrew
+84,477,525,civil,phone,4/5/26,under review,84,3200.94,TRUE,TRUE,TRUE,8/11/30,accepted
+85,84,749,immigration,phone,6/16/19,pending approval,85,3308.61,FALSE,TRUE,FALSE,2/6/17,accepted
+86,206,333,real estate,phone,6/14/19,completed,86,1326.06,FALSE,TRUE,TRUE,6/7/22,completed
+87,197,203,real estate,whatsapp,4/21/22,pending review,87,1437.02,TRUE,FALSE,FALSE,10/18/21,accepted
+88,672,104,immigration,email,6/26/29,in process,88,4925.81,TRUE,FALSE,FALSE,11/29/29,lost_case
+89,545,674,commercial,phone,10/6/18,pending,89,4344.36,FALSE,FALSE,TRUE,9/3/29,office_declined
+90,6,323,immigration,whatsapp,10/26/21,awaiting response,90,542.07,TRUE,FALSE,TRUE,11/18/18,cancelled
+91,787,922,labor,email,1/9/28,rejected,91,4038.38,FALSE,TRUE,FALSE,7/6/30,in_progress
+92,812,145,consultation only service,email,6/28/23,awaiting response,92,4519.56,TRUE,TRUE,TRUE,5/23/16,resolved
+93,161,927,real estate,whatsapp,9/19/17,awaiting response,93,3282.25,TRUE,FALSE,TRUE,9/6/29,settled
+94,140,940,criminal,email,8/31/17,reviewing,94,2904.45,TRUE,TRUE,FALSE,10/31/23,office_declined
+95,828,143,immigration,phone,12/4/21,pending,95,1045.96,TRUE,FALSE,TRUE,8/7/24,completed
+96,280,845,contract review,whatsapp,1/15/20,in progress,96,4151.01,FALSE,TRUE,TRUE,6/6/28,settled
+97,715,933,administrative,whatsapp,2/3/30,under review,97,2853.92,TRUE,FALSE,FALSE,7/22/17,cancelled
+98,51,246,family,phone,2/4/21,under review,98,275.54,FALSE,TRUE,TRUE,6/29/27,lost_case
+99,206,788,consultation only service,phone,9/22/23,awaiting response,99,3767.38,TRUE,TRUE,TRUE,3/29/26,office_declined
+100,839,22,immigration,email,9/23/17,reviewing,100,1167.99,TRUE,FALSE,TRUE,5/13/16,lost_case
+101,130,798,family,whatsapp,8/17/25,finalized,101,839.99,TRUE,TRUE,FALSE,6/14/27,cancelled
+102,927,807,real estate,email,7/27/27,reviewing,102,1443.21,TRUE,TRUE,FALSE,10/1/25,ongoing
+103,463,949,civil,whatsapp,3/3/21,finalized,103,4660.34,FALSE,FALSE,TRUE,5/10/29,ongoing
+104,765,734,commercial,phone,11/7/25,in process,104,1511.78,TRUE,TRUE,FALSE,4/24/28,client_withdrew
+105,607,473,immigration,whatsapp,11/25/28,on hold,105,4401.87,FALSE,TRUE,FALSE,7/20/19,in_progress
+106,419,396,criminal,email,4/11/16,under review,106,3969.27,FALSE,FALSE,FALSE,3/7/25,completed
+107,642,898,real estate,email,5/25/17,delayed,107,3980.07,TRUE,TRUE,TRUE,4/22/17,ongoing
+108,630,372,criminal,whatsapp,10/11/20,reviewing,108,447.06,FALSE,TRUE,FALSE,1/20/19,in_progress
+109,444,515,immigration,phone,9/6/25,pending approval,109,329.05,TRUE,TRUE,FALSE,11/8/19,accepted
+110,280,468,family,phone,7/28/22,approved,110,910.39,TRUE,TRUE,TRUE,11/30/28,settled
+111,832,446,real estate,email,8/25/30,rejected,111,2346.88,FALSE,FALSE,TRUE,8/16/27,cancelled
+112,122,310,commercial,phone,3/18/20,finalized,112,1761.47,TRUE,TRUE,FALSE,8/8/21,accepted
+113,87,94,consultation only service,whatsapp,1/6/21,pending review,113,2888.12,TRUE,FALSE,FALSE,9/25/26,completed
+114,363,254,labor,email,12/10/17,in progress,114,253.36,TRUE,TRUE,TRUE,1/21/17,completed
+115,35,864,real estate,phone,2/21/16,rejected,115,4472.75,TRUE,FALSE,TRUE,8/1/17,settled
+116,704,375,criminal,whatsapp,10/28/28,in process,116,3371.94,FALSE,FALSE,TRUE,1/7/25,lost_case
+117,100,285,real estate,email,11/13/24,pending review,117,2637.93,TRUE,FALSE,FALSE,10/25/24,accepted
+118,788,419,commercial,phone,2/7/23,rejected,118,828.68,FALSE,TRUE,TRUE,10/31/15,office_declined
+119,798,739,real estate,phone,2/22/21,reviewing,119,1911.73,TRUE,FALSE,FALSE,6/23/20,cancelled
+120,717,887,commercial,phone,10/1/26,rejected,120,4474.05,FALSE,TRUE,TRUE,2/16/20,accepted
+121,848,911,real estate,whatsapp,2/23/20,finalized,121,4438.08,TRUE,TRUE,FALSE,4/19/15,cancelled
+122,394,714,consultation only service,whatsapp,5/29/19,in progress,122,225.4,TRUE,FALSE,TRUE,12/14/24,cancelled
+123,239,792,administrative,whatsapp,2/10/15,in process,123,3221.58,FALSE,TRUE,FALSE,3/28/27,office_declined
+124,155,792,criminal,phone,2/26/24,approved,124,3649.73,FALSE,FALSE,FALSE,2/3/26,ongoing
+125,950,414,administrative,phone,1/27/29,approved,125,3267.98,FALSE,FALSE,FALSE,1/18/28,office_declined
+126,345,23,contract review,whatsapp,1/1/15,awaiting response,126,2420.6,FALSE,FALSE,FALSE,6/6/20,lost_case
+127,473,371,consultation only service,phone,4/19/19,under investigation,127,2775.52,FALSE,FALSE,TRUE,3/31/23,ongoing
+128,791,871,civil,phone,3/24/19,under investigation,128,999.98,FALSE,FALSE,TRUE,1/25/24,cancelled
+129,241,348,commercial,email,2/6/28,under review,129,4107.63,TRUE,FALSE,FALSE,4/8/30,accepted
+130,992,66,real estate,phone,10/21/19,finalized,130,3238.29,FALSE,TRUE,FALSE,2/8/21,in_progress
+131,456,85,civil,whatsapp,11/4/29,on hold,131,2696.75,FALSE,TRUE,FALSE,2/7/26,office_declined
+132,299,262,family,email,10/7/21,delayed,132,820.6,FALSE,TRUE,TRUE,4/2/30,ongoing
+133,354,993,consultation only service,phone,1/31/19,rejected,133,1026.56,FALSE,FALSE,TRUE,1/9/18,in_progress
+134,896,410,criminal,email,1/1/25,reviewing,134,4184.67,FALSE,TRUE,TRUE,10/8/29,lost_case
+135,131,321,immigration,whatsapp,10/31/18,pending approval,135,1499.97,FALSE,TRUE,TRUE,4/9/21,completed
+136,1000,492,administrative,whatsapp,2/4/21,under review,136,1197.8,FALSE,TRUE,FALSE,10/4/23,cancelled
+137,339,614,family,whatsapp,4/19/15,approved,137,2151.59,FALSE,FALSE,TRUE,7/1/24,ongoing
+138,576,689,criminal,email,2/23/20,under review,138,3061.8,TRUE,FALSE,FALSE,4/20/16,accepted
+139,268,600,labor,email,3/13/20,in process,139,2801.8,TRUE,TRUE,FALSE,10/28/17,office_declined
+140,521,175,commercial,whatsapp,7/2/17,in process,140,725.06,FALSE,FALSE,FALSE,10/25/17,completed
+141,279,877,civil,phone,10/6/18,pending review,141,1328.41,TRUE,TRUE,FALSE,8/25/23,resolved
+142,693,801,administrative,phone,11/9/26,in process,142,311.51,TRUE,TRUE,TRUE,12/18/24,lost_case
+143,956,768,contract review,email,8/23/16,in process,143,870.46,TRUE,TRUE,FALSE,11/8/17,lost_case
+144,201,907,consultation only service,whatsapp,7/22/19,under investigation,144,2944.38,FALSE,FALSE,FALSE,11/7/17,client_withdrew
+145,611,922,real estate,whatsapp,2/29/28,under investigation,145,4891.06,FALSE,FALSE,TRUE,1/21/30,office_declined
+146,62,983,consultation only service,whatsapp,4/21/15,finalized,146,4094.75,TRUE,TRUE,TRUE,2/27/19,lost_case
+147,558,81,family,phone,7/3/27,approved,147,1434.24,FALSE,TRUE,TRUE,8/1/28,settled
+148,632,30,criminal,whatsapp,3/11/30,pending,148,250.42,TRUE,TRUE,FALSE,12/18/17,ongoing
+149,346,643,consultation only service,whatsapp,2/23/16,approved,149,3249.95,TRUE,TRUE,TRUE,7/22/25,in_progress
+150,800,81,consultation only service,phone,9/17/18,rejected,150,1300.54,FALSE,TRUE,TRUE,11/17/27,resolved
+151,821,834,criminal,whatsapp,8/16/27,delayed,151,4223.97,FALSE,TRUE,TRUE,12/14/28,client_withdrew
+152,546,387,criminal,email,5/12/17,pending approval,152,2849.68,TRUE,TRUE,TRUE,8/16/17,lost_case
+153,840,548,family,phone,3/25/28,completed,153,4518.46,TRUE,FALSE,FALSE,2/2/26,lost_case
+154,289,764,civil,email,11/19/26,on hold,154,3911.96,FALSE,TRUE,FALSE,7/8/17,office_declined
+155,839,706,commercial,phone,4/1/30,under investigation,155,1067.87,FALSE,FALSE,FALSE,4/28/18,resolved
+156,95,309,immigration,email,10/4/22,pending approval,156,3277.78,FALSE,FALSE,TRUE,11/1/20,in_progress
+157,789,97,administrative,email,3/24/30,pending approval,157,1484.63,TRUE,FALSE,TRUE,1/12/26,settled
+158,30,194,civil,email,3/23/28,approved,158,4519.27,TRUE,TRUE,TRUE,11/5/26,accepted
+159,170,536,civil,whatsapp,9/16/28,awaiting response,159,2758.42,TRUE,FALSE,TRUE,3/26/25,settled
+160,37,534,consultation only service,email,5/4/22,reviewing,160,4431.74,TRUE,TRUE,TRUE,10/31/20,resolved
+161,173,805,criminal,phone,7/29/28,pending review,161,1608.77,TRUE,TRUE,TRUE,7/16/26,accepted
+162,602,131,administrative,email,8/19/21,awaiting response,162,1571.27,TRUE,FALSE,TRUE,4/2/18,office_declined
+163,383,771,real estate,whatsapp,1/30/19,approved,163,3763.43,TRUE,TRUE,TRUE,11/27/27,ongoing
+164,217,799,civil,phone,3/27/19,pending approval,164,3002.53,TRUE,TRUE,TRUE,4/28/30,cancelled
+165,498,66,labor,email,9/27/27,in process,165,417.58,TRUE,TRUE,TRUE,12/15/15,client_withdrew
+166,681,671,real estate,phone,9/25/18,pending approval,166,3236.99,TRUE,TRUE,FALSE,3/17/26,accepted
+167,514,260,civil,phone,6/7/18,delayed,167,3654.83,FALSE,FALSE,TRUE,11/20/15,settled
+168,349,607,family,whatsapp,6/29/19,approved,168,4336.33,TRUE,FALSE,FALSE,12/31/29,lost_case
+169,81,108,civil,email,6/18/27,reviewing,169,1080.8,FALSE,TRUE,TRUE,3/4/22,in_progress
+170,742,14,immigration,whatsapp,2/10/15,completed,170,1406.65,FALSE,FALSE,TRUE,9/12/17,ongoing
+171,719,177,commercial,phone,10/18/30,under investigation,171,546.8,TRUE,TRUE,TRUE,11/22/22,resolved
+172,778,284,real estate,whatsapp,1/18/24,under investigation,172,1241.55,FALSE,TRUE,TRUE,9/11/21,office_declined
+173,971,221,commercial,email,10/27/27,in progress,173,4872.35,TRUE,TRUE,TRUE,4/11/30,office_declined
+174,766,425,family,phone,3/17/21,rejected,174,1640.07,FALSE,FALSE,FALSE,1/21/22,office_declined
+175,557,308,consultation only service,email,9/1/18,approved,175,1376.74,TRUE,TRUE,TRUE,11/13/15,ongoing
+176,451,77,criminal,whatsapp,8/30/24,in progress,176,199.46,TRUE,TRUE,FALSE,6/10/28,client_withdrew
+177,468,647,civil,whatsapp,8/25/24,approved,177,4051.22,TRUE,TRUE,FALSE,2/25/28,accepted
+178,169,894,labor,phone,4/9/28,delayed,178,3491.04,TRUE,TRUE,FALSE,5/21/30,settled
+179,55,154,immigration,whatsapp,8/19/28,rejected,179,546.87,TRUE,TRUE,TRUE,2/22/19,lost_case
+180,682,346,real estate,whatsapp,10/3/24,awaiting response,180,2987.88,TRUE,FALSE,TRUE,4/11/22,completed
+181,628,995,criminal,phone,12/5/28,reviewing,181,4765.61,FALSE,TRUE,TRUE,4/26/21,completed
+182,309,38,civil,whatsapp,8/31/24,delayed,182,1331.45,FALSE,TRUE,TRUE,4/28/23,lost_case
+183,834,786,administrative,phone,8/17/23,on hold,183,1132.74,TRUE,FALSE,TRUE,7/13/27,resolved
+184,117,535,criminal,whatsapp,10/18/23,on hold,184,810.09,TRUE,TRUE,FALSE,6/26/24,ongoing
+185,394,980,consultation only service,whatsapp,10/24/20,pending,185,4942.67,TRUE,FALSE,FALSE,7/16/26,cancelled
+186,831,457,labor,phone,4/7/23,awaiting response,186,874.81,FALSE,FALSE,FALSE,2/1/26,ongoing
+187,7,347,labor,email,6/6/21,finalized,187,554.28,TRUE,FALSE,FALSE,8/27/22,cancelled
+188,18,831,contract review,email,11/26/22,in progress,188,395.43,FALSE,TRUE,FALSE,10/5/24,client_withdrew
+189,562,261,immigration,email,8/28/24,completed,189,4361.8,FALSE,FALSE,FALSE,11/27/15,ongoing
+190,924,243,contract review,phone,10/6/26,pending approval,190,3499.14,FALSE,TRUE,FALSE,2/12/18,client_withdrew
+191,331,307,civil,email,7/8/16,delayed,191,501.45,FALSE,TRUE,FALSE,1/13/29,accepted
+192,800,892,labor,whatsapp,4/6/22,in progress,192,1705.43,FALSE,TRUE,TRUE,8/12/30,settled
+193,926,323,consultation only service,whatsapp,1/31/16,rejected,193,4203.34,FALSE,TRUE,FALSE,12/1/20,completed
+194,906,835,consultation only service,email,2/15/16,on hold,194,3472.83,FALSE,TRUE,TRUE,9/26/29,lost_case
+195,285,601,labor,whatsapp,5/22/24,pending,195,2449.28,TRUE,FALSE,FALSE,10/10/23,ongoing
+196,511,607,real estate,whatsapp,1/10/27,completed,196,1275.62,FALSE,TRUE,TRUE,8/1/24,settled
+197,748,684,family,whatsapp,2/15/30,delayed,197,3200.9,FALSE,TRUE,TRUE,3/1/21,cancelled
+198,387,13,immigration,email,11/7/23,finalized,198,1338.8,FALSE,TRUE,FALSE,1/8/24,in_progress
+199,66,806,criminal,whatsapp,10/10/23,pending review,199,2188.4,FALSE,TRUE,FALSE,9/22/25,accepted
+200,962,318,criminal,phone,5/1/22,under review,200,4449.96,TRUE,FALSE,FALSE,4/21/17,in_progress
+201,248,928,family,whatsapp,1/6/22,awaiting response,201,817.58,FALSE,TRUE,FALSE,8/24/26,in_progress
+202,477,20,criminal,whatsapp,7/8/20,on hold,202,3608.21,TRUE,FALSE,TRUE,12/18/18,ongoing
+203,93,542,contract review,whatsapp,6/29/24,finalized,203,547.27,TRUE,FALSE,TRUE,6/1/19,accepted
+204,802,37,criminal,whatsapp,11/6/26,rejected,204,3703.05,TRUE,FALSE,FALSE,1/25/30,client_withdrew
+205,734,135,consultation only service,phone,8/3/24,approved,205,844.66,FALSE,FALSE,TRUE,8/24/21,settled
+206,855,314,labor,email,5/30/25,approved,206,3318.4,TRUE,FALSE,FALSE,2/24/30,ongoing
+207,87,23,administrative,whatsapp,1/18/26,on hold,207,4280.68,FALSE,FALSE,FALSE,10/27/30,ongoing
+208,295,474,commercial,whatsapp,6/19/25,in process,208,2310.59,FALSE,TRUE,TRUE,2/17/26,settled
+209,773,473,commercial,whatsapp,2/14/28,under investigation,209,2832.64,FALSE,FALSE,TRUE,5/11/23,settled
+210,167,319,civil,whatsapp,3/5/26,finalized,210,2826.88,TRUE,TRUE,FALSE,12/10/15,in_progress
+211,687,582,immigration,phone,10/17/27,reviewing,211,1729.47,TRUE,TRUE,FALSE,9/4/19,resolved
+212,367,424,real estate,whatsapp,12/19/30,finalized,212,3809.99,FALSE,FALSE,FALSE,9/9/28,ongoing
+213,340,845,immigration,email,2/3/25,reviewing,213,1518.83,FALSE,TRUE,FALSE,4/22/23,in_progress
+214,811,268,real estate,whatsapp,11/7/15,approved,214,621.94,TRUE,FALSE,TRUE,3/24/19,office_declined
+215,706,945,family,email,2/8/28,completed,215,486.87,FALSE,TRUE,TRUE,4/14/16,in_progress
+216,601,629,family,email,9/3/24,completed,216,2046.54,TRUE,FALSE,TRUE,11/26/18,in_progress
+217,711,843,real estate,phone,9/3/24,pending,217,690.9,TRUE,FALSE,FALSE,11/1/20,settled
+218,457,493,immigration,email,1/11/17,reviewing,218,349.04,TRUE,TRUE,TRUE,2/19/26,cancelled
+219,290,653,labor,whatsapp,12/9/21,under investigation,219,4227.92,TRUE,FALSE,TRUE,10/29/22,ongoing
+220,889,34,real estate,email,3/7/20,completed,220,1345.6,TRUE,FALSE,FALSE,7/27/29,client_withdrew
+221,383,148,immigration,whatsapp,9/23/18,approved,221,2521.72,TRUE,FALSE,TRUE,10/31/26,cancelled
+222,28,803,civil,whatsapp,11/30/29,under review,222,730.52,FALSE,TRUE,TRUE,3/12/28,client_withdrew
+223,680,548,contract review,phone,9/26/17,in process,223,4104.79,FALSE,TRUE,TRUE,10/21/30,ongoing
+224,428,879,contract review,email,8/17/20,awaiting response,224,4560.19,TRUE,TRUE,FALSE,8/21/19,resolved
+225,571,575,real estate,whatsapp,5/18/21,in progress,225,246.26,TRUE,TRUE,FALSE,5/20/22,resolved
+226,501,344,criminal,phone,11/29/17,approved,226,3108.85,FALSE,FALSE,FALSE,11/12/30,completed
+227,862,961,criminal,whatsapp,7/19/16,finalized,227,3369.94,FALSE,FALSE,FALSE,9/20/17,office_declined
+228,699,894,labor,whatsapp,12/16/27,awaiting response,228,3498.76,TRUE,FALSE,TRUE,3/2/30,cancelled
+229,321,306,labor,email,4/24/28,under review,229,902.75,FALSE,FALSE,FALSE,11/21/24,resolved
+230,786,268,civil,whatsapp,11/25/24,rejected,230,207.04,FALSE,FALSE,FALSE,3/8/23,client_withdrew
+231,286,459,civil,phone,11/16/23,on hold,231,4373.19,TRUE,FALSE,TRUE,7/28/29,completed
+232,601,252,civil,email,8/9/26,completed,232,4942.63,FALSE,TRUE,TRUE,2/4/26,accepted
+233,294,710,real estate,email,1/2/19,completed,233,946.18,FALSE,TRUE,TRUE,7/2/24,office_declined
+234,25,257,administrative,whatsapp,3/16/30,pending,234,2794.12,FALSE,TRUE,FALSE,10/10/29,accepted
+235,358,169,immigration,whatsapp,3/8/24,pending approval,235,1990.11,FALSE,FALSE,FALSE,3/4/27,ongoing
+236,411,468,civil,whatsapp,2/21/15,awaiting response,236,3026.03,FALSE,TRUE,TRUE,11/9/19,accepted
+237,915,141,criminal,whatsapp,7/14/15,in process,237,2330.41,TRUE,TRUE,TRUE,8/28/22,settled
+238,737,510,family,whatsapp,9/5/27,rejected,238,507.27,TRUE,TRUE,FALSE,2/6/17,lost_case
+239,356,972,family,email,3/2/29,rejected,239,560.42,TRUE,TRUE,TRUE,6/2/15,accepted
+240,372,157,family,phone,12/30/22,pending approval,240,2389.44,FALSE,FALSE,FALSE,12/24/20,cancelled
+241,540,212,consultation only service,whatsapp,12/14/15,pending,241,2814.65,FALSE,TRUE,FALSE,9/25/20,in_progress
+242,389,366,real estate,whatsapp,5/1/24,under investigation,242,2638.11,FALSE,FALSE,TRUE,1/30/26,resolved
+243,530,543,administrative,whatsapp,10/12/22,rejected,243,3571.35,TRUE,FALSE,TRUE,3/18/20,ongoing
+244,491,526,contract review,email,6/6/28,in process,244,3787.59,TRUE,TRUE,FALSE,6/2/22,client_withdrew
+245,14,274,criminal,phone,2/3/29,rejected,245,2003.38,TRUE,TRUE,TRUE,5/11/20,office_declined
+246,954,299,civil,whatsapp,2/15/16,pending approval,246,2017.54,TRUE,TRUE,FALSE,2/18/17,resolved
+247,51,61,real estate,email,1/27/21,pending review,247,4525.25,FALSE,FALSE,FALSE,11/2/17,completed
+248,722,416,administrative,whatsapp,2/17/19,rejected,248,4566.8,FALSE,FALSE,TRUE,9/2/18,cancelled
+249,432,278,criminal,whatsapp,12/5/29,approved,249,2281.1,FALSE,FALSE,TRUE,8/21/28,ongoing
+250,279,750,administrative,phone,3/16/24,awaiting response,250,1828.48,FALSE,FALSE,TRUE,11/22/20,ongoing
+251,34,267,administrative,phone,7/21/27,on hold,251,3153.77,TRUE,FALSE,TRUE,3/2/20,ongoing
+252,306,732,commercial,whatsapp,4/23/22,delayed,252,3543.39,FALSE,TRUE,TRUE,12/12/26,settled
+253,407,312,labor,whatsapp,12/24/20,under investigation,253,3419.05,FALSE,TRUE,FALSE,5/31/19,lost_case
+254,260,172,labor,whatsapp,12/6/26,in process,254,223.11,FALSE,TRUE,FALSE,10/24/26,completed
+255,815,201,labor,whatsapp,2/11/22,under review,255,3411.47,FALSE,FALSE,FALSE,2/24/16,lost_case
+256,879,966,contract review,phone,7/31/30,on hold,256,3299.67,TRUE,FALSE,TRUE,6/10/16,office_declined
+257,688,869,administrative,email,7/16/17,rejected,257,4868.93,TRUE,TRUE,FALSE,5/3/18,in_progress
+258,537,344,labor,phone,2/5/15,in process,258,1750.03,TRUE,TRUE,FALSE,11/8/26,client_withdrew
+259,218,287,contract review,phone,1/17/29,under review,259,1174.96,TRUE,FALSE,TRUE,8/25/27,cancelled
+260,460,189,administrative,whatsapp,9/19/30,under review,260,351.87,FALSE,FALSE,FALSE,1/5/24,cancelled
+261,919,777,consultation only service,whatsapp,8/24/15,under review,261,2898.03,TRUE,TRUE,TRUE,10/14/21,ongoing
+262,394,601,immigration,whatsapp,8/1/29,completed,262,1319.94,TRUE,FALSE,TRUE,12/2/28,client_withdrew
+263,353,387,labor,phone,6/27/17,under investigation,263,448.68,TRUE,FALSE,TRUE,12/26/23,in_progress
+264,995,502,contract review,email,10/2/29,under investigation,264,490.37,FALSE,TRUE,TRUE,10/13/29,resolved
+265,978,651,real estate,phone,11/24/18,completed,265,1371.59,TRUE,FALSE,TRUE,9/23/20,accepted
+266,948,323,real estate,whatsapp,11/10/28,pending,266,3488.39,TRUE,TRUE,TRUE,9/23/25,client_withdrew
+267,68,625,real estate,whatsapp,1/23/18,rejected,267,2241.63,FALSE,FALSE,TRUE,3/27/23,accepted
+268,114,479,administrative,whatsapp,12/9/24,completed,268,3891.05,FALSE,FALSE,TRUE,6/15/17,resolved
+269,696,566,administrative,whatsapp,6/5/29,completed,269,3605,TRUE,TRUE,TRUE,5/27/15,cancelled
+270,992,905,consultation only service,phone,11/20/16,under review,270,1317.82,TRUE,TRUE,FALSE,8/19/22,settled
+271,777,96,commercial,email,3/19/29,under investigation,271,1781.37,FALSE,FALSE,FALSE,12/27/15,completed
+272,457,638,labor,phone,5/14/26,pending,272,4271.3,TRUE,TRUE,TRUE,3/4/21,cancelled
+273,608,753,contract review,whatsapp,4/13/29,on hold,273,4873.1,TRUE,FALSE,FALSE,2/10/26,lost_case
+274,107,369,criminal,phone,8/26/27,under review,274,4505.7,FALSE,FALSE,TRUE,10/22/15,lost_case
+275,955,463,commercial,email,2/11/18,completed,275,2545.35,TRUE,FALSE,TRUE,1/22/22,in_progress
+276,514,107,family,phone,8/16/25,in progress,276,4323.49,TRUE,TRUE,FALSE,5/10/26,cancelled
+277,735,987,real estate,phone,2/9/19,finalized,277,2825.41,TRUE,FALSE,FALSE,12/1/20,resolved
+278,827,349,commercial,email,12/21/30,pending review,278,3201.23,FALSE,TRUE,TRUE,7/14/30,completed
+279,819,958,consultation only service,whatsapp,11/25/25,in progress,279,1275.6,TRUE,FALSE,TRUE,12/8/30,office_declined
+280,887,788,labor,phone,9/13/24,in progress,280,955.18,FALSE,TRUE,FALSE,2/4/28,accepted
+281,659,626,criminal,whatsapp,9/15/16,delayed,281,2599.77,FALSE,TRUE,TRUE,11/21/21,cancelled
+282,584,232,contract review,whatsapp,6/1/27,pending review,282,720.62,FALSE,TRUE,FALSE,10/13/24,client_withdrew
+283,205,235,civil,email,11/13/22,delayed,283,4552.17,TRUE,TRUE,TRUE,11/22/23,accepted
+284,652,45,immigration,whatsapp,7/17/16,in process,284,2031.64,TRUE,TRUE,FALSE,12/29/21,settled
+285,817,128,civil,phone,11/6/27,under review,285,3553.59,FALSE,FALSE,FALSE,2/12/24,cancelled
+286,14,919,commercial,whatsapp,4/20/24,pending review,286,4951.26,TRUE,TRUE,TRUE,2/28/22,resolved
+287,638,185,immigration,whatsapp,12/29/30,approved,287,2954,TRUE,TRUE,FALSE,6/26/26,settled
+288,511,854,immigration,whatsapp,7/18/24,awaiting response,288,4133.09,FALSE,TRUE,TRUE,9/25/27,settled
+289,764,637,labor,whatsapp,3/11/30,pending approval,289,4342.91,FALSE,FALSE,TRUE,8/9/27,settled
+290,475,846,immigration,whatsapp,7/8/16,reviewing,290,2089.73,TRUE,FALSE,FALSE,1/17/28,accepted
+291,839,620,real estate,whatsapp,6/10/27,awaiting response,291,774.25,FALSE,FALSE,TRUE,6/29/20,accepted
+292,928,298,criminal,email,12/4/24,under review,292,2289.48,TRUE,FALSE,TRUE,8/6/28,completed
+293,463,341,criminal,whatsapp,10/9/18,approved,293,4344.47,FALSE,FALSE,FALSE,1/23/20,office_declined
+294,687,647,real estate,whatsapp,10/4/26,on hold,294,4481.56,FALSE,FALSE,FALSE,8/26/27,cancelled
+295,846,391,civil,whatsapp,4/8/19,reviewing,295,867.76,TRUE,FALSE,FALSE,7/14/24,in_progress
+296,154,270,family,email,12/16/22,under investigation,296,3406.21,TRUE,TRUE,FALSE,1/20/24,office_declined
+297,537,537,administrative,phone,11/17/17,delayed,297,4099.58,TRUE,TRUE,TRUE,11/4/19,completed
+298,260,316,family,whatsapp,8/6/27,pending approval,298,1263.27,TRUE,TRUE,TRUE,5/30/29,in_progress
+299,43,308,administrative,email,11/11/30,pending review,299,4303.56,FALSE,FALSE,FALSE,12/4/15,client_withdrew
+300,338,738,contract review,whatsapp,5/23/28,in process,300,4190.38,FALSE,FALSE,FALSE,12/12/30,ongoing
+301,386,159,administrative,whatsapp,6/2/23,pending,301,4101.85,TRUE,FALSE,TRUE,12/9/18,accepted
+302,361,884,family,phone,9/6/25,completed,302,690.88,TRUE,FALSE,TRUE,4/4/26,settled
+303,767,887,commercial,email,4/18/21,awaiting response,303,1543.38,FALSE,FALSE,FALSE,4/26/29,accepted
+304,433,759,labor,email,12/22/26,on hold,304,2117.83,FALSE,TRUE,FALSE,3/14/24,completed
+305,81,516,commercial,email,6/29/22,awaiting response,305,4080.8,TRUE,FALSE,TRUE,5/25/17,completed
+306,454,484,commercial,phone,1/30/22,pending review,306,1679.45,TRUE,FALSE,TRUE,1/3/30,office_declined
+307,1000,921,immigration,email,8/8/28,pending,307,779.3,FALSE,TRUE,TRUE,5/18/22,ongoing
+308,406,699,consultation only service,whatsapp,12/8/19,on hold,308,1197.57,TRUE,TRUE,FALSE,10/29/21,office_declined
+309,106,176,administrative,whatsapp,1/10/16,pending review,309,3596.92,TRUE,FALSE,TRUE,7/14/17,ongoing
+310,828,825,criminal,phone,4/11/16,under review,310,3854.38,FALSE,FALSE,FALSE,4/21/28,settled
+311,485,186,criminal,email,3/4/29,rejected,311,559.24,FALSE,TRUE,TRUE,6/25/15,ongoing
+312,65,348,civil,phone,11/9/30,completed,312,1970.77,FALSE,FALSE,FALSE,8/21/26,ongoing
+313,848,44,immigration,phone,10/20/23,delayed,313,2970.1,FALSE,FALSE,TRUE,9/14/27,cancelled
+314,856,839,contract review,phone,11/12/24,on hold,314,2736.99,FALSE,TRUE,FALSE,2/28/26,client_withdrew
+315,533,176,contract review,email,7/19/20,awaiting response,315,457.62,TRUE,FALSE,FALSE,8/19/21,completed
+316,427,652,criminal,phone,4/26/27,reviewing,316,4224.56,TRUE,TRUE,TRUE,5/12/18,settled
+317,173,111,labor,whatsapp,2/3/27,under investigation,317,909.99,FALSE,TRUE,TRUE,5/24/30,cancelled
+318,429,796,criminal,phone,10/16/18,in progress,318,2383.11,FALSE,FALSE,FALSE,12/22/23,lost_case
+319,262,374,civil,email,7/18/21,on hold,319,2427.33,FALSE,FALSE,TRUE,2/17/16,resolved
+320,155,491,contract review,whatsapp,4/21/23,on hold,320,4669.35,TRUE,TRUE,TRUE,11/27/19,client_withdrew
+321,493,25,immigration,email,5/24/21,finalized,321,3017.46,TRUE,FALSE,TRUE,3/9/29,in_progress
+322,367,720,civil,email,10/31/29,awaiting response,322,3198.41,FALSE,TRUE,FALSE,6/15/22,settled
+323,639,985,real estate,phone,2/23/15,in progress,323,1245.75,FALSE,FALSE,FALSE,6/27/19,in_progress
+324,899,965,real estate,whatsapp,3/28/25,finalized,324,4933.34,TRUE,FALSE,TRUE,8/14/25,client_withdrew
+325,323,350,consultation only service,phone,12/12/26,pending review,325,2284.57,FALSE,FALSE,TRUE,2/1/21,ongoing
+326,41,215,administrative,phone,10/14/19,completed,326,1497.05,FALSE,TRUE,FALSE,8/23/27,accepted
+327,240,40,labor,whatsapp,7/24/21,under review,327,3186.64,TRUE,TRUE,FALSE,8/29/26,cancelled
+328,140,301,labor,whatsapp,4/26/23,awaiting response,328,1521.96,FALSE,TRUE,TRUE,5/11/16,completed
+329,600,47,labor,phone,4/8/26,under investigation,329,4870.17,TRUE,TRUE,FALSE,9/17/29,office_declined
+330,876,756,contract review,phone,1/25/21,pending,330,3856.68,TRUE,FALSE,FALSE,12/8/20,cancelled
+331,110,119,contract review,whatsapp,1/15/17,approved,331,2179.75,FALSE,FALSE,TRUE,6/13/30,office_declined
+332,434,424,immigration,email,7/9/29,on hold,332,4563.26,FALSE,FALSE,FALSE,1/19/24,client_withdrew
+333,909,22,commercial,phone,9/30/23,awaiting response,333,1534.84,FALSE,TRUE,FALSE,2/9/29,settled
+334,635,751,criminal,whatsapp,3/17/28,under investigation,334,3339.93,FALSE,TRUE,FALSE,2/21/24,settled
+335,136,527,real estate,phone,6/30/16,pending approval,335,3551.44,FALSE,FALSE,TRUE,3/31/25,settled
+336,641,22,criminal,whatsapp,8/26/21,awaiting response,336,1892.68,FALSE,FALSE,TRUE,7/15/20,office_declined
+337,460,874,civil,email,1/28/15,finalized,337,3858.92,TRUE,FALSE,FALSE,12/2/24,accepted
+338,632,662,family,email,10/31/26,in process,338,999.19,FALSE,FALSE,FALSE,11/16/28,in_progress
+339,684,807,consultation only service,whatsapp,8/28/28,completed,339,2353.69,TRUE,TRUE,TRUE,1/11/19,completed
+340,590,544,consultation only service,whatsapp,12/20/15,pending review,340,824.48,TRUE,TRUE,TRUE,2/20/29,resolved
+341,938,469,criminal,phone,12/21/23,delayed,341,3599.67,TRUE,TRUE,FALSE,7/26/25,accepted
+342,339,85,civil,email,7/21/22,in progress,342,1246.07,TRUE,TRUE,FALSE,8/30/25,lost_case
+343,571,148,real estate,whatsapp,2/4/22,completed,343,1385.87,FALSE,FALSE,FALSE,3/5/26,lost_case
+344,259,453,contract review,whatsapp,5/23/18,finalized,344,278.39,TRUE,TRUE,TRUE,6/22/20,office_declined
+345,941,462,consultation only service,whatsapp,4/7/19,finalized,345,4250.84,FALSE,TRUE,TRUE,2/29/16,office_declined
+346,356,458,commercial,email,1/5/26,on hold,346,4975.99,FALSE,TRUE,TRUE,2/19/21,resolved
+347,748,129,commercial,phone,4/18/16,finalized,347,405.72,TRUE,TRUE,TRUE,1/13/23,in_progress
+348,53,693,commercial,whatsapp,6/16/20,approved,348,1245.68,FALSE,FALSE,TRUE,3/14/23,completed
+349,503,620,real estate,email,7/16/21,approved,349,1114.61,TRUE,FALSE,TRUE,4/12/22,lost_case
+350,112,223,criminal,phone,5/1/19,completed,350,2821.35,TRUE,TRUE,FALSE,7/24/17,in_progress
+351,111,164,immigration,whatsapp,4/11/30,completed,351,2919.63,TRUE,FALSE,FALSE,3/31/21,lost_case
+352,85,17,family,email,2/20/23,under investigation,352,4458.2,TRUE,FALSE,FALSE,10/29/23,accepted
+353,971,497,contract review,phone,6/7/24,delayed,353,580.89,FALSE,FALSE,FALSE,4/14/17,office_declined
+354,876,957,real estate,email,11/24/29,pending review,354,1077.39,FALSE,FALSE,TRUE,5/3/17,resolved
+355,129,94,family,email,3/10/17,on hold,355,4592.32,TRUE,FALSE,TRUE,2/16/30,accepted
+356,987,114,labor,email,1/4/18,pending review,356,3560.38,TRUE,TRUE,TRUE,7/4/21,client_withdrew
+357,483,828,real estate,whatsapp,1/15/26,under investigation,357,1857.39,FALSE,TRUE,TRUE,9/26/24,in_progress
+358,663,751,immigration,whatsapp,5/18/30,reviewing,358,721.74,TRUE,FALSE,TRUE,3/2/29,cancelled
+359,113,572,family,whatsapp,9/17/18,pending review,359,3617.21,TRUE,FALSE,TRUE,8/17/19,lost_case
+360,31,872,immigration,email,1/12/28,under investigation,360,2772.24,TRUE,TRUE,FALSE,8/16/27,in_progress
+361,99,248,labor,whatsapp,12/7/30,reviewing,361,2322.91,FALSE,TRUE,FALSE,10/24/26,resolved
+362,436,923,administrative,email,5/10/27,approved,362,4050.06,FALSE,TRUE,TRUE,10/6/19,completed
+363,563,502,criminal,whatsapp,11/27/17,in progress,363,4154.52,FALSE,TRUE,FALSE,2/18/26,ongoing
+364,452,82,civil,email,2/9/27,pending review,364,3481.39,FALSE,TRUE,TRUE,6/2/25,ongoing
+365,305,696,administrative,email,4/11/26,on hold,365,1890.42,TRUE,TRUE,TRUE,9/24/15,ongoing
+366,433,842,labor,email,9/24/26,completed,366,2858.25,TRUE,FALSE,FALSE,3/9/28,cancelled
+367,393,882,administrative,whatsapp,3/4/19,rejected,367,4018.81,TRUE,FALSE,TRUE,10/4/29,completed
+368,747,493,family,phone,6/30/16,under review,368,2228.39,FALSE,FALSE,FALSE,11/19/24,completed
+369,327,11,labor,whatsapp,6/17/19,reviewing,369,1854.99,TRUE,FALSE,FALSE,3/5/16,cancelled
+370,319,424,commercial,phone,5/17/30,approved,370,1683.09,FALSE,FALSE,FALSE,7/23/17,ongoing
+371,889,445,labor,whatsapp,12/14/17,pending approval,371,1539.48,FALSE,TRUE,FALSE,10/21/28,completed
+372,53,742,consultation only service,email,9/17/24,in progress,372,3927.14,TRUE,TRUE,TRUE,9/17/23,accepted
+373,32,407,commercial,phone,6/26/29,finalized,373,3057.58,TRUE,FALSE,FALSE,12/23/22,ongoing
+374,835,677,consultation only service,whatsapp,1/29/27,awaiting response,374,2541.03,FALSE,FALSE,FALSE,1/17/25,lost_case
+375,111,931,commercial,email,8/7/19,under investigation,375,2646.05,FALSE,FALSE,FALSE,3/31/22,office_declined
+376,247,162,criminal,phone,9/6/21,under investigation,376,1138.56,FALSE,FALSE,FALSE,10/8/28,lost_case
+377,981,150,immigration,email,11/29/21,on hold,377,1019.73,TRUE,FALSE,TRUE,9/15/30,cancelled
+378,458,913,labor,whatsapp,3/10/17,delayed,378,1502.62,FALSE,FALSE,TRUE,10/8/28,resolved
+379,820,881,consultation only service,email,6/4/22,finalized,379,3241.75,FALSE,FALSE,FALSE,7/28/25,lost_case
+380,493,196,administrative,whatsapp,10/17/24,pending,380,3930.86,FALSE,TRUE,TRUE,4/23/27,completed
+381,807,556,commercial,whatsapp,10/28/28,under investigation,381,2628.73,TRUE,TRUE,FALSE,6/28/21,resolved
+382,776,654,administrative,whatsapp,3/6/15,finalized,382,2286.58,FALSE,FALSE,TRUE,7/3/28,cancelled
+383,68,836,civil,email,4/11/20,delayed,383,4192.67,TRUE,TRUE,TRUE,4/25/20,accepted
+384,837,917,family,phone,7/26/21,under investigation,384,4022.67,FALSE,TRUE,TRUE,12/4/16,office_declined
+385,9,534,family,email,10/18/28,in progress,385,4251.85,TRUE,TRUE,FALSE,6/27/15,completed
+386,315,226,family,whatsapp,4/29/22,completed,386,3454.1,FALSE,TRUE,FALSE,6/30/30,cancelled
+387,647,431,labor,email,10/31/30,in progress,387,3917.07,FALSE,TRUE,TRUE,11/12/18,client_withdrew
+388,630,773,real estate,email,2/16/28,approved,388,3104.56,FALSE,FALSE,FALSE,12/2/26,office_declined
+389,423,994,family,whatsapp,2/20/18,delayed,389,1515.41,TRUE,FALSE,TRUE,9/13/24,office_declined
+390,708,572,commercial,email,9/1/16,in process,390,3799.88,FALSE,TRUE,FALSE,9/26/27,client_withdrew
+391,438,347,commercial,phone,5/11/17,completed,391,1905.5,TRUE,TRUE,TRUE,7/8/19,lost_case
+392,933,498,criminal,email,6/4/19,reviewing,392,668.42,TRUE,FALSE,TRUE,5/25/27,resolved
+393,490,137,administrative,email,7/14/20,under review,393,1536.35,TRUE,TRUE,TRUE,10/26/25,lost_case
+394,584,150,family,email,10/16/29,under review,394,1720.78,FALSE,FALSE,FALSE,6/24/26,client_withdrew
+395,965,801,family,whatsapp,6/2/19,pending approval,395,1423.25,TRUE,TRUE,TRUE,3/24/19,lost_case
+396,852,779,immigration,phone,8/18/29,in progress,396,1181.06,TRUE,TRUE,TRUE,4/29/26,settled
+397,235,244,consultation only service,email,4/28/24,under review,397,1244.33,FALSE,FALSE,TRUE,12/23/23,client_withdrew
+398,663,152,consultation only service,email,4/9/22,in progress,398,1249.17,TRUE,TRUE,TRUE,12/18/29,settled
+399,763,581,criminal,phone,5/4/19,on hold,399,4908.62,FALSE,TRUE,FALSE,8/28/21,completed
+400,282,211,immigration,phone,9/17/29,pending review,400,4412.73,TRUE,TRUE,TRUE,1/30/17,office_declined
+401,119,146,labor,whatsapp,7/23/25,in process,401,435.17,FALSE,FALSE,FALSE,12/15/21,accepted
+402,121,950,immigration,whatsapp,8/24/23,pending approval,402,3401.79,TRUE,FALSE,FALSE,12/13/20,completed
+403,502,887,family,phone,11/30/24,under investigation,403,1333.74,TRUE,TRUE,TRUE,1/3/20,completed
+404,664,28,criminal,whatsapp,11/17/24,rejected,404,578.59,TRUE,TRUE,TRUE,7/30/29,lost_case
+405,506,310,immigration,email,6/29/26,under investigation,405,4290.82,TRUE,FALSE,FALSE,9/13/20,in_progress
+406,958,610,criminal,phone,5/7/30,delayed,406,3590.62,FALSE,TRUE,FALSE,10/10/29,settled
+407,239,661,commercial,email,1/4/29,approved,407,4823.9,TRUE,FALSE,FALSE,7/14/25,office_declined
+408,921,877,real estate,whatsapp,3/6/15,delayed,408,587.59,FALSE,FALSE,TRUE,2/28/26,client_withdrew
+409,347,700,real estate,whatsapp,6/27/18,rejected,409,4480.65,FALSE,FALSE,TRUE,12/27/19,resolved
+410,488,490,family,whatsapp,9/18/23,pending review,410,2626.69,FALSE,FALSE,TRUE,10/11/29,in_progress
+411,392,373,contract review,whatsapp,1/9/15,pending approval,411,1772.93,TRUE,TRUE,FALSE,7/5/29,in_progress
+412,81,128,real estate,whatsapp,2/16/15,awaiting response,412,4801.81,TRUE,TRUE,TRUE,8/8/29,cancelled
+413,19,109,real estate,phone,5/15/27,finalized,413,4378.99,TRUE,TRUE,FALSE,12/27/17,client_withdrew
+414,552,406,contract review,email,11/28/26,pending,414,4877.89,FALSE,TRUE,TRUE,5/15/24,in_progress
+415,64,344,civil,email,1/25/20,under review,415,3728.24,TRUE,FALSE,TRUE,8/15/30,ongoing
+416,715,575,administrative,whatsapp,10/22/30,in process,416,4017.02,TRUE,FALSE,TRUE,11/13/27,client_withdrew
+417,377,408,commercial,whatsapp,11/29/29,in progress,417,3285.76,TRUE,FALSE,FALSE,9/20/29,lost_case
+418,456,369,administrative,whatsapp,11/30/16,under investigation,418,455.39,TRUE,FALSE,FALSE,12/11/29,completed
+419,139,191,criminal,email,2/11/15,under investigation,419,3459.99,TRUE,TRUE,TRUE,1/26/27,completed
+420,689,352,administrative,email,6/21/28,on hold,420,3555.06,FALSE,FALSE,FALSE,8/11/17,accepted
+421,664,750,administrative,phone,12/20/27,in progress,421,1067.84,TRUE,FALSE,FALSE,11/3/27,accepted
+422,645,572,contract review,phone,1/8/24,pending,422,3046.26,FALSE,FALSE,FALSE,8/6/18,ongoing
+423,561,269,commercial,email,2/16/16,under investigation,423,1527.82,FALSE,FALSE,FALSE,3/3/26,client_withdrew
+424,135,465,immigration,email,10/6/21,reviewing,424,1690.1,FALSE,TRUE,TRUE,4/22/25,cancelled
+425,820,774,consultation only service,email,8/4/30,completed,425,4089.57,FALSE,FALSE,TRUE,11/9/22,accepted
+426,814,601,immigration,whatsapp,10/6/15,in progress,426,1295.67,FALSE,TRUE,FALSE,11/28/23,client_withdrew
+427,503,422,family,phone,4/17/19,delayed,427,807.11,TRUE,TRUE,TRUE,8/9/27,cancelled
+428,31,836,immigration,phone,4/26/27,delayed,428,3373.27,FALSE,FALSE,FALSE,1/1/20,lost_case
+429,164,1,administrative,whatsapp,8/15/15,pending,429,2136.49,TRUE,FALSE,TRUE,11/7/26,resolved
+430,247,747,civil,phone,11/13/22,completed,430,2267.26,TRUE,TRUE,FALSE,7/4/29,office_declined
+431,11,888,criminal,email,4/5/30,pending review,431,547.42,TRUE,TRUE,FALSE,10/25/23,office_declined
+432,302,625,real estate,email,2/11/17,on hold,432,1812.84,TRUE,TRUE,TRUE,12/16/23,ongoing
+433,496,939,immigration,whatsapp,1/6/27,in process,433,1970.65,FALSE,TRUE,TRUE,5/14/24,settled
+434,913,961,immigration,email,6/13/30,rejected,434,1124.17,FALSE,FALSE,TRUE,3/17/15,ongoing
+435,77,566,criminal,whatsapp,2/15/18,awaiting response,435,3943.64,FALSE,TRUE,FALSE,10/13/22,settled
+436,911,454,consultation only service,email,3/22/17,pending review,436,3338.88,FALSE,FALSE,FALSE,11/9/15,resolved
+437,710,561,labor,phone,1/15/23,in progress,437,2001.38,FALSE,FALSE,TRUE,3/20/17,lost_case
+438,671,18,contract review,email,4/21/24,on hold,438,1366.72,FALSE,FALSE,FALSE,8/7/22,accepted
+439,485,772,family,whatsapp,8/6/27,delayed,439,2225.83,FALSE,TRUE,TRUE,8/6/20,ongoing
+440,983,808,criminal,phone,10/8/25,under investigation,440,309.37,TRUE,FALSE,FALSE,12/18/27,cancelled
+441,778,232,commercial,whatsapp,5/25/15,pending review,441,576.03,TRUE,FALSE,TRUE,4/18/28,accepted
+442,910,701,civil,whatsapp,6/19/23,rejected,442,3643.99,TRUE,TRUE,TRUE,9/30/23,resolved
+443,523,571,immigration,whatsapp,10/9/28,in progress,443,4638.31,TRUE,TRUE,FALSE,2/1/29,cancelled
+444,612,758,commercial,whatsapp,1/29/24,awaiting response,444,2962.78,FALSE,FALSE,TRUE,5/24/28,lost_case
+445,416,876,civil,whatsapp,6/15/24,pending review,445,2466.28,FALSE,TRUE,FALSE,7/11/26,office_declined
+446,890,138,family,whatsapp,1/20/21,completed,446,3402.33,FALSE,TRUE,TRUE,9/30/16,resolved
+447,387,270,commercial,email,3/21/19,awaiting response,447,4129.51,FALSE,FALSE,TRUE,7/10/15,resolved
+448,489,414,immigration,whatsapp,1/25/24,pending review,448,4848.98,TRUE,TRUE,FALSE,11/5/22,cancelled
+449,912,550,contract review,whatsapp,10/24/27,under investigation,449,3631.14,TRUE,FALSE,TRUE,3/25/29,lost_case
+450,581,924,civil,phone,10/19/16,rejected,450,4722.02,TRUE,FALSE,FALSE,7/18/21,in_progress
+451,115,528,criminal,email,7/11/22,reviewing,451,3501.15,FALSE,FALSE,TRUE,12/30/27,office_declined
+452,705,933,family,email,7/24/21,pending approval,452,1965.43,TRUE,FALSE,FALSE,4/19/16,accepted
+453,900,696,family,whatsapp,3/3/24,in process,453,4309.77,TRUE,TRUE,FALSE,5/17/20,client_withdrew
+454,255,142,criminal,phone,3/8/19,in process,454,1167.05,FALSE,TRUE,TRUE,4/19/15,settled
+455,903,536,criminal,whatsapp,11/18/17,under investigation,455,4700.82,TRUE,FALSE,FALSE,8/16/27,office_declined
+456,118,231,contract review,phone,12/7/17,pending review,456,2039.6,TRUE,FALSE,TRUE,11/22/24,ongoing
+457,966,877,family,phone,11/25/16,under investigation,457,3410.41,TRUE,TRUE,TRUE,8/5/19,ongoing
+458,708,197,family,whatsapp,1/16/23,under investigation,458,4628.01,TRUE,TRUE,FALSE,9/24/22,completed
+459,287,522,contract review,email,8/10/24,reviewing,459,4365.49,FALSE,TRUE,TRUE,8/11/24,completed
+460,26,162,commercial,email,4/10/30,completed,460,815.54,FALSE,TRUE,FALSE,5/10/18,accepted
+461,787,565,immigration,whatsapp,6/23/26,reviewing,461,3891.91,FALSE,FALSE,TRUE,5/8/17,resolved
+462,95,520,labor,whatsapp,11/7/28,in process,462,3130.15,FALSE,FALSE,TRUE,10/4/19,cancelled
+463,249,244,real estate,phone,12/27/28,awaiting response,463,1072.26,TRUE,TRUE,TRUE,11/11/21,office_declined
+464,468,829,labor,phone,11/16/26,under investigation,464,4171.25,TRUE,TRUE,TRUE,10/2/17,resolved
+465,435,510,criminal,whatsapp,9/3/19,approved,465,1027.87,TRUE,TRUE,FALSE,4/21/17,ongoing
+466,700,996,immigration,whatsapp,5/23/24,rejected,466,1124.54,FALSE,FALSE,FALSE,11/6/30,cancelled
+467,151,291,labor,whatsapp,3/3/23,in progress,467,3600.86,FALSE,FALSE,FALSE,3/8/15,settled
+468,946,29,administrative,whatsapp,9/10/17,under investigation,468,1933.07,FALSE,FALSE,FALSE,5/22/28,completed
+469,777,51,labor,email,4/26/29,on hold,469,430.25,FALSE,TRUE,FALSE,2/13/23,lost_case
+470,902,848,labor,whatsapp,2/19/19,under investigation,470,2578.43,FALSE,TRUE,TRUE,5/9/21,in_progress
+471,400,546,contract review,phone,6/1/22,on hold,471,2979.37,TRUE,TRUE,FALSE,4/12/29,accepted
+472,318,145,consultation only service,email,6/22/17,approved,472,4434.5,TRUE,TRUE,FALSE,5/28/17,in_progress
+473,211,255,family,email,6/7/16,pending review,473,3931.97,TRUE,FALSE,FALSE,10/10/26,settled
+474,374,592,contract review,email,3/7/23,delayed,474,3544.37,FALSE,TRUE,TRUE,2/20/26,ongoing
+475,105,140,criminal,email,11/11/28,under review,475,4657.92,FALSE,TRUE,TRUE,1/22/25,resolved
+476,563,397,real estate,phone,1/30/26,awaiting response,476,3826.26,TRUE,TRUE,TRUE,3/26/30,completed
+477,584,320,administrative,phone,8/24/23,delayed,477,2883.36,TRUE,TRUE,TRUE,7/10/27,office_declined
+478,553,459,civil,whatsapp,3/30/29,under investigation,478,489.97,TRUE,FALSE,FALSE,11/6/16,lost_case
+479,350,290,labor,email,6/7/16,delayed,479,4666.67,TRUE,TRUE,TRUE,4/6/23,settled
+480,371,159,commercial,whatsapp,7/26/27,reviewing,480,1943.22,FALSE,TRUE,FALSE,9/11/26,completed
+481,898,884,consultation only service,phone,7/27/16,pending review,481,749.15,TRUE,FALSE,FALSE,9/1/28,office_declined
+482,209,792,consultation only service,email,6/4/15,in process,482,4790.22,TRUE,TRUE,TRUE,4/13/17,office_declined
+483,626,201,labor,phone,1/12/25,on hold,483,2137.3,FALSE,TRUE,TRUE,5/17/29,office_declined
+484,805,948,immigration,phone,6/11/23,pending,484,4809.41,FALSE,TRUE,TRUE,8/29/19,settled
+485,838,745,commercial,whatsapp,5/17/16,in process,485,394.73,FALSE,FALSE,FALSE,1/10/30,cancelled
+486,156,413,contract review,phone,10/31/17,in progress,486,4660.33,FALSE,FALSE,TRUE,7/11/15,accepted
+487,333,603,civil,whatsapp,9/1/29,awaiting response,487,1315.71,FALSE,TRUE,TRUE,10/28/26,cancelled
+488,151,818,real estate,whatsapp,2/28/27,finalized,488,4873.71,TRUE,TRUE,FALSE,10/11/28,ongoing
+489,897,625,commercial,whatsapp,12/4/25,rejected,489,4340.16,FALSE,FALSE,FALSE,6/22/20,client_withdrew
+490,744,152,contract review,phone,11/7/23,in process,490,1481.19,TRUE,FALSE,TRUE,8/7/22,accepted
+491,406,238,commercial,whatsapp,4/28/23,in process,491,4877.83,TRUE,TRUE,FALSE,11/4/22,cancelled
+492,696,705,real estate,whatsapp,4/12/22,on hold,492,861.63,TRUE,FALSE,FALSE,2/27/25,client_withdrew
+493,272,173,consultation only service,phone,7/29/17,in progress,493,4461.46,TRUE,FALSE,TRUE,3/24/19,settled
+494,970,543,family,whatsapp,8/16/18,in process,494,4587.65,FALSE,TRUE,TRUE,5/4/17,lost_case
+495,205,166,civil,whatsapp,3/26/23,approved,495,2779.24,TRUE,FALSE,TRUE,12/19/16,accepted
+496,668,703,immigration,email,7/3/19,on hold,496,2125.08,TRUE,FALSE,TRUE,1/16/22,lost_case
+497,232,746,commercial,email,11/16/22,in process,497,1883.58,FALSE,FALSE,FALSE,11/18/24,lost_case
+498,213,713,administrative,whatsapp,10/31/17,approved,498,825.16,FALSE,TRUE,FALSE,5/21/21,accepted
+499,377,406,contract review,email,3/20/28,pending review,499,2184.16,TRUE,FALSE,TRUE,8/20/28,completed
+500,315,414,real estate,whatsapp,11/4/20,pending review,500,211.81,FALSE,FALSE,FALSE,8/19/25,in_progress
+501,431,910,contract review,whatsapp,12/27/22,in progress,501,3800.3,FALSE,FALSE,TRUE,8/13/15,completed
+502,206,500,commercial,whatsapp,12/10/23,pending review,502,784.87,TRUE,FALSE,FALSE,2/19/25,cancelled
+503,84,357,family,whatsapp,8/9/21,pending approval,503,2632.83,FALSE,TRUE,FALSE,2/9/17,accepted
+504,621,584,real estate,email,5/11/15,on hold,504,2673.62,TRUE,FALSE,TRUE,7/17/25,client_withdrew
+505,495,383,immigration,email,11/26/18,finalized,505,3833.48,TRUE,FALSE,FALSE,5/22/23,cancelled
+506,19,221,consultation only service,whatsapp,6/4/30,pending,506,901.93,FALSE,FALSE,FALSE,2/10/18,completed
+507,292,702,criminal,email,5/10/25,on hold,507,1980.6,FALSE,FALSE,TRUE,7/5/27,office_declined
+508,680,92,family,whatsapp,10/21/16,in progress,508,2039.53,TRUE,FALSE,FALSE,5/9/17,accepted
+509,528,785,civil,phone,4/25/17,under investigation,509,1717.94,FALSE,TRUE,FALSE,4/14/17,accepted
+510,678,797,criminal,phone,5/20/28,awaiting response,510,3588.44,TRUE,FALSE,FALSE,2/18/25,resolved
+511,305,88,consultation only service,whatsapp,2/22/18,finalized,511,4318.32,TRUE,FALSE,FALSE,10/5/18,client_withdrew
+512,688,676,immigration,whatsapp,3/26/25,awaiting response,512,389.81,TRUE,TRUE,FALSE,4/28/24,ongoing
+513,132,175,civil,phone,5/11/18,reviewing,513,3865.04,TRUE,TRUE,FALSE,3/7/23,ongoing
+514,751,43,administrative,whatsapp,3/15/23,completed,514,2180.19,TRUE,TRUE,TRUE,2/9/20,cancelled
+515,990,555,civil,whatsapp,7/13/18,awaiting response,515,1728.33,TRUE,TRUE,TRUE,7/22/18,completed
+516,411,175,immigration,phone,7/26/19,finalized,516,498.47,FALSE,FALSE,TRUE,3/9/23,resolved
+517,417,173,civil,whatsapp,7/4/16,pending,517,4108.38,FALSE,TRUE,TRUE,1/6/15,ongoing
+518,787,476,family,phone,7/31/17,pending review,518,2047.54,TRUE,TRUE,FALSE,2/24/28,completed
+519,37,889,administrative,whatsapp,10/19/21,pending approval,519,2810.7,FALSE,TRUE,FALSE,11/16/28,cancelled
+520,140,509,administrative,email,9/9/26,delayed,520,2000.65,TRUE,TRUE,TRUE,3/23/26,lost_case
+521,668,747,administrative,whatsapp,3/5/27,in process,521,1031.24,FALSE,FALSE,FALSE,8/12/15,resolved
+522,536,532,civil,whatsapp,3/15/25,under review,522,2101.64,TRUE,TRUE,TRUE,11/10/18,settled
+523,521,978,labor,whatsapp,11/23/30,delayed,523,1597.95,TRUE,TRUE,TRUE,2/3/19,client_withdrew
+524,410,339,criminal,whatsapp,1/3/29,pending review,524,3713.97,FALSE,FALSE,FALSE,6/8/20,cancelled
+525,997,491,administrative,phone,3/29/28,rejected,525,3328.5,TRUE,FALSE,TRUE,8/28/18,in_progress
+526,41,880,labor,phone,11/9/24,in progress,526,4316.64,TRUE,TRUE,FALSE,12/16/18,settled
+527,431,975,commercial,email,6/30/20,pending approval,527,1928.07,TRUE,FALSE,FALSE,5/17/18,cancelled
+528,954,804,consultation only service,email,7/1/28,reviewing,528,539.3,FALSE,TRUE,TRUE,11/21/24,in_progress
+529,989,843,commercial,whatsapp,4/22/18,delayed,529,549.38,FALSE,FALSE,TRUE,9/16/22,office_declined
+530,142,714,civil,email,6/25/19,finalized,530,2850.89,TRUE,TRUE,TRUE,6/8/25,resolved
+531,810,348,administrative,whatsapp,1/25/26,rejected,531,2359.77,FALSE,TRUE,TRUE,2/8/29,resolved
+532,360,482,administrative,phone,3/2/24,rejected,532,588.46,FALSE,FALSE,FALSE,2/11/22,completed
+533,251,584,immigration,email,3/29/23,reviewing,533,3019.02,FALSE,FALSE,TRUE,7/7/16,resolved
+534,15,3,family,whatsapp,2/18/15,pending review,534,4755.96,TRUE,FALSE,TRUE,8/8/15,completed
+535,280,681,contract review,whatsapp,9/17/27,pending,535,660,TRUE,TRUE,TRUE,8/6/29,completed
+536,268,860,commercial,phone,10/27/24,under investigation,536,1473.87,FALSE,FALSE,TRUE,2/1/29,accepted
+537,933,85,contract review,email,1/18/30,under review,537,3183.62,FALSE,TRUE,TRUE,5/24/18,completed
+538,671,341,administrative,email,6/15/26,completed,538,4083.64,TRUE,FALSE,TRUE,8/30/28,resolved
+539,38,537,real estate,phone,1/22/18,finalized,539,2666.43,TRUE,FALSE,FALSE,5/6/18,settled
+540,26,488,criminal,email,5/31/18,on hold,540,4838.63,FALSE,FALSE,FALSE,12/19/25,cancelled
+541,548,345,civil,phone,4/2/21,pending approval,541,3836.94,FALSE,TRUE,TRUE,7/17/16,ongoing
+542,337,785,real estate,email,8/27/17,reviewing,542,2384.72,TRUE,FALSE,TRUE,5/8/22,lost_case
+543,922,761,labor,whatsapp,3/6/24,finalized,543,283.6,FALSE,FALSE,TRUE,5/19/18,office_declined
+544,302,94,civil,whatsapp,12/16/20,finalized,544,913.99,FALSE,FALSE,TRUE,11/29/15,client_withdrew
+545,956,456,contract review,phone,1/18/16,reviewing,545,2406.51,FALSE,TRUE,FALSE,5/14/24,lost_case
+546,634,254,labor,whatsapp,3/21/27,pending review,546,2671.44,TRUE,TRUE,FALSE,7/9/17,settled
+547,577,33,civil,phone,5/6/21,in progress,547,1068.99,TRUE,TRUE,FALSE,3/5/29,completed
+548,682,809,commercial,whatsapp,2/3/29,finalized,548,1705.6,TRUE,FALSE,TRUE,6/2/16,ongoing
+549,491,749,contract review,email,1/5/26,under investigation,549,3059.89,FALSE,FALSE,TRUE,9/28/15,ongoing
+550,555,186,commercial,email,4/9/28,in process,550,376.41,TRUE,FALSE,TRUE,2/18/27,cancelled
+551,488,418,consultation only service,whatsapp,6/30/21,pending review,551,3422.15,TRUE,TRUE,TRUE,11/22/22,in_progress
+552,683,79,commercial,whatsapp,12/17/16,finalized,552,411.23,TRUE,TRUE,FALSE,3/25/26,lost_case
+553,65,259,labor,email,9/8/20,rejected,553,958.75,FALSE,FALSE,FALSE,9/10/16,client_withdrew
+554,31,877,immigration,email,9/21/15,completed,554,3943.17,TRUE,FALSE,FALSE,4/16/21,settled
+555,77,838,immigration,whatsapp,6/16/24,under investigation,555,550.15,TRUE,TRUE,FALSE,10/12/29,lost_case
+556,506,634,administrative,whatsapp,11/29/29,completed,556,4235.49,FALSE,FALSE,FALSE,2/13/18,cancelled
+557,189,911,real estate,whatsapp,7/28/18,approved,557,1079.1,FALSE,FALSE,TRUE,3/4/29,completed
+558,280,18,contract review,whatsapp,2/12/27,approved,558,4688.29,FALSE,TRUE,TRUE,9/12/23,ongoing
+559,190,387,civil,email,1/20/25,under review,559,266.87,TRUE,FALSE,FALSE,7/12/28,completed
+560,885,474,immigration,phone,11/18/27,pending,560,3664.88,TRUE,TRUE,FALSE,7/5/20,accepted
+561,181,641,immigration,whatsapp,10/20/18,in progress,561,214.44,FALSE,FALSE,TRUE,9/7/26,accepted
+562,679,487,immigration,whatsapp,6/27/28,completed,562,874.15,FALSE,TRUE,TRUE,1/3/28,ongoing
+563,206,241,civil,phone,7/30/16,awaiting response,563,4931.79,TRUE,FALSE,TRUE,9/29/25,lost_case
+564,772,288,civil,email,10/25/28,reviewing,564,871.59,FALSE,FALSE,FALSE,3/30/24,office_declined
+565,951,328,real estate,email,7/21/18,reviewing,565,3972.1,FALSE,FALSE,FALSE,10/13/26,in_progress
+566,870,783,commercial,email,6/2/29,in process,566,3087.56,FALSE,TRUE,TRUE,11/29/16,resolved
+567,316,341,commercial,phone,12/12/23,in process,567,2961.25,TRUE,TRUE,FALSE,10/21/22,settled
+568,426,700,labor,email,9/11/18,pending review,568,622.47,FALSE,FALSE,TRUE,2/2/30,client_withdrew
+569,246,89,administrative,email,11/12/21,finalized,569,4458.3,FALSE,FALSE,TRUE,5/18/30,lost_case
+570,576,970,real estate,phone,1/17/21,finalized,570,3661.43,TRUE,FALSE,FALSE,6/30/28,lost_case
+571,1000,267,real estate,phone,5/10/19,in process,571,1094.01,FALSE,TRUE,FALSE,9/13/21,completed
+572,767,284,consultation only service,phone,4/11/29,reviewing,572,3037.02,FALSE,TRUE,FALSE,11/10/29,resolved
+573,131,371,real estate,phone,3/11/25,pending review,573,2329.82,FALSE,FALSE,FALSE,1/25/23,ongoing
+574,372,178,consultation only service,whatsapp,5/20/21,finalized,574,4022.82,FALSE,TRUE,FALSE,4/27/24,office_declined
+575,864,784,consultation only service,phone,6/13/25,finalized,575,3264.1,TRUE,TRUE,TRUE,4/29/30,ongoing
+576,771,184,contract review,email,10/17/18,in process,576,2354.46,TRUE,TRUE,TRUE,11/11/24,accepted
+577,18,469,civil,phone,5/24/18,delayed,577,2659.7,TRUE,TRUE,FALSE,7/16/17,lost_case
+578,138,71,labor,whatsapp,6/24/18,completed,578,3258.85,TRUE,TRUE,FALSE,11/12/15,client_withdrew
+579,230,386,criminal,whatsapp,5/31/25,pending review,579,959.18,TRUE,TRUE,TRUE,5/17/15,resolved
+580,562,569,family,whatsapp,7/3/19,delayed,580,1896.22,TRUE,TRUE,FALSE,8/15/28,ongoing
+581,630,374,administrative,whatsapp,7/2/20,reviewing,581,2816.11,FALSE,TRUE,TRUE,4/6/17,completed
+582,802,737,contract review,whatsapp,2/29/24,delayed,582,599.9,TRUE,TRUE,FALSE,9/22/18,settled
+583,287,868,commercial,whatsapp,2/16/15,pending approval,583,2167.32,TRUE,FALSE,FALSE,5/29/26,resolved
+584,566,132,labor,whatsapp,6/15/23,pending review,584,1110.22,FALSE,FALSE,FALSE,3/6/30,ongoing
+585,308,508,immigration,phone,10/9/23,pending approval,585,2019.9,TRUE,FALSE,FALSE,8/10/24,completed
+586,593,726,family,whatsapp,1/25/15,completed,586,2071.6,TRUE,TRUE,FALSE,5/29/22,in_progress
+587,429,201,administrative,phone,11/12/26,pending approval,587,4355.4,FALSE,FALSE,TRUE,11/29/19,accepted
+588,944,337,consultation only service,whatsapp,1/24/21,finalized,588,1946.97,FALSE,TRUE,TRUE,2/24/20,office_declined
+589,25,660,criminal,email,3/14/25,under review,589,735.45,FALSE,TRUE,TRUE,6/17/15,client_withdrew
+590,668,905,administrative,phone,1/13/19,on hold,590,1252.83,TRUE,TRUE,TRUE,3/30/20,completed
+591,25,772,family,whatsapp,2/9/22,delayed,591,280.96,FALSE,TRUE,TRUE,7/2/20,ongoing
+592,293,790,administrative,whatsapp,8/26/22,finalized,592,2965.4,TRUE,TRUE,TRUE,8/4/21,completed
+593,496,827,commercial,phone,5/21/27,approved,593,1480.86,FALSE,TRUE,FALSE,2/12/16,resolved
+594,47,286,civil,email,1/18/28,approved,594,2569.16,TRUE,TRUE,FALSE,7/7/28,lost_case
+595,751,427,real estate,whatsapp,12/14/27,in process,595,2254.5,TRUE,TRUE,TRUE,5/21/27,office_declined
+596,176,973,labor,phone,6/20/19,finalized,596,1631.03,TRUE,TRUE,TRUE,9/19/24,settled
+597,443,530,consultation only service,phone,5/14/15,on hold,597,1229.81,FALSE,TRUE,TRUE,10/18/17,accepted
+598,20,724,criminal,whatsapp,4/9/18,on hold,598,1685.12,TRUE,FALSE,FALSE,3/27/21,lost_case
+599,909,617,consultation only service,email,5/29/19,approved,599,1031.34,FALSE,TRUE,TRUE,9/28/16,resolved
+600,209,602,immigration,phone,8/20/26,completed,600,4957.3,TRUE,TRUE,FALSE,1/26/27,client_withdrew
+601,1,992,labor,phone,9/16/27,delayed,601,4866.02,FALSE,FALSE,FALSE,6/25/27,lost_case
+602,416,619,labor,phone,6/6/26,delayed,602,4406.06,FALSE,TRUE,FALSE,3/19/18,ongoing
+603,703,586,real estate,whatsapp,8/18/23,under review,603,1038.48,FALSE,TRUE,TRUE,3/8/18,office_declined
+604,276,622,civil,whatsapp,7/6/15,completed,604,4240.73,TRUE,TRUE,FALSE,1/5/30,client_withdrew
+605,21,487,consultation only service,whatsapp,1/15/29,pending,605,1585.04,FALSE,FALSE,FALSE,5/22/16,settled
+606,832,751,civil,email,2/10/30,delayed,606,570.06,FALSE,FALSE,TRUE,8/27/23,settled
+607,300,825,commercial,email,2/7/27,finalized,607,556.58,TRUE,TRUE,FALSE,8/24/17,settled
+608,526,603,civil,whatsapp,4/25/27,approved,608,3362.86,FALSE,TRUE,TRUE,12/17/17,completed
+609,682,40,civil,email,12/9/23,completed,609,4986.5,TRUE,FALSE,TRUE,3/1/16,office_declined
+610,323,234,contract review,phone,5/17/18,reviewing,610,3172.41,TRUE,FALSE,FALSE,12/7/17,accepted
+611,196,769,contract review,whatsapp,6/5/24,under review,611,4991.46,FALSE,FALSE,TRUE,4/14/30,in_progress
+612,177,513,contract review,email,9/16/22,rejected,612,4191.28,TRUE,FALSE,FALSE,9/28/26,resolved
+613,708,540,civil,whatsapp,11/24/17,reviewing,613,1243.45,TRUE,TRUE,FALSE,10/3/30,resolved
+614,416,511,immigration,whatsapp,9/1/19,pending,614,3086.53,FALSE,TRUE,TRUE,8/3/17,completed
+615,360,376,contract review,whatsapp,6/25/18,completed,615,3908.16,FALSE,TRUE,FALSE,10/13/24,settled
+616,398,149,civil,phone,5/1/19,completed,616,4488.91,TRUE,FALSE,TRUE,5/1/18,accepted
+617,82,159,contract review,whatsapp,5/16/27,on hold,617,3627.52,FALSE,FALSE,FALSE,5/20/16,lost_case
+618,889,735,family,whatsapp,4/14/28,awaiting response,618,3101.9,TRUE,TRUE,TRUE,5/29/15,accepted
+619,573,590,criminal,whatsapp,10/17/27,under review,619,3083.38,TRUE,FALSE,FALSE,1/20/26,client_withdrew
+620,992,224,contract review,whatsapp,6/23/30,rejected,620,3803.91,TRUE,TRUE,FALSE,12/3/30,resolved
+621,408,386,labor,whatsapp,6/14/19,finalized,621,4907.88,FALSE,TRUE,FALSE,6/7/24,cancelled
+622,855,691,labor,whatsapp,2/21/15,approved,622,4470.17,TRUE,TRUE,FALSE,9/12/29,office_declined
+623,545,246,consultation only service,phone,9/20/26,finalized,623,1907.86,TRUE,TRUE,FALSE,3/5/30,ongoing
+624,3,384,labor,whatsapp,5/6/24,pending,624,2870.3,TRUE,FALSE,TRUE,3/22/20,in_progress
+625,599,108,labor,email,12/31/20,in process,625,2784.96,TRUE,FALSE,FALSE,3/18/28,settled
+626,467,426,administrative,whatsapp,2/27/26,approved,626,3464.94,TRUE,FALSE,FALSE,7/15/16,accepted
+627,729,494,real estate,phone,9/16/22,rejected,627,4730.57,FALSE,TRUE,FALSE,1/22/15,lost_case
+628,686,671,consultation only service,email,1/12/17,approved,628,264.58,FALSE,FALSE,FALSE,4/1/24,ongoing
+629,563,756,real estate,whatsapp,9/1/15,delayed,629,4981.9,FALSE,FALSE,TRUE,8/11/29,ongoing
+630,410,912,contract review,whatsapp,11/20/24,pending approval,630,1892.65,TRUE,TRUE,TRUE,11/3/29,cancelled
+631,627,788,administrative,whatsapp,4/20/15,delayed,631,3280.45,TRUE,FALSE,FALSE,4/6/29,client_withdrew
+632,601,263,contract review,phone,5/16/16,reviewing,632,3880.4,TRUE,FALSE,TRUE,2/28/22,client_withdrew
+633,270,538,immigration,whatsapp,5/25/26,under investigation,633,363.1,FALSE,TRUE,TRUE,11/24/23,office_declined
+634,601,531,civil,email,11/22/18,pending approval,634,3327.81,FALSE,TRUE,FALSE,1/12/30,client_withdrew
+635,646,168,real estate,whatsapp,2/21/29,in progress,635,4816.33,FALSE,FALSE,FALSE,9/28/23,resolved
+636,869,675,family,whatsapp,10/1/21,reviewing,636,1981.98,TRUE,FALSE,FALSE,4/9/21,accepted
+637,505,208,commercial,whatsapp,9/8/15,pending approval,637,2988.85,TRUE,TRUE,TRUE,10/12/15,office_declined
+638,155,278,commercial,email,9/7/24,in process,638,3844.51,TRUE,TRUE,TRUE,1/5/17,office_declined
+639,238,171,contract review,whatsapp,10/26/27,reviewing,639,3096.72,TRUE,TRUE,FALSE,8/9/24,lost_case
+640,730,678,consultation only service,phone,8/27/28,delayed,640,996.75,FALSE,FALSE,FALSE,4/6/19,in_progress
+641,893,719,commercial,whatsapp,4/29/26,under review,641,1824.24,TRUE,TRUE,TRUE,7/6/15,lost_case
+642,436,704,criminal,email,12/8/29,in process,642,1905.76,TRUE,TRUE,FALSE,10/22/16,in_progress
+643,283,3,criminal,email,11/29/16,in process,643,3438.15,FALSE,TRUE,TRUE,5/28/16,office_declined
+644,52,145,criminal,whatsapp,3/18/25,finalized,644,198.98,TRUE,FALSE,TRUE,9/17/19,resolved
+645,720,117,immigration,phone,4/6/24,under investigation,645,3979.02,TRUE,FALSE,FALSE,5/27/20,completed
+646,702,320,labor,phone,11/9/15,pending review,646,3681.46,FALSE,FALSE,FALSE,4/14/29,office_declined
+647,739,616,commercial,whatsapp,5/19/20,on hold,647,4812.5,TRUE,FALSE,TRUE,1/23/25,ongoing
+648,483,689,real estate,email,3/13/23,pending approval,648,3684.18,TRUE,FALSE,FALSE,12/23/15,in_progress
+649,914,578,administrative,phone,3/22/24,finalized,649,4312.8,TRUE,FALSE,FALSE,3/19/17,lost_case
+650,152,139,consultation only service,phone,3/21/26,pending review,650,2833.24,FALSE,FALSE,TRUE,11/2/28,resolved
+651,472,779,civil,whatsapp,10/25/16,completed,651,1670.7,FALSE,TRUE,TRUE,9/22/27,client_withdrew
+652,482,94,immigration,phone,11/17/16,pending approval,652,3339.19,TRUE,TRUE,TRUE,12/20/16,lost_case
+653,105,339,family,whatsapp,1/19/20,awaiting response,653,1071.98,FALSE,TRUE,TRUE,10/31/26,ongoing
+654,946,630,family,phone,7/21/25,under review,654,988.83,FALSE,TRUE,FALSE,8/18/28,accepted
+655,664,659,administrative,whatsapp,7/31/26,under review,655,653.43,FALSE,FALSE,TRUE,12/19/23,lost_case
+656,772,378,consultation only service,email,7/23/17,reviewing,656,4290.26,TRUE,TRUE,FALSE,11/8/30,cancelled
+657,420,679,criminal,phone,8/28/21,pending,657,4365.62,TRUE,FALSE,FALSE,11/30/17,office_declined
+658,143,636,administrative,phone,2/19/18,on hold,658,2380.34,TRUE,TRUE,TRUE,3/2/23,resolved
+659,979,251,administrative,email,3/3/30,pending review,659,669.32,FALSE,TRUE,TRUE,7/11/23,resolved
+660,527,328,real estate,whatsapp,1/3/26,approved,660,691.64,TRUE,FALSE,FALSE,5/2/26,office_declined
+661,837,978,administrative,email,9/24/19,awaiting response,661,2525.15,FALSE,TRUE,FALSE,1/16/18,client_withdrew
+662,174,777,consultation only service,email,10/12/23,under review,662,1690.17,FALSE,TRUE,TRUE,1/26/17,cancelled
+663,916,779,contract review,whatsapp,10/12/22,finalized,663,4685.17,TRUE,FALSE,FALSE,4/1/16,completed
+664,192,813,administrative,email,1/2/21,reviewing,664,2323.88,FALSE,FALSE,TRUE,12/30/22,resolved
+665,116,579,labor,email,8/24/20,pending review,665,3826.26,FALSE,TRUE,FALSE,12/11/20,in_progress
+666,687,608,real estate,whatsapp,8/9/26,pending review,666,344.76,TRUE,TRUE,TRUE,12/18/27,resolved
+667,491,41,contract review,whatsapp,9/13/28,on hold,667,3390,TRUE,TRUE,TRUE,4/28/18,office_declined
+668,184,442,commercial,whatsapp,3/24/30,delayed,668,3693.53,TRUE,FALSE,TRUE,4/30/22,ongoing
+669,50,436,immigration,whatsapp,4/6/21,pending review,669,333.31,TRUE,FALSE,TRUE,7/23/28,lost_case
+670,847,90,commercial,whatsapp,8/18/21,in process,670,1839.57,FALSE,FALSE,TRUE,10/9/28,office_declined
+671,747,142,commercial,whatsapp,3/26/20,on hold,671,2242.77,FALSE,TRUE,FALSE,8/10/27,ongoing
+672,857,188,contract review,email,8/15/16,pending approval,672,1705.56,TRUE,FALSE,FALSE,10/2/16,resolved
+673,987,307,criminal,phone,12/22/26,pending review,673,413.24,FALSE,TRUE,TRUE,6/19/15,office_declined
+674,174,781,administrative,email,2/20/20,under investigation,674,779.91,FALSE,TRUE,TRUE,4/9/28,client_withdrew
+675,916,852,contract review,email,2/16/18,pending review,675,1147.97,TRUE,TRUE,FALSE,8/3/18,ongoing
+676,354,918,consultation only service,whatsapp,11/17/24,delayed,676,352.7,FALSE,TRUE,TRUE,9/15/15,accepted
+677,932,732,contract review,email,4/19/21,delayed,677,944.6,FALSE,FALSE,TRUE,10/8/16,resolved
+678,300,724,criminal,whatsapp,6/2/30,pending approval,678,840.38,TRUE,TRUE,FALSE,8/20/19,ongoing
+679,257,246,contract review,phone,3/12/17,approved,679,4878.12,FALSE,TRUE,FALSE,12/3/21,client_withdrew
+680,725,217,consultation only service,phone,9/23/18,delayed,680,506.14,FALSE,TRUE,TRUE,7/26/15,settled
+681,157,241,administrative,phone,9/10/19,finalized,681,3906.9,TRUE,TRUE,FALSE,5/6/16,lost_case
+682,644,904,real estate,whatsapp,2/16/22,rejected,682,4711.9,FALSE,TRUE,TRUE,5/21/24,accepted
+683,639,803,family,whatsapp,10/14/18,pending review,683,1503.6,TRUE,FALSE,TRUE,5/12/27,in_progress
+684,648,790,civil,email,2/3/23,awaiting response,684,2990.04,FALSE,FALSE,TRUE,1/14/20,cancelled
+685,811,321,contract review,phone,5/29/15,rejected,685,2999.78,TRUE,FALSE,TRUE,4/24/17,in_progress
+686,385,320,commercial,whatsapp,3/31/20,finalized,686,1404.08,TRUE,FALSE,TRUE,4/3/20,client_withdrew
+687,640,296,immigration,phone,8/22/21,delayed,687,4352.91,FALSE,TRUE,TRUE,6/28/19,office_declined
+688,190,618,immigration,whatsapp,10/22/17,pending review,688,948.94,TRUE,FALSE,FALSE,3/28/15,cancelled
+689,73,86,immigration,phone,7/4/20,in process,689,704.15,TRUE,FALSE,TRUE,3/31/27,lost_case
+690,805,426,contract review,whatsapp,4/30/21,pending review,690,1123.04,FALSE,FALSE,TRUE,5/31/26,lost_case
+691,832,363,administrative,email,9/30/28,pending,691,4063.99,FALSE,FALSE,TRUE,5/7/23,lost_case
+692,424,631,immigration,email,8/1/17,pending approval,692,722.89,FALSE,FALSE,TRUE,5/26/22,office_declined
+693,628,357,contract review,email,2/22/28,pending review,693,3638.36,TRUE,FALSE,TRUE,10/27/16,accepted
+694,277,334,immigration,whatsapp,2/24/20,pending approval,694,3669.62,FALSE,TRUE,TRUE,1/3/23,resolved
+695,958,727,real estate,phone,1/5/24,approved,695,3262.81,TRUE,FALSE,FALSE,10/20/25,client_withdrew
+696,793,116,real estate,email,1/8/30,in process,696,3958.06,FALSE,TRUE,TRUE,8/25/16,accepted
+697,870,299,civil,whatsapp,1/14/16,finalized,697,1528.35,TRUE,FALSE,FALSE,6/4/24,in_progress
+698,281,763,commercial,phone,1/29/27,approved,698,795.04,FALSE,TRUE,FALSE,2/15/24,lost_case
+699,418,382,labor,email,7/14/30,on hold,699,3412.33,TRUE,FALSE,TRUE,1/26/24,ongoing
+700,660,498,labor,email,12/29/22,reviewing,700,4439.71,TRUE,FALSE,FALSE,11/26/20,accepted
+701,330,39,civil,email,11/25/24,delayed,701,3936.1,TRUE,TRUE,FALSE,9/19/20,in_progress
+702,776,122,family,phone,2/6/27,reviewing,702,2706.51,FALSE,TRUE,FALSE,9/9/20,office_declined
+703,927,302,labor,email,3/21/27,approved,703,2845.64,TRUE,FALSE,TRUE,8/7/28,in_progress
+704,643,766,labor,whatsapp,1/3/18,pending,704,861.55,FALSE,TRUE,FALSE,5/4/28,cancelled
+705,871,524,labor,whatsapp,9/8/26,awaiting response,705,2218.96,TRUE,FALSE,TRUE,11/9/16,resolved
+706,648,199,immigration,whatsapp,11/28/21,in process,706,4917.62,FALSE,TRUE,TRUE,5/28/20,settled
+707,6,113,immigration,whatsapp,11/8/16,on hold,707,1517.18,TRUE,TRUE,FALSE,2/5/28,resolved
+708,218,835,commercial,whatsapp,10/2/24,rejected,708,3325.08,TRUE,TRUE,TRUE,8/27/19,client_withdrew
+709,112,801,civil,email,9/14/27,in progress,709,562.23,TRUE,FALSE,TRUE,8/15/18,completed
+710,770,23,administrative,email,11/16/25,reviewing,710,1144.09,TRUE,TRUE,FALSE,11/20/19,accepted
+711,6,417,family,phone,7/6/22,approved,711,4900.04,FALSE,TRUE,TRUE,3/27/18,lost_case
+712,989,324,civil,whatsapp,3/27/24,on hold,712,3848.17,TRUE,FALSE,FALSE,5/29/29,resolved
+713,691,579,contract review,phone,4/20/23,in process,713,2956.78,TRUE,TRUE,FALSE,5/24/24,completed
+714,23,208,contract review,whatsapp,12/12/28,delayed,714,1446.89,FALSE,TRUE,TRUE,8/25/26,accepted
+715,878,586,contract review,phone,9/24/22,approved,715,1558.04,FALSE,FALSE,FALSE,4/18/15,settled
+716,502,723,immigration,whatsapp,4/9/15,under review,716,863.17,FALSE,FALSE,FALSE,10/2/30,completed
+717,423,911,immigration,whatsapp,9/1/20,approved,717,1482.54,TRUE,FALSE,FALSE,9/11/20,client_withdrew
+718,151,372,family,email,12/10/29,delayed,718,2175.51,FALSE,FALSE,FALSE,10/19/28,cancelled
+719,888,680,family,phone,7/2/28,awaiting response,719,3336.61,FALSE,FALSE,FALSE,4/4/29,lost_case
+720,607,523,immigration,phone,7/20/23,on hold,720,4248.6,FALSE,FALSE,FALSE,8/26/23,office_declined
+721,892,599,consultation only service,whatsapp,10/5/25,approved,721,3562.49,FALSE,TRUE,TRUE,1/11/28,settled
+722,260,937,immigration,whatsapp,8/4/24,reviewing,722,1132.42,FALSE,FALSE,FALSE,2/18/19,resolved
+723,561,620,real estate,whatsapp,3/29/25,in progress,723,239.83,FALSE,FALSE,FALSE,3/11/18,resolved
+724,60,770,contract review,whatsapp,11/16/15,reviewing,724,4798.68,FALSE,TRUE,FALSE,10/28/25,accepted
+725,790,997,administrative,phone,8/7/30,reviewing,725,2309.77,FALSE,FALSE,TRUE,6/27/29,completed
+726,896,990,real estate,whatsapp,3/12/26,awaiting response,726,2779.03,FALSE,FALSE,TRUE,3/26/24,lost_case
+727,287,68,consultation only service,whatsapp,7/15/23,pending approval,727,802.48,TRUE,TRUE,FALSE,2/14/28,settled
+728,968,840,family,whatsapp,1/17/21,rejected,728,275.07,TRUE,FALSE,TRUE,12/24/21,settled
+729,84,12,civil,phone,10/2/18,under review,729,1063.9,FALSE,TRUE,FALSE,4/21/18,in_progress
+730,828,155,real estate,phone,10/8/28,finalized,730,1250.88,FALSE,TRUE,TRUE,9/4/22,ongoing
+731,281,49,administrative,phone,1/21/30,in process,731,3354.56,FALSE,TRUE,FALSE,1/2/18,lost_case
+732,615,420,immigration,whatsapp,6/28/18,pending approval,732,450.23,FALSE,FALSE,TRUE,2/21/28,office_declined
+733,466,939,commercial,phone,8/21/30,in progress,733,1864.44,FALSE,TRUE,TRUE,8/26/16,completed
+734,644,667,administrative,email,11/7/24,pending approval,734,2522.49,FALSE,FALSE,TRUE,7/15/20,ongoing
+735,315,933,consultation only service,whatsapp,2/8/22,reviewing,735,3583.73,FALSE,TRUE,FALSE,9/25/26,cancelled
+736,708,192,administrative,email,3/2/21,on hold,736,3770.75,TRUE,TRUE,FALSE,8/4/26,cancelled
+737,821,994,immigration,email,6/17/20,in progress,737,4590.03,TRUE,TRUE,FALSE,12/24/19,settled
+738,172,492,real estate,email,10/29/21,awaiting response,738,4719.55,TRUE,FALSE,FALSE,5/15/16,settled
+739,169,714,contract review,email,11/11/25,in process,739,4128.62,TRUE,FALSE,FALSE,8/24/26,completed
+740,409,265,contract review,phone,4/17/17,pending review,740,1054.25,TRUE,FALSE,FALSE,8/23/22,completed
+741,244,905,civil,email,11/9/26,on hold,741,1773.33,TRUE,FALSE,FALSE,12/14/26,lost_case
+742,34,659,family,phone,8/11/15,in process,742,466.97,FALSE,TRUE,FALSE,12/5/24,client_withdrew
+743,102,620,consultation only service,email,2/24/20,under review,743,204.05,FALSE,TRUE,FALSE,12/21/18,accepted
+744,25,4,commercial,email,11/10/30,rejected,744,2507.44,TRUE,TRUE,TRUE,9/24/28,resolved
+745,551,346,civil,phone,3/13/29,completed,745,1127.28,TRUE,TRUE,FALSE,8/4/26,cancelled
+746,813,421,family,phone,1/17/21,reviewing,746,418.16,TRUE,FALSE,TRUE,1/5/25,cancelled
+747,890,275,commercial,phone,2/5/21,reviewing,747,1518.75,TRUE,TRUE,FALSE,1/8/20,office_declined
+748,179,398,administrative,whatsapp,4/8/30,approved,748,1120.69,TRUE,FALSE,FALSE,4/28/17,lost_case
+749,567,243,family,whatsapp,5/21/21,in progress,749,3888.56,TRUE,FALSE,TRUE,3/27/30,completed
+750,585,165,consultation only service,whatsapp,9/12/21,rejected,750,2923.56,FALSE,TRUE,TRUE,10/1/27,office_declined
+751,97,696,immigration,whatsapp,12/6/23,under investigation,751,1318.47,TRUE,FALSE,FALSE,4/25/28,completed
+752,832,407,family,phone,2/6/17,pending,752,677.43,FALSE,FALSE,TRUE,9/8/23,lost_case
+753,504,816,real estate,phone,5/13/19,completed,753,375.82,TRUE,TRUE,FALSE,2/7/30,office_declined
+754,489,738,commercial,phone,2/26/24,under investigation,754,657.51,FALSE,TRUE,TRUE,11/12/24,settled
+755,808,285,commercial,phone,12/19/18,pending approval,755,1053.4,TRUE,FALSE,TRUE,9/27/28,cancelled
+756,92,785,labor,whatsapp,12/7/17,under review,756,285.99,FALSE,TRUE,TRUE,12/7/18,resolved
+757,420,982,consultation only service,whatsapp,5/20/15,under review,757,2493.64,FALSE,FALSE,FALSE,1/29/28,cancelled
+758,890,634,real estate,phone,8/5/26,completed,758,3761.33,TRUE,FALSE,FALSE,10/21/21,client_withdrew
+759,485,707,immigration,whatsapp,4/19/25,under review,759,1163.67,FALSE,FALSE,TRUE,5/11/28,settled
+760,860,828,immigration,phone,8/7/30,approved,760,4771.52,TRUE,FALSE,TRUE,2/4/22,resolved
+761,981,658,labor,whatsapp,2/15/29,under investigation,761,617.37,FALSE,FALSE,FALSE,12/29/20,client_withdrew
+762,595,315,criminal,whatsapp,8/6/24,awaiting response,762,3725.2,TRUE,TRUE,FALSE,1/21/15,cancelled
+763,508,742,civil,email,12/29/27,rejected,763,2245.7,FALSE,TRUE,FALSE,2/1/26,lost_case
+764,760,774,consultation only service,whatsapp,12/16/30,under review,764,3102.23,FALSE,FALSE,TRUE,8/5/20,office_declined
+765,768,319,administrative,email,1/11/17,awaiting response,765,1989.57,FALSE,TRUE,FALSE,3/16/24,lost_case
+766,852,70,real estate,phone,8/24/15,rejected,766,2608.05,TRUE,TRUE,TRUE,2/24/21,settled
+767,378,978,criminal,phone,8/19/28,in process,767,1783.44,FALSE,FALSE,TRUE,9/7/19,ongoing
+768,690,271,immigration,email,2/8/27,reviewing,768,2211.13,FALSE,TRUE,FALSE,1/12/26,lost_case
+769,965,470,immigration,whatsapp,1/14/17,approved,769,4324.8,FALSE,FALSE,FALSE,12/18/29,cancelled
+770,778,644,civil,phone,5/26/19,under review,770,621.26,FALSE,FALSE,FALSE,1/8/26,client_withdrew
+771,257,314,immigration,email,5/5/15,reviewing,771,4496.44,FALSE,FALSE,TRUE,4/4/27,settled
+772,622,331,family,whatsapp,1/22/28,delayed,772,2957.46,TRUE,FALSE,FALSE,3/26/21,accepted
+773,54,253,immigration,whatsapp,5/13/15,delayed,773,3121.5,TRUE,FALSE,FALSE,6/20/27,office_declined
+774,391,537,commercial,whatsapp,11/1/16,reviewing,774,1863.18,TRUE,TRUE,FALSE,1/27/28,cancelled
+775,460,321,real estate,whatsapp,3/25/15,under review,775,4602.17,TRUE,FALSE,TRUE,6/8/25,completed
+776,586,988,immigration,email,8/2/23,in process,776,2269.21,FALSE,FALSE,FALSE,1/29/18,client_withdrew
+777,38,936,consultation only service,phone,7/10/18,rejected,777,4073.78,FALSE,TRUE,TRUE,6/5/24,completed
+778,189,922,labor,whatsapp,6/27/20,under review,778,526.3,TRUE,TRUE,TRUE,4/4/23,accepted
+779,581,186,consultation only service,email,8/20/22,pending,779,3986.66,FALSE,TRUE,TRUE,6/30/20,ongoing
+780,19,803,real estate,phone,5/14/17,under review,780,1433.25,TRUE,FALSE,TRUE,6/6/24,in_progress
+781,872,337,consultation only service,phone,9/20/18,reviewing,781,2443.7,FALSE,FALSE,TRUE,10/1/23,office_declined
+782,835,423,civil,email,10/8/23,under investigation,782,1069.13,FALSE,FALSE,TRUE,3/28/30,client_withdrew
+783,310,228,labor,whatsapp,10/25/27,delayed,783,2127.29,TRUE,FALSE,TRUE,11/28/25,lost_case
+784,832,766,family,email,12/19/27,pending review,784,1794.26,FALSE,TRUE,FALSE,1/3/28,in_progress
+785,353,125,criminal,whatsapp,9/7/26,pending review,785,2059.4,FALSE,FALSE,TRUE,4/8/21,client_withdrew
+786,699,590,administrative,email,4/8/20,awaiting response,786,1032.25,FALSE,FALSE,FALSE,12/17/25,completed
+787,814,824,commercial,email,4/16/20,pending review,787,500.2,FALSE,TRUE,FALSE,10/7/26,client_withdrew
+788,235,735,labor,email,12/18/26,approved,788,3962.22,TRUE,TRUE,FALSE,12/5/20,settled
+789,22,619,family,whatsapp,9/16/22,finalized,789,1800.21,TRUE,TRUE,TRUE,12/27/17,settled
+790,581,922,criminal,whatsapp,8/23/24,pending,790,674.01,TRUE,FALSE,FALSE,11/6/25,resolved
+791,944,935,consultation only service,whatsapp,11/19/25,reviewing,791,2220.95,FALSE,TRUE,TRUE,3/5/30,in_progress
+792,536,291,consultation only service,whatsapp,10/11/20,in process,792,1874.49,TRUE,TRUE,TRUE,7/26/21,ongoing
+793,931,316,labor,email,5/7/15,rejected,793,3003.3,TRUE,FALSE,FALSE,4/20/24,settled
+794,155,547,administrative,email,1/24/20,under review,794,4509.07,FALSE,FALSE,FALSE,5/29/30,in_progress
+795,64,350,immigration,phone,9/23/21,under review,795,3269.26,FALSE,TRUE,TRUE,4/29/27,accepted
+796,52,142,family,phone,8/8/23,under investigation,796,3502.66,FALSE,FALSE,FALSE,3/15/19,in_progress
+797,958,454,criminal,whatsapp,11/25/17,in progress,797,2233.83,TRUE,TRUE,FALSE,3/23/17,completed
+798,931,637,immigration,email,3/29/17,in progress,798,4396.57,TRUE,FALSE,TRUE,11/5/28,accepted
+799,356,726,civil,phone,7/4/22,completed,799,1349.77,FALSE,FALSE,FALSE,7/3/27,settled
+800,797,693,consultation only service,phone,12/1/26,finalized,800,3543.8,TRUE,TRUE,TRUE,10/13/22,settled
+801,542,370,real estate,email,10/26/29,pending review,801,551.74,TRUE,TRUE,TRUE,3/15/30,accepted
+802,676,557,real estate,whatsapp,10/22/24,in process,802,1897.2,FALSE,TRUE,FALSE,3/21/17,client_withdrew
+803,629,233,contract review,email,1/4/21,pending review,803,4920.38,FALSE,TRUE,TRUE,9/11/19,completed
+804,17,920,family,whatsapp,12/24/30,awaiting response,804,377.56,FALSE,FALSE,FALSE,5/19/16,settled
+805,854,24,real estate,email,2/6/21,delayed,805,375.08,FALSE,FALSE,TRUE,7/13/28,office_declined
+806,910,88,civil,whatsapp,2/27/17,finalized,806,3265.94,TRUE,FALSE,TRUE,6/3/19,resolved
+807,878,968,immigration,phone,8/3/25,pending,807,4209.48,FALSE,TRUE,TRUE,10/7/17,completed
+808,332,356,commercial,whatsapp,2/18/15,pending,808,3523.81,TRUE,TRUE,TRUE,4/10/28,cancelled
+809,329,71,contract review,whatsapp,12/15/16,completed,809,4799.9,TRUE,FALSE,FALSE,7/17/28,in_progress
+810,512,170,commercial,whatsapp,2/29/20,pending approval,810,4470.85,TRUE,FALSE,TRUE,12/14/24,office_declined
+811,14,830,civil,phone,10/13/15,reviewing,811,1239,TRUE,TRUE,FALSE,4/5/22,ongoing
+812,451,958,family,phone,4/6/20,awaiting response,812,4370.62,FALSE,TRUE,TRUE,7/10/16,client_withdrew
+813,393,291,contract review,email,4/8/20,pending approval,813,3629.67,FALSE,TRUE,FALSE,3/9/25,office_declined
+814,69,300,contract review,email,3/20/24,reviewing,814,2962.58,TRUE,FALSE,TRUE,7/2/24,settled
+815,848,204,family,whatsapp,12/13/17,awaiting response,815,2294.9,TRUE,TRUE,TRUE,10/5/17,completed
+816,564,970,commercial,whatsapp,7/7/15,pending review,816,3570.65,TRUE,TRUE,FALSE,4/23/16,resolved
+817,946,837,civil,email,6/17/23,under investigation,817,3135.07,TRUE,TRUE,FALSE,10/10/22,cancelled
+818,152,417,family,phone,9/30/22,under review,818,3174.99,FALSE,TRUE,TRUE,7/21/20,ongoing
+819,724,358,real estate,phone,8/24/21,rejected,819,358.94,TRUE,TRUE,TRUE,10/14/16,completed
+820,377,295,labor,email,3/25/21,pending,820,2679.79,FALSE,FALSE,TRUE,5/5/28,client_withdrew
+821,47,818,family,phone,4/9/23,reviewing,821,1485.47,FALSE,FALSE,TRUE,7/7/25,resolved
+822,568,59,labor,whatsapp,3/14/26,awaiting response,822,1028.9,TRUE,FALSE,TRUE,7/28/18,completed
+823,708,227,real estate,whatsapp,12/7/20,completed,823,3736.45,FALSE,TRUE,TRUE,8/5/21,lost_case
+824,864,912,administrative,whatsapp,3/24/28,pending review,824,3813.29,TRUE,FALSE,TRUE,7/26/24,settled
+825,887,911,labor,phone,9/10/19,under review,825,2971.78,TRUE,TRUE,FALSE,9/30/28,ongoing
+826,14,228,labor,phone,5/26/29,in progress,826,3523.53,FALSE,TRUE,FALSE,1/26/28,in_progress
+827,827,270,civil,email,7/27/26,in process,827,4698.88,FALSE,FALSE,TRUE,6/16/21,resolved
+828,760,886,administrative,email,9/26/20,in progress,828,2000.49,FALSE,TRUE,TRUE,8/24/28,settled
+829,369,520,civil,whatsapp,8/16/19,pending review,829,235.79,FALSE,TRUE,FALSE,3/18/23,client_withdrew
+830,217,708,consultation only service,email,11/16/17,approved,830,2664.81,FALSE,TRUE,FALSE,9/18/29,office_declined
+831,389,257,criminal,whatsapp,12/15/21,in process,831,436.93,FALSE,FALSE,FALSE,1/3/17,accepted
+832,768,129,consultation only service,phone,8/9/19,in process,832,3510.68,FALSE,TRUE,FALSE,9/1/19,cancelled
+833,107,155,real estate,whatsapp,6/2/26,on hold,833,241.99,FALSE,TRUE,FALSE,5/2/30,resolved
+834,936,584,administrative,email,7/8/30,under review,834,729.99,FALSE,TRUE,TRUE,1/21/15,accepted
+835,525,155,criminal,email,11/18/29,pending,835,1984.53,FALSE,FALSE,TRUE,4/22/19,office_declined
+836,640,575,real estate,whatsapp,2/27/27,awaiting response,836,1028.68,TRUE,FALSE,FALSE,11/15/28,completed
+837,406,703,administrative,whatsapp,2/10/19,awaiting response,837,4414.19,FALSE,TRUE,TRUE,9/18/26,in_progress
+838,178,638,criminal,phone,3/1/15,under investigation,838,1908.56,FALSE,TRUE,TRUE,8/20/17,client_withdrew
+839,39,54,consultation only service,email,7/31/15,under review,839,4468.89,FALSE,FALSE,FALSE,9/16/25,settled
+840,590,104,immigration,email,6/16/21,under investigation,840,3568.18,FALSE,TRUE,TRUE,1/14/29,cancelled
+841,722,961,labor,email,12/14/24,pending,841,1425.26,FALSE,TRUE,FALSE,1/25/28,ongoing
+842,341,567,consultation only service,whatsapp,12/25/23,in process,842,4013.08,TRUE,FALSE,FALSE,1/9/20,lost_case
+843,507,207,consultation only service,phone,1/12/16,pending approval,843,1787.25,TRUE,FALSE,FALSE,6/2/25,completed
+844,804,808,commercial,email,11/18/18,on hold,844,2022.76,TRUE,FALSE,TRUE,4/19/28,accepted
+845,657,296,consultation only service,whatsapp,4/19/27,awaiting response,845,2807.63,FALSE,FALSE,TRUE,11/28/19,lost_case
+846,606,429,commercial,phone,4/14/29,pending review,846,3537.26,TRUE,FALSE,TRUE,5/22/20,in_progress
+847,950,714,family,email,5/27/22,on hold,847,4614.44,TRUE,FALSE,TRUE,9/23/20,ongoing
+848,460,310,administrative,whatsapp,1/1/29,under review,848,3824.38,FALSE,FALSE,FALSE,1/13/30,settled
+849,570,396,labor,email,2/21/28,in progress,849,4148.29,FALSE,FALSE,FALSE,7/21/24,resolved
+850,866,658,real estate,email,1/27/23,completed,850,4262.68,TRUE,FALSE,FALSE,11/15/18,ongoing
+851,364,925,labor,email,9/9/19,under investigation,851,4134.94,FALSE,FALSE,TRUE,11/9/28,settled
+852,208,627,immigration,whatsapp,11/14/15,delayed,852,4177.66,TRUE,TRUE,FALSE,2/13/23,lost_case
+853,511,16,criminal,phone,2/2/30,delayed,853,3314.69,TRUE,TRUE,TRUE,6/29/30,settled
+854,652,356,administrative,whatsapp,12/8/21,pending approval,854,2919.84,TRUE,TRUE,TRUE,9/28/20,lost_case
+855,406,111,commercial,whatsapp,2/9/25,under review,855,988.49,TRUE,FALSE,FALSE,7/12/19,cancelled
+856,209,571,real estate,whatsapp,9/4/20,under review,856,4334.69,FALSE,FALSE,FALSE,12/30/19,lost_case
+857,542,485,labor,email,3/12/27,under review,857,3670.86,FALSE,FALSE,FALSE,4/5/22,completed
+858,993,169,administrative,phone,7/11/25,finalized,858,2081.9,FALSE,FALSE,FALSE,4/5/15,lost_case
+859,115,979,civil,phone,9/7/17,awaiting response,859,736.61,FALSE,FALSE,TRUE,8/1/24,office_declined
+860,11,249,real estate,phone,7/25/20,in progress,860,2302.71,FALSE,TRUE,FALSE,1/1/24,lost_case
+861,417,503,family,phone,6/3/26,under review,861,4938.99,FALSE,TRUE,FALSE,8/6/15,ongoing
+862,40,461,real estate,whatsapp,8/23/30,in progress,862,4634.05,TRUE,FALSE,FALSE,1/27/23,resolved
+863,192,946,administrative,whatsapp,4/25/16,finalized,863,2870.5,TRUE,FALSE,FALSE,4/28/22,in_progress
+864,223,181,civil,whatsapp,2/24/30,under investigation,864,4681.24,TRUE,TRUE,FALSE,1/9/23,resolved
+865,174,297,immigration,phone,8/5/27,in progress,865,2508.11,TRUE,TRUE,TRUE,2/21/26,client_withdrew
+866,347,884,family,email,10/21/21,completed,866,2670.87,TRUE,FALSE,TRUE,9/20/22,lost_case
+867,430,579,contract review,email,11/28/24,pending approval,867,4815.87,FALSE,FALSE,FALSE,10/13/30,ongoing
+868,614,138,commercial,whatsapp,8/10/21,under investigation,868,3812.69,FALSE,FALSE,TRUE,12/1/25,accepted
+869,568,14,civil,whatsapp,9/6/22,pending approval,869,3438.81,FALSE,TRUE,TRUE,4/1/20,resolved
+870,151,977,consultation only service,whatsapp,3/3/28,finalized,870,4252.4,FALSE,FALSE,TRUE,1/28/20,client_withdrew
+871,616,435,administrative,phone,4/20/17,delayed,871,3361.86,FALSE,FALSE,FALSE,12/17/29,completed
+872,156,583,administrative,email,11/29/24,rejected,872,4383.89,FALSE,TRUE,FALSE,7/24/30,ongoing
+873,73,795,criminal,whatsapp,9/22/15,delayed,873,3205.57,FALSE,TRUE,TRUE,8/15/19,accepted
+874,187,205,criminal,whatsapp,1/3/26,awaiting response,874,4365.74,TRUE,TRUE,FALSE,7/5/17,accepted
+875,779,46,administrative,phone,11/21/24,rejected,875,4691.15,FALSE,FALSE,TRUE,11/18/26,cancelled
+876,771,301,criminal,email,5/4/22,completed,876,4097.87,TRUE,TRUE,TRUE,6/8/25,office_declined
+877,391,651,civil,whatsapp,12/17/29,reviewing,877,896.76,TRUE,TRUE,FALSE,3/6/19,settled
+878,570,338,immigration,whatsapp,10/19/28,delayed,878,4602.81,TRUE,FALSE,TRUE,6/1/30,completed
+879,543,717,real estate,whatsapp,6/29/23,completed,879,210.39,TRUE,FALSE,TRUE,1/2/20,in_progress
+880,243,684,consultation only service,whatsapp,8/5/22,in process,880,4721.86,TRUE,FALSE,TRUE,6/7/15,ongoing
+881,788,647,contract review,whatsapp,3/2/22,on hold,881,3047.01,TRUE,FALSE,TRUE,7/6/29,resolved
+882,128,25,criminal,whatsapp,6/7/30,pending,882,1384.38,TRUE,FALSE,TRUE,2/10/17,client_withdrew
+883,777,498,criminal,email,12/27/25,awaiting response,883,855.71,FALSE,TRUE,TRUE,9/22/24,lost_case
+884,438,740,administrative,whatsapp,12/8/21,on hold,884,927.35,TRUE,FALSE,FALSE,7/5/28,in_progress
+885,55,34,labor,phone,9/30/29,in process,885,2531.84,TRUE,FALSE,TRUE,2/4/15,ongoing
+886,926,820,contract review,email,1/5/15,rejected,886,4791.42,FALSE,TRUE,FALSE,2/19/27,cancelled
+887,996,449,administrative,phone,8/1/23,pending approval,887,514.26,FALSE,FALSE,FALSE,9/19/19,client_withdrew
+888,409,68,labor,phone,11/1/22,on hold,888,2740.18,FALSE,FALSE,TRUE,5/18/20,ongoing
+889,503,264,family,phone,11/27/25,pending approval,889,942.17,TRUE,TRUE,FALSE,12/12/26,cancelled
+890,336,845,contract review,whatsapp,3/28/16,pending approval,890,4465.68,FALSE,FALSE,FALSE,2/19/25,client_withdrew
+891,28,24,administrative,whatsapp,7/17/21,pending,891,3545.57,FALSE,FALSE,TRUE,1/15/26,in_progress
+892,472,867,consultation only service,phone,11/26/18,delayed,892,1568.3,FALSE,TRUE,FALSE,6/4/21,completed
+893,60,715,real estate,phone,5/8/24,pending review,893,4382.31,FALSE,TRUE,TRUE,3/31/25,accepted
+894,886,285,family,whatsapp,12/13/21,completed,894,3085.33,TRUE,TRUE,TRUE,1/27/30,client_withdrew
+895,217,837,real estate,email,4/17/19,under review,895,1050.64,TRUE,TRUE,FALSE,3/10/20,office_declined
+896,568,184,administrative,email,9/11/29,completed,896,3421.14,FALSE,FALSE,FALSE,1/21/27,cancelled
+897,199,418,family,phone,11/1/26,under investigation,897,439.71,TRUE,TRUE,FALSE,11/4/19,completed
+898,506,432,criminal,email,5/3/24,pending approval,898,355.76,FALSE,FALSE,TRUE,12/19/28,office_declined
+899,195,892,immigration,email,11/7/21,completed,899,1733.4,FALSE,TRUE,TRUE,10/20/19,client_withdrew
+900,501,989,real estate,phone,11/1/21,on hold,900,4078.37,TRUE,TRUE,TRUE,9/13/16,settled
+901,736,5,contract review,whatsapp,8/27/29,pending approval,901,939.61,FALSE,FALSE,TRUE,2/4/22,cancelled
+902,415,733,real estate,whatsapp,3/11/28,in progress,902,4249.99,TRUE,FALSE,FALSE,6/25/25,resolved
+903,970,537,contract review,email,10/7/15,under review,903,2363.56,TRUE,TRUE,TRUE,12/13/29,accepted
+904,507,579,civil,phone,12/2/21,pending approval,904,2985.64,FALSE,FALSE,TRUE,8/8/25,accepted
+905,413,396,commercial,email,10/11/25,awaiting response,905,843,FALSE,FALSE,TRUE,10/26/21,client_withdrew
+906,564,687,administrative,email,1/10/24,pending,906,2713.69,TRUE,FALSE,TRUE,11/6/21,accepted
+907,931,137,real estate,email,4/21/29,pending,907,434.31,FALSE,TRUE,FALSE,3/16/16,settled
+908,276,93,family,email,7/5/20,rejected,908,1082.06,TRUE,FALSE,TRUE,11/18/28,office_declined
+909,456,301,civil,whatsapp,3/14/25,delayed,909,3634.06,TRUE,TRUE,TRUE,5/23/20,office_declined
+910,214,110,labor,whatsapp,6/6/24,pending review,910,4306.99,TRUE,TRUE,FALSE,5/20/23,client_withdrew
+911,205,750,contract review,phone,6/7/30,in process,911,4389.21,FALSE,TRUE,FALSE,10/30/16,lost_case
+912,472,330,civil,email,10/25/24,delayed,912,3955.27,TRUE,FALSE,FALSE,3/12/18,client_withdrew
+913,41,831,immigration,phone,6/12/15,in process,913,1091.23,FALSE,TRUE,TRUE,3/22/19,client_withdrew
+914,144,412,criminal,whatsapp,11/2/19,reviewing,914,4737.13,FALSE,TRUE,FALSE,7/19/21,client_withdrew
+915,393,61,immigration,whatsapp,7/29/19,in process,915,1192.72,FALSE,FALSE,TRUE,7/30/24,resolved
+916,393,542,real estate,email,2/16/21,on hold,916,1893.11,TRUE,FALSE,TRUE,4/5/19,lost_case
+917,750,966,family,phone,10/18/21,delayed,917,4423.12,TRUE,TRUE,FALSE,9/17/25,ongoing
+918,75,811,consultation only service,whatsapp,1/2/24,on hold,918,3670.14,FALSE,FALSE,FALSE,1/16/29,ongoing
+919,559,868,commercial,whatsapp,7/25/20,pending review,919,773.27,TRUE,TRUE,TRUE,2/22/17,settled
+920,876,239,criminal,phone,11/30/28,on hold,920,4874.33,TRUE,TRUE,FALSE,6/12/16,settled
+921,770,247,civil,phone,4/23/27,completed,921,3481.21,FALSE,TRUE,FALSE,4/29/24,ongoing
+922,807,976,immigration,email,8/2/24,finalized,922,4593.94,TRUE,FALSE,TRUE,2/15/22,completed
+923,87,437,labor,whatsapp,2/27/16,under review,923,530.08,FALSE,TRUE,TRUE,1/16/26,client_withdrew
+924,152,314,administrative,phone,2/9/23,approved,924,1437.63,TRUE,TRUE,TRUE,7/20/23,settled
+925,723,677,family,phone,5/25/27,approved,925,2423.95,TRUE,FALSE,TRUE,2/17/18,in_progress
+926,263,598,family,phone,9/16/20,under investigation,926,4106.58,TRUE,FALSE,FALSE,6/11/26,in_progress
+927,221,876,commercial,email,2/7/15,awaiting response,927,3936.36,TRUE,FALSE,TRUE,11/7/18,settled
+928,376,317,commercial,email,2/19/25,under investigation,928,3982.44,TRUE,FALSE,FALSE,1/23/26,lost_case
+929,797,132,labor,email,7/16/18,pending,929,1718.22,TRUE,TRUE,FALSE,11/29/29,ongoing
+930,913,196,civil,email,11/27/24,on hold,930,3112.15,FALSE,FALSE,TRUE,9/7/23,office_declined
+931,564,994,family,email,2/1/28,on hold,931,392.59,FALSE,TRUE,TRUE,3/13/25,office_declined
+932,230,960,civil,email,5/11/19,finalized,932,2305.85,TRUE,FALSE,TRUE,1/25/16,client_withdrew
+933,572,731,administrative,whatsapp,3/10/19,delayed,933,4132.46,FALSE,FALSE,FALSE,6/28/27,ongoing
+934,230,940,civil,email,2/27/15,pending review,934,3350.45,FALSE,FALSE,FALSE,12/15/21,in_progress
+935,937,819,labor,phone,2/7/19,under investigation,935,2057.08,TRUE,FALSE,FALSE,3/6/27,office_declined
+936,855,595,criminal,phone,12/7/15,on hold,936,1625.76,FALSE,FALSE,FALSE,10/22/24,client_withdrew
+937,374,992,civil,phone,1/20/29,on hold,937,563.16,TRUE,FALSE,FALSE,4/24/30,lost_case
+938,513,635,civil,phone,3/4/18,under review,938,1793.82,FALSE,TRUE,TRUE,3/10/22,settled
+939,959,664,civil,phone,11/24/23,approved,939,1832.12,TRUE,FALSE,TRUE,8/21/30,in_progress
+940,289,177,consultation only service,whatsapp,6/18/24,under investigation,940,1275.97,FALSE,TRUE,FALSE,1/29/16,settled
+941,628,333,commercial,email,3/15/17,in process,941,1269.36,TRUE,FALSE,TRUE,6/5/25,client_withdrew
+942,126,885,contract review,email,7/7/21,pending review,942,669.82,TRUE,FALSE,TRUE,10/21/18,cancelled
+943,304,671,civil,email,10/29/19,under review,943,2953.24,FALSE,TRUE,TRUE,1/11/15,settled
+944,195,246,real estate,email,5/11/20,in process,944,294.86,TRUE,TRUE,TRUE,10/4/24,lost_case
+945,573,290,consultation only service,email,2/6/24,rejected,945,3460.93,TRUE,FALSE,FALSE,5/9/29,accepted
+946,153,9,contract review,whatsapp,5/1/16,completed,946,2695.24,FALSE,FALSE,TRUE,8/3/17,lost_case
+947,312,237,administrative,whatsapp,9/27/20,pending approval,947,4982.54,TRUE,FALSE,TRUE,12/23/25,client_withdrew
+948,347,924,administrative,email,9/11/15,in process,948,1853.03,TRUE,TRUE,TRUE,9/19/22,cancelled
+949,120,65,labor,email,7/27/17,pending review,949,1108.09,TRUE,TRUE,TRUE,12/19/21,resolved
+950,695,957,contract review,whatsapp,2/28/29,reviewing,950,1925.36,FALSE,TRUE,FALSE,3/17/18,in_progress
+951,678,238,immigration,whatsapp,1/8/16,in process,951,4602.12,FALSE,FALSE,TRUE,2/26/22,office_declined
+952,835,777,family,whatsapp,5/5/27,pending review,952,1155.27,TRUE,FALSE,FALSE,11/1/25,accepted
+953,776,817,contract review,email,5/11/24,on hold,953,2256.3,TRUE,TRUE,FALSE,8/1/16,ongoing
+954,786,927,administrative,phone,4/25/19,under investigation,954,2426.75,FALSE,TRUE,TRUE,5/23/15,completed
+955,698,275,contract review,phone,2/22/25,under investigation,955,3074.02,FALSE,TRUE,TRUE,7/16/28,client_withdrew
+956,880,198,contract review,whatsapp,9/1/26,under investigation,956,747.17,FALSE,TRUE,FALSE,7/23/28,ongoing
+957,295,819,family,email,4/4/19,rejected,957,3489.07,FALSE,TRUE,TRUE,7/4/17,settled
+958,938,473,administrative,phone,4/14/16,approved,958,1011.54,TRUE,TRUE,FALSE,4/21/23,completed
+959,524,524,contract review,email,6/29/25,in process,959,3423.14,TRUE,FALSE,FALSE,11/12/25,ongoing
+960,494,411,criminal,email,10/3/22,pending,960,2674.19,TRUE,FALSE,FALSE,3/15/24,cancelled
+961,299,217,criminal,whatsapp,1/8/25,reviewing,961,1552.89,TRUE,TRUE,TRUE,9/14/26,client_withdrew
+962,175,669,administrative,email,7/27/16,pending,962,2632.68,TRUE,FALSE,FALSE,1/16/19,lost_case
+963,756,460,consultation only service,phone,10/22/15,completed,963,2286.34,FALSE,FALSE,TRUE,8/7/29,lost_case
+964,218,719,criminal,email,8/2/19,on hold,964,3611.97,FALSE,TRUE,TRUE,6/22/18,client_withdrew
+965,603,184,immigration,email,9/9/28,completed,965,1004.5,TRUE,FALSE,FALSE,10/17/17,cancelled
+966,687,543,civil,whatsapp,4/6/26,under investigation,966,1590.34,TRUE,TRUE,FALSE,9/28/20,client_withdrew
+967,78,535,consultation only service,whatsapp,12/15/21,in progress,967,4243.08,TRUE,FALSE,TRUE,3/28/21,resolved
+968,809,216,contract review,whatsapp,9/5/25,completed,968,2857.47,TRUE,TRUE,FALSE,7/10/27,ongoing
+969,872,425,consultation only service,phone,6/16/17,approved,969,2619.98,FALSE,FALSE,TRUE,12/1/30,in_progress
+970,171,267,immigration,email,6/9/26,completed,970,1091.24,FALSE,FALSE,FALSE,6/12/21,accepted
+971,183,898,commercial,phone,7/27/29,under investigation,971,2794.63,TRUE,FALSE,FALSE,5/12/29,ongoing
+972,124,605,criminal,email,12/7/23,rejected,972,272.79,TRUE,TRUE,FALSE,5/27/29,accepted
+973,495,756,consultation only service,whatsapp,11/23/25,in process,973,2705.45,TRUE,FALSE,FALSE,3/20/30,completed
+974,267,989,commercial,email,2/21/29,pending approval,974,332.62,FALSE,TRUE,TRUE,7/7/19,accepted
+975,997,978,commercial,email,6/2/17,pending review,975,2001.95,FALSE,TRUE,TRUE,9/12/22,client_withdrew
+976,71,821,family,whatsapp,2/16/17,delayed,976,4913.61,FALSE,FALSE,TRUE,11/3/28,completed
+977,846,371,criminal,phone,3/7/29,under review,977,2162.63,TRUE,TRUE,TRUE,3/16/23,resolved
+978,947,617,civil,phone,3/4/24,under review,978,4908.72,FALSE,FALSE,TRUE,4/25/15,resolved
+979,729,799,immigration,whatsapp,9/5/21,finalized,979,2398.87,TRUE,FALSE,TRUE,8/3/21,lost_case
+980,770,398,real estate,whatsapp,12/30/18,pending approval,980,1322.81,FALSE,FALSE,TRUE,6/24/30,lost_case
+981,769,64,family,whatsapp,6/17/25,under investigation,981,1054.46,FALSE,TRUE,TRUE,8/21/25,client_withdrew
+982,941,187,criminal,whatsapp,7/18/26,under review,982,2568.75,FALSE,FALSE,FALSE,2/2/25,client_withdrew
+983,706,675,criminal,whatsapp,7/11/17,finalized,983,795.71,FALSE,TRUE,FALSE,11/7/24,lost_case
+984,515,58,real estate,email,3/27/16,in progress,984,3754.79,FALSE,TRUE,TRUE,4/23/23,in_progress
+985,489,269,administrative,whatsapp,12/24/22,delayed,985,1253.91,FALSE,TRUE,TRUE,5/17/18,resolved
+986,303,581,real estate,whatsapp,10/13/18,under review,986,2924.11,TRUE,TRUE,FALSE,10/9/19,office_declined
+987,425,104,administrative,whatsapp,7/10/30,in progress,987,838.9,FALSE,TRUE,FALSE,8/28/15,resolved
+988,276,795,administrative,whatsapp,12/4/21,rejected,988,2925.26,FALSE,TRUE,TRUE,12/23/18,office_declined
+989,74,622,administrative,phone,3/10/26,completed,989,4571.5,TRUE,TRUE,TRUE,6/9/17,resolved
+990,857,538,criminal,whatsapp,4/14/17,rejected,990,4447.95,TRUE,FALSE,FALSE,11/28/22,settled
+991,306,328,immigration,email,7/21/27,under review,991,184.42,FALSE,FALSE,FALSE,7/22/30,accepted
+992,571,732,labor,email,9/3/26,approved,992,4032.13,FALSE,FALSE,FALSE,5/15/25,settled
+993,339,215,family,whatsapp,9/7/23,finalized,993,3390.32,TRUE,FALSE,FALSE,4/12/20,cancelled
+994,297,492,real estate,email,2/9/25,under investigation,994,2784.21,TRUE,TRUE,TRUE,12/2/18,settled
+995,417,91,commercial,whatsapp,1/1/26,under review,995,2365.37,TRUE,TRUE,TRUE,11/15/30,ongoing
+996,629,722,commercial,phone,6/5/20,on hold,996,267.32,TRUE,TRUE,TRUE,11/10/22,client_withdrew
+997,885,685,civil,whatsapp,1/5/20,pending approval,997,4912.62,TRUE,TRUE,FALSE,10/16/19,completed
+998,182,430,commercial,email,2/3/21,on hold,998,1295,TRUE,TRUE,TRUE,9/13/17,client_withdrew
+999,242,170,labor,phone,8/10/29,on hold,999,3482.79,TRUE,TRUE,TRUE,5/27/19,resolved
+1000,374,446,administrative,email,2/5/16,awaiting response,1000,2630.62,FALSE,FALSE,TRUE,12/5/23,settled

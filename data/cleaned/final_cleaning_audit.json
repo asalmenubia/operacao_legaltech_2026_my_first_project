@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-09-12",
+  "tables": {
+    "clients": {
+      "changed_cells": {
+        "created_at": 1000,
+        "phone": 1000,
+        "status": 285
+      },
+      "rows": 1000
+    },
+    "consultations": {
+      "changed_cells": {
+        "case_accepted": 635,
+        "held_at": 1000,
+        "paid_status": 210,
+        "scheduled_at": 1000
+      },
+      "rows": 1000
+    },
+    "documents": {
+      "changed_cells": {
+        "is_missing": 1000,
+        "is_required": 1000,
+        "received_at": 1000,
+        "received_via": 333
+      },
+      "rows": 1000
+    },
+    "inquiries": {
+      "changed_cells": {
+        "first_response_at": 1000,
+        "menu_option": 182,
+        "outcome": 190,
+        "received_at": 1000,
+        "response_delay_minutes": 999
+      },
+      "rows": 1000
+    },
+    "invoices": {
+      "changed_cells": {
+        "due_date": 1000,
+        "issued_at": 1000
+      },
+      "rows": 1000
+    },
+    "matters": {
+      "changed_cells": {
+        "closed_at": 1000,
+        "current_stage": 843,
+        "matter_type": 93,
+        "opened_at": 1000,
+        "outcome": 101
+      },
+      "rows": 1000
+    },
+    "payments": {
+      "changed_cells": {
+        "method": 102,
+        "payment_date": 1000
+      },
+      "rows": 1000
+    },
+    "users": {
+      "changed_cells": {},
+      "rows": 1000
+    }
+  }
+}

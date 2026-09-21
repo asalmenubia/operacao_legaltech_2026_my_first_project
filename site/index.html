@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Executive dashboard for the Operacao LegalTech synthetic dataset">
+  <title>Operacao LegalTech</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@3.1.0/plotly.min.js"></script>
+  <script defer src="dashboard-data.js"></script>
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Executive operations dashboard</p>
+      <h1>Operacao LegalTech</h1>
+      <p class="subtitle">A validated view of matters, service demand, and financial performance.</p>
+    </div>
+    <div class="status-panel">
+      <span id="validation" class="badge">Loading validation…</span>
+      <small id="generated-at"></small>
+      <a class="report-download" href="reports/operacao_legaltech_dissertation_en.pdf" download>
+        Dissertation · English (PDF)
+      </a>
+      <a class="report-download" href="reports/operacao_legaltech_dissertation_pt-PT.pdf" download lang="pt-PT">
+        Dissertação · Português europeu (PDF)
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="filter-panel" aria-label="Dashboard filters">
+      <label>Month<select id="month-filter"><option value="">All months</option></select></label>
+      <label>Channel<select id="channel-filter"><option value="">All channels</option></select></label>
+      <label>Matter type<select id="type-filter"><option value="">All types</option></select></label>
+      <label>Stage<select id="stage-filter"><option value="">All stages</option></select></label>
+      <label>Outcome<select id="outcome-filter"><option value="">All outcomes</option></select></label>
+      <label>Lawyer<select id="lawyer-filter"><option value="">All lawyers</option></select></label>
+      <button id="reset-filters" type="button">Reset filters</button>
+    </section>
+
+    <section class="kpis" aria-label="Key performance indicators">
+      <article><span>Total matters</span><strong id="kpi-matters">—</strong></article>
+      <article><span>Active matters</span><strong id="kpi-active">—</strong></article>
+      <article><span>Invoiced</span><strong id="kpi-invoiced">—</strong></article>
+      <article><span>Paid</span><strong id="kpi-paid">—</strong></article>
+      <article><span>Outstanding</span><strong id="kpi-outstanding">—</strong></article>
+      <article><span>Overdue invoices</span><strong id="kpi-overdue">—</strong></article>
+    </section>
+
+    <section>
+      <div class="section-heading"><p class="eyebrow">Portfolio</p><h2>Matters and documents</h2></div>
+      <div class="chart-grid">
+        <article class="chart-card wide"><div id="matters-stage-chart"></div></article>
+        <article class="chart-card"><div id="matter-type-chart"></div></article>
+        <article class="chart-card"><div id="missing-docs-chart"></div></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading"><p class="eyebrow">Client journey</p><h2>Inquiries and consultations</h2></div>
+      <div class="chart-grid">
+        <article class="chart-card wide"><div id="inquiry-chart"></div></article>
+        <article class="chart-card"><div id="funnel-chart"></div></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading"><p class="eyebrow">Cash position</p><h2>Billing and payments</h2></div>
+      <div class="chart-grid">
+        <article class="chart-card wide"><div id="finance-chart"></div></article>
+        <article class="chart-card"><div id="invoice-status-chart"></div></article>
+      </div>
+    </section>
+  </main>
+  <footer>Synthetic educational data. No real client records are displayed.</footer>
+</body>
+</html>

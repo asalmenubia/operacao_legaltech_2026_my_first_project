@@ -1,0 +1,211 @@
+{
+  "title": "Operacao LegalTech: Business Workflow, Governed Data and Communication Automation",
+  "course": "Data Analysis and IT Applied to Management",
+  "institution": "Prepara Portugal",
+  "project": "Individual final project",
+  "mentor": "Project mentor: Adwiteey Mauriya, Ph.D.",
+  "date": "20 September 2026",
+  "ack_title": "Acknowledgments",
+  "ack": "I acknowledge Adwiteey Mauriya, Ph.D., for serving as my mentor during this project. This report is authored by Nubia Aparecida Silva Almeida.",
+  "abstract_title": "Abstract",
+  "abstract": "This applied project examines how a law office can connect its client-service workflow to governed analytical data and communication automation. Eight synthetic datasets underpin a PostgreSQL model with controlled ingestion, relational checks, payment allocation and a static executive dashboard. The business process retains two routes into legal work: direct onboarding and a paid lawyer consultation. A new private communications layer adds signed WhatsApp intake, email collection, a durable sending queue and human-response tracking. The corrected service policy defines office hours as Monday to Friday, 09:00-18:00. Messages received outside those hours are due a human response by 10:00 on the next working day, using a configurable office time zone. Automated acknowledgments do not satisfy that target. This dissertation distinguishes the validated historical synthetic snapshot from the newly implemented integration code and from live deployment, which requires provider credentials and hosted services. It explains the data architecture, analytical results, response policy, implementation controls, evaluation method and remaining limitations. The outcome is a reproducible educational system and an explicit path to operational adoption, rather than evidence of a live legal practice or measured production service performance.",
+  "keywords": "Keywords: legal analytics, data governance, WhatsApp, email, response target, PostgreSQL",
+  "contents": "Table of Contents",
+  "sections": [
+    {
+      "title": "Introduction",
+      "paragraphs": [
+        "A growing law office must coordinate inquiries, consultations, legal matters, required documents, fees and payments. When these records remain spread across spreadsheets, messages and email, management has difficulty distinguishing outstanding work from incomplete records. Operacao LegalTech addresses that problem through a structured business model, reproducible data preparation and management reporting.",
+        "The project asks three questions: how can operational records preserve the meaning of the client journey; how can validated data support useful indicators; and how can communication automation support a response commitment without confusing an automated acknowledgment with human service? The work is an applied technical case study using synthetic records, not a study of identifiable clients.",
+        "The author supplied Law Office Intake and Matter Workflow as the business source. The later clarification that the one-hour period starts when the office next opens supersedes the document's ambiguous after-hours wording. The specification is Monday to Friday, 09:00-18:00, with an after-hours deadline of 10:00 on the next working day. Europe/Lisbon is the configurable default used for the examples; it is an implementation assumption rather than a separate instruction from the source document."
+      ]
+    },
+    {
+      "title": "Business Context and Client Journey",
+      "paragraphs": [
+        "The source process begins with a WhatsApp menu offering new services, process status and consultation. An assistant identifies the service need and clarifies the request. Not every contact creates a consultation or a new matter: a client may ask only for a status update, decline a meeting, or finish after clarification (Law Office Intake and Matter Workflow, n.d., pp. 1-3).",
+        "Direct onboarding occurs when clarification is sufficient and the client wishes to proceed. The source places signing the contract and power of attorney and paying applicable fees before document collection. A consultation is therefore optional; forcing a consultation record onto every matter would misrepresent this route.",
+        "When the situation requires a lawyer, the office generates a consultation fee and holds a meeting. If the case does not proceed, the service may end as consultation only. If it proceeds, matter fees and contracting follow. Consultation charges and charges for later legal work must remain distinguishable, and payment for a meeting does not prove that a matter was opened.",
+        "Both routes converge on receipt of the required documents by email, then matter opening, legal work, litigation when necessary and closure. The source's client-and/or-lawyer acceptance wording does not specify separate approvals. The existing single case_accepted field represents one recorded decision; separate approvals and timestamped onboarding checks remain future model extensions outside this communication update."
+      ]
+    },
+    {
+      "title": "Data and Method",
+      "paragraphs": [
+        "The analytical dataset comprises eight synthetic entities: users, clients, inquiries, consultations, matters, documents, invoices and payments. The retained validated snapshot contains 1,000 records per entity. Raw files preserve the submitted evidence; cleaned files normalize categories, dates, booleans and values. No claim is made that the synthetic volumes or amounts describe an actual law office.",
+        "PostgreSQL separates permissive ingestion in staging, constrained operational records in core and reporting views in analytics. Alembic records ordered schema changes. Primary keys, foreign keys and checks prevent selected invalid states, while cross-table validation detects relationships that are individually valid but semantically inconsistent (PostgreSQL Global Development Group, n.d.).",
+        "The existing reconciliation audit records 999 consultation-client corrections, 1,000 matter-client corrections, 997 invoice-client corrections, 89 unsupported paid-status corrections and 88 document-status corrections. The retained validation reports zero critical findings and 3,000 warnings. The warnings comprise 2,000 unresolved staff identifiers and 1,000 payment-recorder names; these are preserved rather than assigned invented identities.",
+        "The dashboard builder queries validated analytical views and writes a static JavaScript snapshot. The report reads the same committed snapshot, so its totals can be reproduced without querying live operational channels. The historical date-only inquiry fields cannot establish compliance with the new response deadline. New communication events use timezone-aware timestamps and a separately versioned policy.",
+        "The communications schema is deliberately separate from both the synthetic core data and public dashboard exports. It contains requests and an outbox, with an optional inquiry link for reviewed reconciliation. Incoming phone numbers and email addresses are not automatically matched to a client identity. This boundary prevents accidental publication of channel contact details and avoids silently treating a sender address as verified identity."
+      ]
+    },
+    {
+      "title": "Corrected Office Schedule and Response Target",
+      "paragraphs": [
+        "The office is open on Monday through Friday from 09:00 inclusive to 18:00 exclusive. An out-of-hours contact received before 09:00 on a weekday is due by 10:00 that day. A contact at or after 18:00 is due by 10:00 on the next weekday. Saturday and Sunday contacts are due by 10:00 on Monday. The implementation does not exclude public holidays because no holiday calendar was specified.",
+        "During office hours the workflow calls for prompt assistant service. This update does not invent an additional numerical in-hours commitment: response_due_at is null for those contacts and their target status is no_numeric_target. The one-hour rule specifically covers contacts received while the office is closed. A human response sent earlier than reopening is permitted and meets the target.",
+        "The calculation converts the receipt timestamp into the configured office time zone before checking the weekday and opening boundary. It constructs the deadline on the next local working date so that a weekend daylight-saving transition does not shift the deadline away from 10:00 local time. Naive timestamps are rejected. Each request stores its time zone, policy version and calculated deadline for auditability.",
+        "An automated acknowledgment communicates the opening hours and, for an after-hours contact, the actual deadline date and time. It does not populate first_human_response_at. The implemented human-response measure records when the provider accepts a reply authored by an authorized staff user. This is a submission measure, not proof of delivery, reading or resolution; delivery-receipt processing is a further extension."
+      ]
+    },
+    {
+      "title": "WhatsApp and Email Automation",
+      "paragraphs": [
+        "The WhatsApp adapter implements the verification challenge and checks the HMAC signature of the original webhook body. It accepts inbound messages only for the configured business phone identifier and deduplicates provider message identifiers in PostgreSQL. A request and its acknowledgment queue item are committed together before the endpoint acknowledges successful intake. The implementation follows the verification pattern documented by WhatsApp (n.d.-a).",
+        "Outbound WhatsApp text uses the Meta Cloud API with locally configured credentials and API version. Free-text messages outside the 24-hour customer-service window (WhatsApp, n.d.-b) are held for review instead of repeatedly retried. This matters particularly for a Friday-evening contact whose Monday response deadline can occur after that window. Production operation therefore needs an approved re-engagement template or another authorized contact route; the office-hours target does not override channel restrictions. Meta documents the business account, number and access-token prerequisites for Cloud API use (Meta, n.d.). A staff command can queue a configured, approved template without parameters. That template is tracked separately and does not count as a human reply.",
+        "The email adapter polls a dedicated IMAP folder over verified TLS, using mailbox identity, UIDVALIDITY and UID to identify messages. It uses the server's INTERNALDATE for receipt time rather than trusting the sender's Date header. Repeated polling cannot create duplicate accepted requests. The standard Python libraries provide IMAP and SMTP interfaces for these adapters (Python Software Foundation, n.d.-a, n.d.-b).",
+        "Email intake retrieves headers only. Legal narratives and attachments remain in the protected mailbox for staff review; the integration does not mark a document complete simply because an email arrived. Automated messages, mailing lists, delivery failures and office self-mail are excluded from intake to reduce response loops. Email auto-acknowledgment is disabled until the dedicated mailbox's filtering is configured. Sending uses authenticated SMTP over TLS.",
+        "The durable outbox separates intake from external transmission. A worker claims one pending item with a database row lock, then records provider acceptance or a review condition. Ambiguous failures and stale sending claims are not blindly retried because the provider may already have accepted the message. Staff must reconcile the provider record before deciding whether to resend. This avoids claiming exactly-once external delivery.",
+        "Human replies are queued through a private command that requires an active staff user and a body file. The queue view shows pending, overdue, met and late after-hours targets separately from contacts without a numerical target. Live sending is disabled by default. The adapters are implementation code requiring configured accounts and a hosted service; no live client messages were sent as part of preparing this dissertation."
+      ]
+    },
+    {
+      "title": "Analytical Results and Interpretation",
+      "paragraphs": [
+        "The following tables and figures describe the retained synthetic snapshot. They are independent of the new communication queue and do not report production response-target compliance. The dashboard covers executive workload, matters and documents, inquiries and consultations, and billing and payments.",
+        "An active matter is any matter whose current stage is not closed. Missing-document counts are calculated from listed required documents without a receipt date. This supports exception review but does not establish that the checklist contains every document required for the service. Staff must confirm completeness of the checklist itself.",
+        "Inquiry and consultation totals are stage counts, not a linked longitudinal conversion funnel. Direct onboarding bypasses consultations, and consultation-only services are valid endpoints. A defensible conversion rate needs a defined intake cohort, route and observation window. The historical accepted-count divided by held-count calculation also needs an accepted-and-held numerator check before interpretation as a meeting acceptance rate.",
+        "Financial reporting distinguishes invoice value, allocated payments, outstanding balances and credits. Cash received can exceed the amount allocated to an invoice; any excess must remain reconcilable as a credit rather than disappear from reporting. Currency labels in the educational dashboard are illustrative, and unusually large synthetic amounts are not a commercial benchmark."
+      ]
+    },
+    {
+      "title": "Governance and Operating Responsibilities",
+      "paragraphs": [
+        "Assistants own the response queue and initial qualification; lawyers own legal assessment and matter work; finance owns invoice and payment reconciliation; the data steward owns definitions, identity mappings and quality exceptions; and the technical operator owns migrations, availability and provider configuration. The office must schedule staff to cover the queue after opening: automation can calculate a deadline but cannot guarantee that a person responds.",
+        "The new communications role has access to its private tables and selected core references. It does not grant the dashboard analyst access to channel records. Secrets belong in local configuration or a deployment secret store. Public artifacts remain synthetic. A production deployment should also define retention periods, audit review, backups, restore tests and access revocation for contact metadata and queued reply text.",
+        "The webhook requires an HTTPS reverse proxy with body-size and connection limits. The email collector and sending worker need supervised scheduling and monitoring. GitHub Pages hosts static files and cannot run these services (GitHub, n.d.). Publishing the repository therefore makes the code and reports available; it does not activate the communication service.",
+        "Before activation, the office should verify the business phone, mailbox authentication, sender address, service time zone, approved message templates and staff responsibilities using test recipients. A failed integration or rejected delivery must remain visible in the private queue. Historical synthetic analytics and live operational records should retain separate publication and retention rules."
+      ]
+    },
+    {
+      "title": "Evaluation and Limitations",
+      "paragraphs": [
+        "Evaluation targets business behavior rather than only code structure. Schedule cases include weekday pre-opening, exactly 09:00, the last second before 18:00, exactly 18:00, Friday evening, weekends and both daylight-saving transitions. Provider checks cover signature tampering, phone-identifier filtering, email loop suppression, server receipt dates, the default live-send lock and expired WhatsApp free-text windows.",
+        "Database evaluation should confirm atomic intake and acknowledgment creation, duplicate rejection, row claiming, authorized staff replies and the distinction between automated and human response times. These checks use synthetic test events and must not transmit messages. The release validation record documents which checks were run and any environment limitations; the dissertation does not infer a live provider test from passing local tests.",
+        "The principal limitations are the synthetic analytical data, unresolved historical staff mappings, date-only source events, unconfigured provider accounts and absence of a public-holiday calendar. A dedicated filtered mailbox and a parameter-free approved WhatsApp re-engagement template require operational configuration. Channel delivery/read receipts, attachment verification, separate acceptance approvals and a full authenticated staff interface remain further work.",
+        "A provider acceptance timestamp is not proof that the recipient received the reply. An old inbound WhatsApp event can require a template before a human reply is possible. The response target must therefore be reviewed alongside channel availability and staffing. These limitations are explicit operating conditions, not grounds to replace the author's original business workflow."
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "paragraphs": [
+        "Operacao LegalTech connects the author's law-office workflow to reproducible synthetic analytics and a private communication-automation structure. The corrected after-hours rule is precise: Monday-Friday opening at 09:00, closing at 18:00, and a human reply due by 10:00 on the next working day for contacts received outside those hours. Automated acknowledgments remain separate from human service.",
+        "The contribution is a controlled path from contact events to auditable deadlines and from validated synthetic records to management information. The English and European Portuguese reports share the same data, definitions and implementation boundaries. Live adoption still requires configured communication accounts, a supervised service and staff ownership of the queue; it is not achieved merely by uploading the project to GitHub."
+      ]
+    }
+  ],
+  "tables": {
+    "schedule_title": "Examples of the After-Hours Response Rule",
+    "schedule_headers": [
+      "Receipt in office local time",
+      "Human-response deadline"
+    ],
+    "schedule_rows": [
+      [
+        "Monday, 08:30",
+        "Monday, 10:00"
+      ],
+      [
+        "Monday, 09:00",
+        "Prompt service; no numerical target specified"
+      ],
+      [
+        "Tuesday, 18:00",
+        "Wednesday, 10:00"
+      ],
+      [
+        "Friday, 20:00",
+        "Monday, 10:00"
+      ],
+      [
+        "Saturday or Sunday",
+        "Monday, 10:00"
+      ]
+    ],
+    "results_title": "Indicators from the Retained Synthetic Snapshot",
+    "results_headers": [
+      "Indicator",
+      "Value"
+    ],
+    "results_labels": [
+      "Matters",
+      "Active matters",
+      "Missing required documents",
+      "Inquiries",
+      "Scheduled consultations",
+      "Held consultations",
+      "Accepted consultations",
+      "Invoice value",
+      "Allocated paid value",
+      "Outstanding value",
+      "Overdue invoices"
+    ],
+    "mapping_title": "Business Events and Data Responsibilities",
+    "mapping_headers": [
+      "Event",
+      "Record or control"
+    ],
+    "mapping_rows": [
+      [
+        "WhatsApp / email contact",
+        "Private requests; channel key; server/provider receipt time"
+      ],
+      [
+        "Automatic acknowledgment",
+        "Outbox item; never a human response"
+      ],
+      [
+        "Assistant reply",
+        "Staff actor; provider acceptance time; deadline comparison"
+      ],
+      [
+        "Direct onboarding / consultation",
+        "Optional consultation-to-matter relationship"
+      ],
+      [
+        "Documents received",
+        "Manual review against the service checklist"
+      ],
+      [
+        "Invoices and payments",
+        "Separate fee purpose, allocations and credit reconciliation"
+      ],
+      [
+        "Publication",
+        "Synthetic analytics only; private requests excluded"
+      ]
+    ]
+  },
+  "figures": [
+    "Matter Stage Distribution",
+    "Listed Missing Documents and Affected Matters",
+    "Consultation Stage Counts",
+    "Invoice Value, Allocated Payments and Outstanding Balance"
+  ],
+  "figure_labels": [
+    [
+      "Closed",
+      "Active"
+    ],
+    [
+      "Missing documents",
+      "Affected matters"
+    ],
+    [
+      "Scheduled",
+      "Held",
+      "Accepted"
+    ],
+    [
+      "Invoiced",
+      "Allocated",
+      "Outstanding"
+    ]
+  ],
+  "figure_note": "Note. Calculated from the retained synthetic snapshot. Counts are not production performance measures; consultation stages are not linked-cohort conversion rates.",
+  "references_title": "References",
+  "appendix_title": "Appendix: Reproduction and Release Evidence",
+  "appendix": "Use UV for all Python commands. Apply migrations without resetting existing data; then run the unit tests and, with PostgreSQL available, the integration checks. The report builder reads the existing validated dashboard snapshot and creates both language editions. Provider credentials are not required to build the PDFs. Consult docs/COMMUNICATION_AUTOMATION.md for private service configuration and docs/RELEASE_VALIDATION.md for the checks actually executed.",
+  "table": "Table",
+  "figure": "Figure"
+}

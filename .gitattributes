@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+# Preserve supplied CSV bytes, including original CRLF and field whitespace.
+*.csv -text whitespace=-trailing-space

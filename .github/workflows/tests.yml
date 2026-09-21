@@ -1,0 +1,40 @@
+name: Validate project
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: legaltech_test
+          POSTGRES_PASSWORD: temporary-ci-only
+          POSTGRES_DB: legaltech_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U legaltech_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://legaltech_test:temporary-ci-only@localhost:5432/legaltech_test
+      ISOLATED_TEST_DATABASE: 'true'
+      COMMUNICATIONS_LIVE_SEND: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run python -m unittest discover -s tests -v
+      - run: uv run python -m alembic upgrade head
+      - run: uv run python -m tests.integration_communications
+      - name: Check communications migration reversibility in the disposable database
+        run: |
+          uv run python -m alembic downgrade 0003
+          uv run python -m alembic upgrade head
+          uv run python -m tests.integration_communications
+      - run: uv run python -m src.load_csvs
+      - run: uv run python -m src.validate_database
