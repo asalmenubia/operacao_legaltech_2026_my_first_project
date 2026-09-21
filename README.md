@@ -144,3 +144,17 @@ workflow uses a temporary PostgreSQL database and never sends external messages.
 Publication does not make the private automation operational.
 
 No project license has been selected. Standard copyright protection applies.
+
+## One-command release pipeline
+
+```sh
+uv sync --frozen
+uv run python -m src.pipeline --plan
+uv run python -m src.pipeline
+```
+
+The pipeline tests, migrates, loads, validates, builds the dashboard and both
+PDFs, verifies the outputs and writes a checksum manifest. GitHub runs the same
+pipeline in a disposable database and produces a downloadable `legaltech-release`
+bundle. Pages deployment is optional and follows successful validation. See
+[PIPELINE.md](docs/PIPELINE.md) for stages, downloads and configuration.
