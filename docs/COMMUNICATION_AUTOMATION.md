@@ -1,7 +1,7 @@
 # Private communication automation
 
 Author: **Nubia Aparecida Silva Almeida**
-Project mentor: **Adwiteey Mauriya, Ph.D.**
+Special thanks to **Adwiteey Mauriya** for his support during the project.
 
 ## Corrected response policy
 

@@ -1,7 +1,7 @@
 # Operacao LegalTech
 
 **Author:** Nubia Aparecida Silva Almeida
-**Project mentor:** Adwiteey Mauriya, Ph.D.
+**Special thanks:** Adwiteey Mauriya, for his support during the project.
 **Course:** Data Analysis and IT Applied to Management, Prepara Portugal
 
 A synthetic law-office analytics project with a PostgreSQL data pipeline, a static
@@ -18,7 +18,7 @@ output after successful checks on `main`.
 - [European Portuguese PDF](site/reports/operacao_legaltech_dissertation_pt-PT.pdf)
 - [English PDF](site/reports/operacao_legaltech_dissertation_en.pdf)
 
-Both APA-style editions include the author's full name, mentor acknowledgment,
+Both APA-style editions include the author's full name, a special acknowledgment of support,
 business workflow, corrected response policy, architecture, synthetic results,
 automation, governance, limitations and references. Editable narrative sources
 are in `docs/dissertation/`; the original report filename remains an English alias.

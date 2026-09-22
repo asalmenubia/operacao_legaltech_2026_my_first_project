@@ -151,7 +151,7 @@ def build_report(language, data):
                     subject='Dissertação de projeto' if pt else 'Project dissertation', lang=language)
     story = [Spacer(1,inch), p(c['title'],'title'), Spacer(1,36), p(AUTHOR,'center'),
              p(c['institution'],'center'), p(c['course'],'center'), p(c['project'],'center'),
-             p(c['mentor'],'center'), Spacer(1,24), p(c['date'],'center'), Spacer(1,36),
+             Spacer(1,24), p(c['date'],'center'), Spacer(1,36),
              p('Apresentação adaptada à APA, 7.ª edição (American Psychological Association, 2020).' if pt else 'Presentation adapted to APA, 7th edition (American Psychological Association, 2020).','center'),
              PageBreak(), p(c['ack_title'],'heading'), p(c['ack']),
              PageBreak(), p(c['abstract_title'],'heading'), p(c['abstract'],'plain'), Spacer(1,12), p(c['keywords'],'plain'),

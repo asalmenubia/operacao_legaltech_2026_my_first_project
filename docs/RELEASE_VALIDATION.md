@@ -15,7 +15,7 @@ not activate provider accounts or send client messages.
 - Python source compilation passed.
 - The complete Alembic migration chain generated SQL successfully in offline mode.
 - Both PDF editions built from the same retained validated synthetic snapshot.
-- PDF layout, full author name, mentor acknowledgment, schedule and download copies
+- PDF layout, full author name, acknowledgment of support, schedule and download copies
   are reviewed before publication.
 
 ## Database and provider limits

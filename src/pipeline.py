@@ -44,9 +44,11 @@ def verify_artifacts(root=ROOT):
         if reader.metadata.author != 'Nubia Aparecida Silva Almeida':
             raise ValueError('Incorrect report author')
         contents = '\n'.join(page.extract_text() or '' for page in reader.pages)
-        for expected in ('Nubia Aparecida Silva Almeida', 'Adwiteey Mauriya, Ph.D.', '09:00', '18:00', '10:00'):
+        for expected in ('Nubia Aparecida Silva Almeida', 'Adwiteey Mauriya', '09:00', '18:00', '10:00'):
             if expected not in contents:
                 raise ValueError(f'Missing required report content: {expected}')
+        if 'mentor' in contents.casefold():
+            raise ValueError('Report must acknowledge support without assigning a mentor role')
         if not reader.pages or any(not (page.extract_text() or '').strip() for page in reader.pages):
             raise ValueError('Report has empty pages')
         if digest(path) != digest(root / 'site/reports' / name):
